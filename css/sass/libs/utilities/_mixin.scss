@@ -1,10 +1,9 @@
 @charset "utf-8";
 
-
 @mixin link-color($color) {
 	color: $color;
-	
-	&:hover, &:active, &:focus {
+
+	&:hover {
 		color: lighten($color, 20%);
 	}
 }

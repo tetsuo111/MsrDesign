@@ -6,23 +6,22 @@
  *=== 基本
  *==========================================================*/
 html, body {
-  /* 横揺れ防止 */
-  overflow: hidden;
-  width: 100vw;
-  -webkit-overflow-scrolling: touch;
+	/* 横揺れ防止 */
+	overflow: hidden;
+	width: 100vw;
+	-webkit-overflow-scrolling: touch;
 }
 
 body {
-  /* @see http://sole-color-blog.com/blog/design/963/ */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
-  /* スマホの横向き時の文字サイズ設定 */
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
-body::-webkit-scrollbar {
-  display: none;
-  /* スクロールバー非表示(特定ブラウザ) */
+	/* @see http://sole-color-blog.com/blog/design/963/ */
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+	/* スマホの横向き時の文字サイズ設定 */
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	&::-webkit-scrollbar {
+		display: none;
+		/* スクロールバー非表示(特定ブラウザ) */
+	}
 }
 
 .contents-margin {
@@ -32,11 +31,7 @@ body::-webkit-scrollbar {
 
 /* リンク */
 a {
-  color: white;
-}
-
-a:hover {
-  color: white;
+	@include link-color($color-white);
 }
 
 /* Bulma変更 */

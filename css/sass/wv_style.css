@@ -19,7 +19,6 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
-
 body::-webkit-scrollbar {
   display: none;
   /* スクロールバー非表示(特定ブラウザ) */
@@ -34,7 +33,6 @@ body::-webkit-scrollbar {
 a {
   color: white;
 }
-
 a:hover {
   color: white;
 }
@@ -45,5 +43,62 @@ a:hover {
   margin-right: 0;
   margin-top: 0;
 }
+
+/*==========================================================*
+ *=== アコーディオン
+ *==========================================================*/
+.accordion .accordion-list-group {
+  margin-bottom: 1rem;
+}
+.accordion .accordion-list-group .accordion-toggle {
+  margin-bottom: .75rem;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  padding: 0.625rem;
+  background-image: url(/img/icon/accordion_up_arrow.png);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 1.25rem;
+}
+.accordion .accordion-list-group .accordion-toggle.accordion-toggle-style1 {
+  background-color: #ffad4d;
+}
+.accordion .accordion-list-group .accordion-toggle.accordion-toggle-style2 {
+  background-color: #29586d;
+}
+.accordion .accordion-list-group .accordion-toggle.accordion-toggle-open {
+  background-image: url(/img/icon/accordion_down_arrow.png);
+}
+.accordion .accordion-list-group .accordion-list {
+  display: none;
+}
+.accordion .accordion-list-group .accordion-list li {
+  width: 100%;
+  padding: 0.625rem;
+  cursor: pointer;
+  background: url(/img/icon/accordion_right_arrow.png);
+  background-repeat: no-repeat;
+  background-position: right 0.625rem center;
+  background-size: 1.25rem;
+}
+.accordion .accordion-list-group .accordion-list li:not(:last-child) {
+  border-bottom: 2px solid #ddd;
+}
+.accordion .accordion-list-group .accordion-list li button {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-right: 1.5rem;
+  /* ボタンスタイル削除 */
+  border: none;
+  background-color: white;
+}
+
+/*##############################################################################*
+ *### トップページ
+ *##############################################################################*/
 
 /*# sourceMappingURL=wv_style.css.map */
