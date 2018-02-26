@@ -7,9 +7,6 @@
  *==========================================================*/
 html, body {
 	/* 横揺れ防止 */
-	overflow: hidden;
-	width: 100vw;
-	-webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -20,7 +17,6 @@ body {
 	-ms-text-size-adjust: 100%;
 	&::-webkit-scrollbar {
 		display: none;
-		/* スクロールバー非表示(特定ブラウザ) */
 	}
 }
 

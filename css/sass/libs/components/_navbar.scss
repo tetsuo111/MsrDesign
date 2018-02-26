@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+$box-shadow-color: #f1f1f1;
+$nav-home-color: #958b87;
+$bg-img-nav-menu: url(../img/msr_img/menu_arrow.png);
+
+/*################################################*
+*# ナビメニュー
+*################################################*/
+nav {
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	overflow: hidden;
+	height: 52px;
+}
+
+.nav-shadow {
+	/* 下に1px影 */
+	box-shadow: 0px 2px 0px 0px $box-shadow-color;
+	-moz-box-shadow: 0px 2px 0px 0px $box-shadow-color;
+	-webkit-box-shadow: 0px 2px 0px 0px $box-shadow-color;
+}
+.nav-left-item,
+.nav-right-item {
+	width: 50px;
+	text-align: center;
+}
+.nav-left-item a,
+.nav-right-item a {
+	font-size: 2rem;
+	color: $nav-home-color;
+}
+.nav-center-item {
+	a{
+		display: block;
+		padding-top: 10px;
+	}
+}
+
+/* メニューモーダル */
+.nav-modal-card-head {
+	background-color: $color-deepblue;
+	padding: 0.625rem;
+}
+.nav-modal-card-title {
+	color: $color-white;
+}
+.nav-btn-delete {
+	/* Bulmaの .delete.is-large が効かないため指定 */
+	height: 32px;
+	width: 32px;
+	max-height: 32px;
+	max-width: 32px;
+}
+.nav-modal-card-body {
+	li {
+		text-align: left;
+		line-height: 2.5rem;
+		border-bottom: 1px solid #eee;
+		a {
+			display: block;
+			background: $bg-img-nav-menu no-repeat right 0.625rem top 0.75rem;
+			background-size: 0.5rem;
+			color: $color-deepblue;
+		}
+	}
+}
+
+

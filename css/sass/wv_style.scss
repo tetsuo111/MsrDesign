@@ -1,10 +1,25 @@
 @charset "utf-8";
 @import "libs/utilities/_all";
 @import "libs/base/_all";
-@import "libs/layout/_all";
 @import "libs/components/_all";
-
+@import "libs/layout/_all";
 
 /*##############################################################################*
  *### トップページ
  *##############################################################################*/
+
+.top-cource {
+	.accordion-list{
+		li{
+			text-align: center;
+		}
+	}
+}
+
+.top-message{
+	padding: 20px;
+	text-align: center;
+	margin: auto 5px;
+	background-color: $color-top-message;
+	@include border-radius(3px);
+}

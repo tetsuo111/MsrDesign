@@ -1,90 +1,99 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>Top</title>
-	<link rel="stylesheet" type="text/css" href="../css/bulma.min.css"/>
-	<link rel="stylesheet" type="text/css" href="../css/ionicons.min.css"/>
-
-	<link rel="stylesheet" type="text/css" href="../css/wv_style.css"/>
-
-	<script type="text/javascript" src="../js/jquery.min.js"></script>
-	<script type="text/javascript" src="../js/common.js"></script>
-<script type="text/javascript">
-//<![CDATA[
-	jQuery(function($){
-		// マイデータリンク
-		$('.top-mydata-list-item').click(function() {
-			var link = $(this).data('href');
-			if (link != '') {
-				location.href = link;
-			}
-		});
-	});
-
-//]]>
-</script></head>
-<body>
-	<nav class="nav nav-shadow">
-		<div class="nav-left">
-			<a href="#" class="nav-item"><span class="ion-home nav-home"></span></a>
-		</div>
-		<div class="nav-center">
-			<p class="nav-item nav-title"><a href="/Top/"><img src="../img/logo.png" alt="ロゴ" widht="100" height=""></a><p>
-		</div>
-		<div class="nav-right">
-			<div class="nav-right-empty"></div>
-		</div>
-		<div id="nav-modal-menu" class="modal">
-			<div class="modal-background"></div>
-			<div class="modal-card"></div>
-		</div>
-	</nav>
-	<div class="container">
-		<div class="top-news" style="background-color: #faf8f7;">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<title>Top</title>
+		<link rel="stylesheet" type="text/css" href="../css/bulma.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/ionicons.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/wv_style.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<nav class="nav-shadow">
+				<div class="nav-left-item">
+					<a href="/Top/">
+						<span class="ion-home"></span>
+					</a>
+				</div>
+				<div class="nav-center-item">
+					<a href="/Top/">
+						<img src="/img/common/logo.png" class="logo">
+					</a>
+				</div>
+				<div class="nav-right-item">
+					<a href="/Users/logout">
+						<span class="ion-log-out"></span>
+					</a>
+				</div>
+			</nav>
 			<div>
-				<!-- ドロップダウンメニュー -->
+				<div class="top-cource">
+					<div class="accordion-list-group">
+						<p class="accordion-toggle accordion-toggle-style1">コース 1：感じ方切替トレーニング</p>
+						<ul class="accordion-list">
+							<li><button data-stress-id-value="14" type="submit" class="accordion-list-group-btn1">コース2 対人ストレスマネジメント</button></li>
+							<li><button data-stress-id-value="35" type="submit" class="accordion-list-group-btn1">コース3:行動目標達成トレーニング</button></li>
+							<li><button data-stress-id-value="37" type="submit" class="accordion-list-group-btn1">マスターコース</button></li>
+						</ul>
+					</div>
+				</div>
+				<div class="top-message">
+					<p>メッセージボード</p>
+				</div>
 			</div>
-			<div>
-				<p>メッセージボード</p>
+			<div class="has-text-centered">
+				<div class="columns is-multiline is-mobile">
+					<div class="column is-6">
+						<a href=""><img alt="ムードメータ" src="../img/icon/mood_meter.png"></a>
+					</div>
+					<div class="column is-6">
+						<a href=""><img alt="エクソサイズ" src="../img/icon/exosize.png"></a>
+					</div>
+				</div>
+				<div class="columns is-multiline is-mobile">
+					<div class="column is-6">
+						<a href=""><img alt="ムードサプリ" src="../img/icon/mood_supplements.png"></a>
+					</div>
+					<div class="column is-6">
+						<a href=""><img alt="マイデータ" src="../img/icon/mydata.png"></a>
+					</div>
+				</div>
+				<div class="columns is-multiline is-mobile">
+					<div class="column is-6">
+						<a href=""><img alt="ラーニング" src="../img/icon/learning.png"></a>
+					</div>
+					<div class="column is-6">
+						<a href=""><img alt="Q&A" src="../img/icon/q_and_a.png"></a>
+					</div>
+				</div>
 			</div>
+			<footer class="footer has-text-centered">
+				<div class="footer-title">
+					<img src="../img/common/logo.png" class="logo">
+				</div>
+				<ul class="footer-list">
+					<li><a href="/Tou/">利用規約</a></li>
+					<li><a href="/Privacy/">プライバシーポリシー</a></li>
+				</ul>
+				<div class="footer-copyright">Copyright (C) 2017 mind set research Inc. All Rights Reserved.</div>
+			</footer>
 		</div>
-		<div class="">
-			<div class="columns">
-				<div class="column is-6">
-					<a href=""><img alt="ムードメータ" src="../img/mood_meter.png"></a>
-				</div>
-				<div class="column is-6">
-					<a href=""><img alt="ムードメータ" src="../img/mood_meter.png"></a>
-				</div>
-			</div>
-			<div class="columns">
-				<div class="column is-6">
-					<a href=""><img alt="ムードメータ" src="../img/mood_meter.png"></a>
-				</div>
-				<div class="column is-6">
-					<a href=""><img alt="ムードメータ" src="../img/mood_meter.png"></a>
-				</div>
-			</div>
-			<div class="columns">
-				<div class="column is-6">
-					<a href=""><img alt="ムードメータ" src="../img/mood_meter.png"></a>
-				</div>
-				<div class="column is-6">
-					<a href=""><img alt="ムードメータ" src="../img/mood_meter.png"></a>
-				</div>
-			</div>
-		</div>
-	</div>
-		<footer class="footer has-text-centered">
-		<div class="footer-title">
-			<img src="./img/common/logo2.png" class="logo">
-		</div>
-		<ul class="footer-list">
-			<li><a href="/Tou/">利用規約</a></li>
-			<li><a href="/Privacy/">プライバシーポリシー</a></li>
-		</ul>
-		<div class="footer-copyright">Copyright (C) 2017 mind set research Inc. All Rights Reserved.</div>
-	</footer></body>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript">
+			//<![CDATA[
+			jQuery(function($){
+				// マイデータリンク
+				$('.top-mydata-list-item').click(function() {
+					var link = $(this).data('href');
+					if (link != '') {
+						location.href = link;
+					}
+				});
+			});
+
+			//]]>
+		</script>
+	</body>
 </html>

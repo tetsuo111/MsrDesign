@@ -19,12 +19,6 @@
 	font-size: ($size / $base) + rem;
 }
 
-@mixin prefixes($property, $value) {
-	@each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
-	#{$prefix}#{$property}: $value;
-	}
-}
-
 @mixin truncate($width: 100%) {
 	width: $width;
 	max-width: 100%;
@@ -32,4 +26,31 @@
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+@mixin border-top-left-radius($radius) {
+	-webkit-border-top-left-radius: $radius;
+	-moz-border-radius-topleft: $radius;
+	border-top-left-radius: $radius;
+}
+@mixin border-top-right-radius($radius) {
+	-webkit-border-top-right-radius: $radius;
+	-moz-border-radius-topright: $radius;
+	border-top-right-radius: $radius;
+}
+@mixin border-bottom-right-radius($radius) {
+	-webkit-border-bottom-right-radius: $radius;
+	-moz-border-radius-bottomright: $radius;
+	border-bottom-right-radius: $radius;
+}
+@mixin border-bottom-left-radius($radius) {
+	-webkit-border-bottom-left-radius: $radius;
+	-moz-border-radius-bottomleft: $radius;
+	border-bottom-left-radius: $radius;
 }

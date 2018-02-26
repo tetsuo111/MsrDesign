@@ -1,0 +1,33 @@
+@charset "utf-8";
+$footer-border-color: #d7cbc6;
+$footer-copyright-color: #daceca;
+$footer-list-color: #68615e;
+
+
+/*##############################################################################*
+*### フッター
+*##############################################################################*/
+.footer {
+	margin: 2rem 1rem;
+	border-top: 1px solid $footer-border-color;
+	/* Bulmaスタイル更新 */
+	padding: 1.5rem 0 0;
+	background-color: transparent;
+	.footer-title {
+		margin-bottom: 1.25rem;
+	}
+	.footer-copyright {
+		margin-top: 1rem;
+		font-size: 0.75rem;
+		color: $footer-copyright-color;
+	}
+}
+.footer-list {
+	li {
+		display: inline;
+		padding: 0 0.75rem;
+		a {
+			color: $footer-list-color;
+		}
+	}
+}

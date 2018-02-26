@@ -7,9 +7,6 @@
  *==========================================================*/
 html, body {
   /* 横揺れ防止 */
-  overflow: hidden;
-  width: 100vw;
-  -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -21,7 +18,6 @@ body {
 }
 body::-webkit-scrollbar {
   display: none;
-  /* スクロールバー非表示(特定ブラウザ) */
 }
 
 .contents-margin {
@@ -47,46 +43,28 @@ a:hover {
 /*==========================================================*
  *=== アコーディオン
  *==========================================================*/
-.accordion .accordion-list-group {
-  margin-bottom: 1rem;
-}
-.accordion .accordion-list-group .accordion-toggle {
+.accordion-list-group .accordion-toggle {
   margin-bottom: .75rem;
   border-radius: 3px;
   cursor: pointer;
   text-align: center;
   color: white;
   padding: 0.625rem;
-  background-image: url(/img/icon/accordion_up_arrow.png);
+  background-image: url(../img/icon/accordion_up_arrow.png);
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 1.25rem;
 }
-.accordion .accordion-list-group .accordion-toggle.accordion-toggle-style1 {
+.accordion-list-group .accordion-toggle.accordion-toggle-style1 {
   background-color: #ffad4d;
 }
-.accordion .accordion-list-group .accordion-toggle.accordion-toggle-style2 {
+.accordion-list-group .accordion-toggle.accordion-toggle-style2 {
   background-color: #29586d;
 }
-.accordion .accordion-list-group .accordion-toggle.accordion-toggle-open {
-  background-image: url(/img/icon/accordion_down_arrow.png);
+.accordion-list-group .accordion-toggle.accordion-toggle-open {
+  background-image: url(../img/icon/accordion_down_arrow.png);
 }
-.accordion .accordion-list-group .accordion-list {
-  display: none;
-}
-.accordion .accordion-list-group .accordion-list li {
-  width: 100%;
-  padding: 0.625rem;
-  cursor: pointer;
-  background: url(/img/icon/accordion_right_arrow.png);
-  background-repeat: no-repeat;
-  background-position: right 0.625rem center;
-  background-size: 1.25rem;
-}
-.accordion .accordion-list-group .accordion-list li:not(:last-child) {
-  border-bottom: 2px solid #ddd;
-}
-.accordion .accordion-list-group .accordion-list li button {
+.accordion-list-group .accordion-list-group-btn1 {
   text-align: left;
   font-size: 1rem;
   font-weight: 700;
@@ -96,9 +74,136 @@ a:hover {
   border: none;
   background-color: white;
 }
+.accordion-list-group .accordion-list {
+  display: none;
+}
+.accordion-list-group .accordion-list li {
+  width: 100%;
+  padding: 0.625rem;
+  cursor: pointer;
+  background-image: url(../img/icon/accordion_right_arrow.png);
+  background-repeat: no-repeat;
+  background-position: right 0.625rem center;
+  background-size: 1.25rem;
+}
+.accordion-list-group .accordion-list li:not(:last-child) {
+  border-bottom: 2px solid #ddd;
+}
+
+/*################################################*
+*# ナビメニュー
+*################################################*/
+nav {
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  overflow: hidden;
+  height: 52px;
+}
+
+.nav-shadow {
+  /* 下に1px影 */
+  box-shadow: 0px 2px 0px 0px #f1f1f1;
+  -moz-box-shadow: 0px 2px 0px 0px #f1f1f1;
+  -webkit-box-shadow: 0px 2px 0px 0px #f1f1f1;
+}
+
+.nav-left-item,
+.nav-right-item {
+  width: 50px;
+  text-align: center;
+}
+
+.nav-left-item a,
+.nav-right-item a {
+  font-size: 2rem;
+  color: #958b87;
+}
+
+.nav-center-item a {
+  display: block;
+  padding-top: 10px;
+}
+
+/* メニューモーダル */
+.nav-modal-card-head {
+  background-color: #29586d;
+  padding: 0.625rem;
+}
+
+.nav-modal-card-title {
+  color: white;
+}
+
+.nav-btn-delete {
+  /* Bulmaの .delete.is-large が効かないため指定 */
+  height: 32px;
+  width: 32px;
+  max-height: 32px;
+  max-width: 32px;
+}
+
+.nav-modal-card-body li {
+  text-align: left;
+  line-height: 2.5rem;
+  border-bottom: 1px solid #eee;
+}
+.nav-modal-card-body li a {
+  display: block;
+  background: url(../img/msr_img/menu_arrow.png) no-repeat right 0.625rem top 0.75rem;
+  background-size: 0.5rem;
+  color: #29586d;
+}
+
+/*##############################################################################*
+*### フッター
+*##############################################################################*/
+.footer {
+  margin: 2rem 1rem;
+  border-top: 1px solid #d7cbc6;
+  /* Bulmaスタイル更新 */
+  padding: 1.5rem 0 0;
+  background-color: transparent;
+}
+.footer .footer-title {
+  margin-bottom: 1.25rem;
+}
+.footer .footer-copyright {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  color: #daceca;
+}
+
+.footer-list li {
+  display: inline;
+  padding: 0 0.75rem;
+}
+.footer-list li a {
+  color: #68615e;
+}
 
 /*##############################################################################*
  *### トップページ
  *##############################################################################*/
+.top-cource .accordion-list li {
+  text-align: center;
+}
+
+.top-message {
+  padding: 20px;
+  text-align: center;
+  margin: auto 5px;
+  background-color: #f4f4ec;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+}
 
 /*# sourceMappingURL=wv_style.css.map */
