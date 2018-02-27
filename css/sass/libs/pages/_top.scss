@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*##############################################################################*
+*### トップページ
+*##############################################################################*/
+.top-cource {
+	.accordion-list{
+		li{
+			text-align: center;
+		}
+	}
+}
+.top-message{
+	padding: 20px;
+	text-align: center;
+	margin: auto 5px;
+	background-color: $color-top-message;
+	@include border-radius(3px);
+}

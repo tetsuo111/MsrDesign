@@ -188,8 +188,8 @@ a:hover {
 }
 
 /*##############################################################################*
- *### トップページ
- *##############################################################################*/
+*### トップページ
+*##############################################################################*/
 .top-cource .accordion-list li {
   text-align: center;
 }
@@ -250,7 +250,7 @@ a:hover {
 }
 .swiper-slide .intro-slide-body {
   padding: 10px;
-  min-height: 30vh;
+  min-height: 25vh;
   text-align: left;
 }
 .swiper-slide .intro-slide-foot .button.intro-slide-foot-btn-1 {
