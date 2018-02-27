@@ -5,10 +5,6 @@
 /*==========================================================*
 *=== 基本
 *==========================================================*/
-html, body {
-	/* 横揺れ防止 */
-}
-
 body {
 	/* @see http://sole-color-blog.com/blog/design/963/ */
 	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
@@ -56,7 +52,7 @@ a:hover {
 	background-size: 1.25rem;
 }
 .accordion-list-group .accordion-toggle.accordion-toggle-style1 {
-	background-color: #ffad4d;
+	background-color: #fc9c34;
 }
 .accordion-list-group .accordion-toggle.accordion-toggle-style2 {
 	background-color: #29586d;
@@ -93,16 +89,17 @@ a:hover {
 /*################################################*
 *# ナビメニュー
 *################################################*/
-nav {
+.nav {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
 	overflow: hidden;
 	height: 52px;
 }
@@ -201,4 +198,61 @@ nav {
 	margin: auto 5px;
 	background-color: #f4f4ec;
 	border-radius: 3px;
+}
+
+/*##############################################################################*
+*### イントロダクション
+*##############################################################################*/
+.intro {
+	background-color: #fc9c34;
+	color: white;
+}
+.intro .intro-fullhight {
+	min-height: 100vh;
+	height: auto;
+}
+.intro .intro-adjusthight-1 {
+	min-height: 80vh;
+}
+.intro .intro-nav {
+	text-align: center;
+}
+.intro .title {
+	color: white;
+}
+
+.swiper-slide.intro-slide {
+	text-align: center;
+	font-size: 1rem;
+}
+.swiper-slide .intro-slide-head {
+	min-height: 30vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	flex-direction: column;
+	justify-content: center;
+	-webkit-justify-content: center;
+}
+.swiper-slide .intro-slide-body {
+	padding: 10px;
+	min-height: 30vh;
+	text-align: left;
+}
+.swiper-slide .intro-slide-foot .button.intro-slide-foot-btn-1 {
+	background-color: #92d050;
+	color: white;
+	border-radius: 25px;
+	border: none;
+}
+.swiper-slide .intro-slide-foot .button:hover {
+	border: none;
 }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Swiper demo</title>
+	<link rel="stylesheet" href="../css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/ionicons.min.css"/>
+	<link rel="stylesheet" href="../css/swiper.min.css">
+	<link rel="stylesheet" href="../css/wv_style.css">
+
+</head>
+<body>
+	<div class="intro">
+		<div class="container intro-fullhight">
+			<nav class="intro-nav">
+				<div class="nav-center-item">
+					<a href="/Top/">
+						<img src="../img/common/intro_logo.png" alt="イントロダクションロゴ" width="200" height="35">
+					</a>
+				</div>
+			</nav>
+			<div class="swiper-container intro-adjusthight-1 swiper-container-h">
+				<div class="swiper-wrapper">
+					<section class="swiper-slide intro-slide">
+						<div class="intro-slide-head">
+							<h1 class="title">ようこそ!
+							</h1>
+							<figure>
+								<img src="../img/common/intro_logo.png" alt="イントロダクションロゴ"width="200" height="35">
+							</figure>
+						</div>
+						<div class="intro-slide-body">
+							<p>「この仕事本当にできるかな？」、「上司とうまが合わない…」「どうせうまくいかない…」「誰も協力してくれない…」「本当のことは言えない…」なんて、普段の仕事の中で、未来へのちょっとしたストレスや不安、感じたことありませんか？</p>
+						</div>
+					</section>
+					<section class="swiper-slide intro-slide is-adjustheight">
+						<div class="intro-slide-head">
+							<h1 style="font-size: 1.25rem; font-weight: 500;">
+								<p style="padding-right: 70px;">「感じ方」が変わると</p>
+								<p style="padding-left: 70px;" class="has-text-right">「未来」が変わる！</p>
+							</h1>
+						</div>
+						<div class="intro-slide-body">
+							<p class="">
+								<img src="../img/common/intro_logo.png" alt="イントロダクションロゴ" style="vertical-align: middle;">のトレーニングをして、このセルフスキルを身につけていきましょう。
+							</p>
+						</div>
+						<div class="intro-slide-foot">
+							<a href="../Top/top.html" class="button is-medium intro-slide-foot-btn-1">始める
+							</a>
+							<span>
+								<img src="../img/icon/instruction.png" alt="">
+							</span>
+						</div>
+					</section>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination swiper-pagination-h">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Swiper JS -->
+	<script src="../js/swiper.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiperH = new Swiper('.swiper-container-h', {
+			autoHeight: true,
+			spaceBetween: 50,
+			pagination: {
+				el: '.swiper-pagination-h',
+				clickable: true,
+			},
+			breakpoints: {
+				767: {
+					slidesPerView: 1,
+					spaceBetween: 0
+				}
+			},
+		});
+	</script>
+</body>
+</html>

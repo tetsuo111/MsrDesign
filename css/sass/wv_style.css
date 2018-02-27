@@ -5,10 +5,6 @@
 /*==========================================================*
  *=== 基本
  *==========================================================*/
-html, body {
-  /* 横揺れ防止 */
-}
-
 body {
   /* @see http://sole-color-blog.com/blog/design/963/ */
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
@@ -56,7 +52,7 @@ a:hover {
   background-size: 1.25rem;
 }
 .accordion-list-group .accordion-toggle.accordion-toggle-style1 {
-  background-color: #ffad4d;
+  background-color: #fc9c34;
 }
 .accordion-list-group .accordion-toggle.accordion-toggle-style2 {
   background-color: #29586d;
@@ -93,16 +89,19 @@ a:hover {
 /*################################################*
 *# ナビメニュー
 *################################################*/
-nav {
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
   overflow: hidden;
   height: 52px;
 }
@@ -204,6 +203,67 @@ nav {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   border-radius: 3px;
+}
+
+/*##############################################################################*
+*### イントロダクション
+*##############################################################################*/
+.intro {
+  background-color: #fc9c34;
+  color: white;
+}
+.intro .intro-fullhight {
+  min-height: 100vh;
+  height: auto;
+}
+.intro .intro-adjusthight-1 {
+  min-height: 80vh;
+}
+.intro .intro-nav {
+  text-align: center;
+}
+.intro .title {
+  color: white;
+}
+
+.swiper-slide.intro-slide {
+  text-align: center;
+  font-size: 1rem;
+}
+.swiper-slide .intro-slide-head {
+  min-height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.swiper-slide .intro-slide-body {
+  padding: 10px;
+  min-height: 30vh;
+  text-align: left;
+}
+.swiper-slide .intro-slide-foot .button.intro-slide-foot-btn-1 {
+  background-color: #92d050;
+  color: white;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px;
+  border: none;
+}
+.swiper-slide .intro-slide-foot .button:hover {
+  border: none;
 }
 
 /*# sourceMappingURL=wv_style.css.map */

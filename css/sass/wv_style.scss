@@ -4,10 +4,14 @@
 @import "libs/components/_all";
 @import "libs/layout/_all";
 
+$intro-base-margin-top: 80px;
+$intro-base-margin-right: 30px;
+$intro-base-margin-bottom: 80px;
+$intro-base-margin-left: 30px;
+
 /*##############################################################################*
  *### トップページ
  *##############################################################################*/
-
 .top-cource {
 	.accordion-list{
 		li{
@@ -15,11 +19,61 @@
 		}
 	}
 }
-
 .top-message{
 	padding: 20px;
 	text-align: center;
 	margin: auto 5px;
 	background-color: $color-top-message;
 	@include border-radius(3px);
+}
+/*##############################################################################*
+*### イントロダクション
+*##############################################################################*/
+.intro{
+	background-color: $color-orange;
+	color: $color-white;
+	.intro-fullhight{
+		min-height: 100vh;
+		height: auto;
+	}
+	.intro-adjusthight-1{
+		//ページネーションの位置調整
+		min-height: 80vh;
+	}
+	.intro-nav{
+		text-align: center;
+	}
+	.title{
+		color: $color-white;
+	}
+}
+.swiper-slide{
+	&.intro-slide{
+		text-align: center;
+		font-size: $font-size-6;
+	}
+	.intro-slide-head{
+		min-height: 30vh;
+		@include flex-center;
+		@include flex-vertical;
+		@include justify-content(center);
+	}
+	.intro-slide-body{
+		padding: 10px;
+		min-height: 25vh;
+		text-align: left;
+	}
+	.intro-slide-foot{
+		.button{
+			&.intro-slide-foot-btn-1{
+				background-color:$color-palegreen;
+				color: $color-white;
+				@include border-radius(25px);
+				border: none;
+			}
+			&:hover{
+				border: none;
+			}
+		}
+	}
 }
