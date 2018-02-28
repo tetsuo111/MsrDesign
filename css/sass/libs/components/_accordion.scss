@@ -4,6 +4,10 @@ $bg-img-accordion-up: url(../img/icon/accordion_up_arrow.png);
 $bg-img-accordion-down:url(../img/icon/accordion_down_arrow.png);
 $bg-img-accordion-right: url(../img/icon/accordion_right_arrow.png);
 
+/*##############################################################################*
+*### コンポーネント
+*##############################################################################*/
+
 /*==========================================================*
  *=== アコーディオン
  *==========================================================*/
@@ -32,7 +36,7 @@ $bg-img-accordion-right: url(../img/icon/accordion_right_arrow.png);
 	.accordion-list-group-btn1 {
 		text-align: left;
 		font-size: 1rem;
-		font-weight: 700;
+		font-weight: $weight-bold;
 		cursor: pointer;
 		margin-right: 1.5rem;
 		/* ボタンスタイル削除 */

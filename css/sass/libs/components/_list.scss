@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+$bg-img-arrow-1: url(../img/icon/arrow.png);
+$bg-img-question: url(../img/icon/hatena.png);
+/*==========================================================*
+*=== リスト(サブメニューなど)
+*==========================================================*/
+.list {
+	margin: 0 1.25rem;
+	.list-icon {
+		margin-right: 1rem;
+		img {
+			width: 40px;
+		}
+	}
+	.list-item-1 {
+		cursor: pointer;
+		margin-bottom: 2.5rem;
+		/* 矢印アイコン */
+		background-image: $bg-img-question;
+		background-repeat: no-repeat;
+		background-position: center right;
+		background-size: 30px;
+		p{
+			display: inline-block;
+			/* 上下中央 */
+			vertical-align: middle;
+		}
+		.list-title {
+			font-size: 1.25rem;
+			font-weight: $weight-semibold;
+		}
+		.list-subtitle {
+			font-size: 0.875rem;
+			color: $color-grey-2;
+		}
+		.list-text {
+			/* 行間調整 */
+			line-height: 1.2;
+		}
+	}
+}

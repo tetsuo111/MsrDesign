@@ -12,6 +12,7 @@ body {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 }
+
 body::-webkit-scrollbar {
 	display: none;
 }
@@ -25,6 +26,7 @@ body::-webkit-scrollbar {
 a {
 	color: white;
 }
+
 a:hover {
 	color: white;
 }
@@ -36,6 +38,219 @@ a:hover {
 	margin-top: 0;
 }
 
+/*==========================================================*
+*=== プロパティ追加(中央寄せなど)
+*==========================================================*/
+.is-fullhight {
+	min-height: 100vh;
+	height: auto;
+}
+
+.is-adjusthight-80 {
+	min-height: 80vh;
+	height: auto;
+}
+
+.is-adjusthight-60 {
+	min-height: 60vh;
+	height: auto;
+}
+
+.mt-0 {
+	margin-top: 0rem;
+}
+
+.mr-0 {
+	margin-right: 0rem;
+}
+
+.mb-0 {
+	margin-bottom: 0rem;
+}
+
+.ml-0 {
+	margin-left: 0rem;
+}
+
+.pt-0 {
+	padding-top: 0rem;
+}
+
+.pr-0 {
+	padding-right: 0rem;
+}
+
+.pb-0 {
+	padding-bottom: 0rem;
+}
+
+.pl-0 {
+	padding-left: 0rem;
+}
+
+.mt-10 {
+	margin-top: 1.125rem;
+}
+
+.mr-10 {
+	margin-right: 1.125rem;
+}
+
+.mb-10 {
+	margin-bottom: 1.125rem;
+}
+
+.ml-10 {
+	margin-left: 1.125rem;
+}
+
+.pt-10 {
+	padding-top: 1.125rem;
+}
+
+.pr-10 {
+	padding-right: 1.125rem;
+}
+
+.pb-10 {
+	padding-bottom: 1.125rem;
+}
+
+.pl-10 {
+	padding-left: 1.125rem;
+}
+
+.mt-20 {
+	margin-top: 2.25rem;
+}
+
+.mr-20 {
+	margin-right: 2.25rem;
+}
+
+.mb-20 {
+	margin-bottom: 2.25rem;
+}
+
+.ml-20 {
+	margin-left: 2.25rem;
+}
+
+.pt-20 {
+	padding-top: 2.25rem;
+}
+
+.pr-20 {
+	padding-right: 2.25rem;
+}
+
+.pb-20 {
+	padding-bottom: 2.25rem;
+}
+
+.pl-20 {
+	padding-left: 2.25rem;
+}
+
+.mt-30 {
+	margin-top: 3.375rem;
+}
+
+.mr-30 {
+	margin-right: 3.375rem;
+}
+
+.mb-30 {
+	margin-bottom: 3.375rem;
+}
+
+.ml-30 {
+	margin-left: 3.375rem;
+}
+
+.pt-30 {
+	padding-top: 3.375rem;
+}
+
+.pr-30 {
+	padding-right: 3.375rem;
+}
+
+.pb-30 {
+	padding-bottom: 3.375rem;
+}
+
+.pl-30 {
+	padding-left: 3.375rem;
+}
+
+.mt-40 {
+	margin-top: 4.5rem;
+}
+
+.mr-40 {
+	margin-right: 4.5rem;
+}
+
+.mb-40 {
+	margin-bottom: 4.5rem;
+}
+
+.ml-40 {
+	margin-left: 4.5rem;
+}
+
+.pt-40 {
+	padding-top: 4.5rem;
+}
+
+.pr-40 {
+	padding-right: 4.5rem;
+}
+
+.pb-40 {
+	padding-bottom: 4.5rem;
+}
+
+.pl-40 {
+	padding-left: 4.5rem;
+}
+
+.mt-50 {
+	margin-top: 5.625rem;
+}
+
+.mr-50 {
+	margin-right: 5.625rem;
+}
+
+.mb-50 {
+	margin-bottom: 5.625rem;
+}
+
+.ml-50 {
+	margin-left: 5.625rem;
+}
+
+.pt-50 {
+	padding-top: 5.625rem;
+}
+
+.pr-50 {
+	padding-right: 5.625rem;
+}
+
+.pb-50 {
+	padding-bottom: 5.625rem;
+}
+
+.pl-50 {
+	padding-left: 5.625rem;
+}
+
+/*##############################################################################*
+*### コンポーネント
+*##############################################################################*/
 /*==========================================================*
 *=== アコーディオン
 *==========================================================*/
@@ -51,15 +266,19 @@ a:hover {
 	background-position: right 10px center;
 	background-size: 1.25rem;
 }
+
 .accordion-list-group .accordion-toggle.accordion-toggle-style1 {
 	background-color: #fc9c34;
 }
+
 .accordion-list-group .accordion-toggle.accordion-toggle-style2 {
 	background-color: #29586d;
 }
+
 .accordion-list-group .accordion-toggle.accordion-toggle-open {
 	background-image: url(../img/icon/accordion_down_arrow.png);
 }
+
 .accordion-list-group .accordion-list-group-btn1 {
 	text-align: left;
 	font-size: 1rem;
@@ -70,9 +289,11 @@ a:hover {
 	border: none;
 	background-color: white;
 }
+
 .accordion-list-group .accordion-list {
 	display: none;
 }
+
 .accordion-list-group .accordion-list li {
 	width: 100%;
 	padding: 0.625rem;
@@ -82,19 +303,22 @@ a:hover {
 	background-position: right 0.625rem center;
 	background-size: 1.25rem;
 }
+
 .accordion-list-group .accordion-list li:not(:last-child) {
 	border-bottom: 2px solid #ddd;
 }
 
-/*################################################*
-*# ナビメニュー
-*################################################*/
+/*==========================================================*
+*=== ナビゲーション
+*==========================================================*/
 .nav {
 	display: -webkit-box;
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
+	-webkit-align-items: center;
 	align-items: center;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
@@ -151,6 +375,7 @@ a:hover {
 	line-height: 2.5rem;
 	border-bottom: 1px solid #eee;
 }
+
 .nav-modal-card-body li a {
 	display: block;
 	background: url(../img/msr_img/menu_arrow.png) no-repeat right 0.625rem top 0.75rem;
@@ -158,9 +383,138 @@ a:hover {
 	color: #29586d;
 }
 
+/*==========================================================*
+*=== スワイパーカスタム
+*==========================================================*/
+/*** スワイプコンテンツ***/
+.swiper-slide.common-slide {
+	text-align: center;
+	font-size: 1rem;
+	position: relative;
+}
+
+.swiper-slide .common-slide-head {
+	min-height: 30vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
+	-webkit-justify-content: center;
+}
+
+.swiper-slide .common-slide-head .common-slide-head-text-1 {
+	font-size: 1.25rem;
+	font-weight: 400;
+}
+
+.swiper-slide .common-slide-head .common-slide-head-text-1:nth-child(1) {
+	padding-right: 70px;
+}
+
+.swiper-slide .common-slide-head .common-slide-head-text-1:nth-child(2) {
+	padding-left: 70px;
+}
+
+.swiper-slide .common-slide-body {
+	padding: 10px;
+	min-height: 25vh;
+	text-align: left;
+}
+
+.swiper-slide .common-slide-foot .button.common-slide-foot-btn-1 {
+	background-color: #92d050;
+	color: white;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-ms-border-radius: 25px;
+	border-radius: 25px;
+	border: none;
+}
+
+.swiper-slide .common-slide-foot .button.common-slide-foot-btn-1:hover {
+	border: none;
+}
+
+/*** スキップボタン***/
+.swipper-skip {
+	padding-right: 20px;
+	min-height: 20vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: flex-end;
+	-ms-flex-align: flex-end;
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+	-webkit-box-pack: flex-end;
+	-ms-flex-pack: flex-end;
+	justify-content: flex-end;
+	-webkit-justify-content: flex-end;
+}
+
+/*==========================================================*
+*=== リスト(サブメニューなど)
+*==========================================================*/
+.list {
+	margin: 0 1.25rem;
+}
+
+.list .list-icon {
+	margin-right: 1rem;
+}
+
+.list .list-icon img {
+	width: 40px;
+}
+
+.list .list-item-1 {
+	cursor: pointer;
+	margin-bottom: 2.5rem;
+	/* 矢印アイコン */
+	background-image: url(../img/icon/hatena.png);
+	background-repeat: no-repeat;
+	background-position: center right;
+	background-size: 30px;
+}
+
+.list .list-item-1 p {
+	display: inline-block;
+	/* 上下中央 */
+	vertical-align: middle;
+}
+
+.list .list-item-1 .list-title {
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+.list .list-item-1 .list-subtitle {
+	font-size: 0.875rem;
+	color: #d6cbc5;
+}
+
+.list .list-item-1 .list-text {
+	/* 行間調整 */
+	line-height: 1.2;
+}
+
 /*##############################################################################*
-*### フッター
+*### レイアウト(footer,header,contentsなどの変更)
 *##############################################################################*/
+/*==========================================================*
+*=== footer
+*==========================================================*/
 .footer {
 	margin: 2rem 1rem;
 	border-top: 1px solid #d7cbc6;
@@ -168,9 +522,11 @@ a:hover {
 	padding: 1.5rem 0 0;
 	background-color: transparent;
 }
+
 .footer .footer-title {
 	margin-bottom: 1.25rem;
 }
+
 .footer .footer-copyright {
 	margin-top: 1rem;
 	font-size: 0.75rem;
@@ -181,78 +537,36 @@ a:hover {
 	display: inline;
 	padding: 0 0.75rem;
 }
+
 .footer-list li a {
 	color: #68615e;
 }
 
 /*##############################################################################*
-*### トップページ
+*### 各ページ(ページ独自のスタイル)
 *##############################################################################*/
-.top-cource .accordion-list li {
-	text-align: center;
-}
-
+/*==========================================================*
+*=== トップページ
+*==========================================================*/
 .top-message {
 	padding: 20px;
 	text-align: center;
-	margin: auto 5px;
+	margin: auto 5px 5vh 5px;
 	background-color: #f4f4ec;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
 	border-radius: 3px;
 }
 
-/*##############################################################################*
-*### イントロダクション
-*##############################################################################*/
+/*==========================================================*
+*=== イントロダクション
+*==========================================================*/
 .intro {
 	background-color: #fc9c34;
 	color: white;
 }
-.intro .intro-fullhight {
-	min-height: 100vh;
-	height: auto;
-}
-.intro .intro-adjusthight-1 {
-	min-height: 80vh;
-}
-.intro .intro-nav {
-	text-align: center;
-}
+
 .intro .title {
 	color: white;
-}
-
-.swiper-slide.intro-slide {
-	text-align: center;
-	font-size: 1rem;
-}
-.swiper-slide .intro-slide-head {
-	min-height: 30vh;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	-ms-flex-direction: column;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	flex-direction: column;
-	justify-content: center;
-	-webkit-justify-content: center;
-}
-.swiper-slide .intro-slide-body {
-	padding: 10px;
-	min-height: 25vh;
-	text-align: left;
-}
-.swiper-slide .intro-slide-foot .button.intro-slide-foot-btn-1 {
-	background-color: #92d050;
-	color: white;
-	border-radius: 25px;
-	border: none;
-}
-.swiper-slide .intro-slide-foot .button:hover {
-	border: none;
 }

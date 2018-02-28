@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+$num : 10;
+$base_rem : 0.625;
+
+/*==========================================================*
+*=== プロパティ追加(中央寄せなど)
+*==========================================================*/
+@for $i from 1 through 10 {
+	@if($i = 10){
+		.is-fuulhight{
+			min-height: #{$i * $num}vh;
+		}
+		break;
+	}
+	.is-adjusthight-#{$i * $num}{
+		min-height: #{$i * $num}vh;
+		height :auto;
+	}
+}
+
+@for $i from 1 through 5 {
+	.mt-#{$i * $num} {
+		margin-top: #{($i * $base_rem)}rem;
+	}
+	.mr-#{$i * $num} {
+		margin-right: #{$i * $base_rem}rem;
+	}
+	.mb-#{$i * $num} {
+		margin-bottom: #{$i * $base_rem}rem ;
+	}
+	.ml-#{$i * $num} {
+		margin-left: #{$i * $base_rem}rem ;
+	}
+	.pt-#{$i * $num} {
+		padding-top: #{$i * $base_rem}rem ;
+	}
+	.pr-#{$i * $num} {
+		padding-right: #{$i * $base_rem}rem ;
+	}
+	.pb-#{$i * $num} {
+		padding-bottom: #{$i * $base_rem}rem ;
+	}
+	.pl-#{$i * $num} {
+		padding-left: #{$i * $base_rem}rem ;
+	}
+}

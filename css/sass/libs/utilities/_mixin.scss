@@ -67,6 +67,19 @@
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 }
+@mixin flex($property){
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: $property;
+	-ms-flex-align: $property;
+	-webkit-align-items: $property;
+	align-items: $property;
+	-webkit-box-pack: $property;
+	-ms-flex-pack: $property;
+}
+
 @mixin justify-content($property){
 	justify-content: $property;
 	-webkit-justify-content: $property;

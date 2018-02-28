@@ -11,48 +11,72 @@
 
 </head>
 <body>
-	<div class="intro">
-		<div class="container intro-fullhight">
-			<nav class="intro-nav">
+	<div class="intro container is-fullhd">
+		<div class="">
+			<nav class="has-text-centered">
 				<div class="nav-center-item">
-					<a href="/Top/">
+					<a href="/Top/top.html">
 						<img src="../img/common/intro_logo.png" alt="イントロダクションロゴ" width="200" height="35">
 					</a>
 				</div>
 			</nav>
-			<div class="swiper-container intro-adjusthight-1 swiper-container-h">
+			<div class="swiper-container is-adjusthight-80 swiper-container">
 				<div class="swiper-wrapper">
-					<section class="swiper-slide intro-slide">
-						<div class="intro-slide-head">
+					<section class="swiper-slide common-slide">
+						<div class="common-slide-head">
 							<h1 class="title">ようこそ!
 							</h1>
 							<figure>
 								<img src="../img/common/intro_logo.png" alt="イントロダクションロゴ"width="200" height="35">
 							</figure>
 						</div>
-						<div class="intro-slide-body">
+						<div class="common-slide-body">
 							<p>「この仕事本当にできるかな？」、「上司とうまが合わない…」「どうせうまくいかない…」「誰も協力してくれない…」「本当のことは言えない…」なんて、普段の仕事の中で、未来へのちょっとしたストレスや不安、感じたことありませんか？</p>
 						</div>
-						<a href="" class="slide-1">Skip</a>
-					</section>
-					<section class="swiper-slide intro-slide is-adjustheight">
-						<div class="intro-slide-head">
-							<h1 style="font-size: 1.25rem; font-weight: 500;">
-								<p style="padding-right: 70px;">「感じ方」が変わると</p>
-								<p style="padding-left: 70px;" class="has-text-right">「未来」が変わる！</p>
-							</h1>
+						<div class="swipper-skip">
+							<a href="../Top/top.html">Skip</a>
 						</div>
-						<div class="intro-slide-body">
+					</section>
+					<section class="swiper-slide common-slide">
+						<div class="common-slide-head">
+							<figure>
+								<img src="../img/common/intro_logo.png" alt="イントロダクションロゴ"width="200" height="35">
+							</figure>
+							<div class="">
+								<figure>
+									<img src="../img/common/intro_logo.png" alt="イントロダクションロゴ" >
+								</figure>
+								<p>感じ方測定</p>
+							</div>
+						</div>
+						<div class="common-slide-body">
+							<p>「この仕事本当にできるかな？」、「上司とうまが合わない…」「どうせうまくいかない…」「誰も協力してくれない…」「本当のことは言えない…」なんて、普段の仕事の中で、未来へのちょっとしたストレスや不安、感じたことありませんか？</p>
+						</div>
+						<div class="common-slide-foot">
+							<figure>
+								<img src="../img/icon/mydata.png" alt="マイデータ">
+							</figure>
+						</div>
+						<div class="swipper-skip">
+							<a href="../Top/top.html">Skip</a>
+						</div>
+					</section>
+					<section class="swiper-slide common-slide is-adjustheight">
+						<div class="common-slide-head">
+							<figure>
+								<img src="../img/" alt="ムードメーター">
+							</figure>
+						</div>
+						<div class="common-slide-body">
 							<p class="">
 								<img src="../img/common/intro_logo.png" alt="イントロダクションロゴ" style="vertical-align: middle;">のトレーニングをして、このセルフスキルを身につけていきましょう。
 							</p>
 						</div>
-						<div class="intro-slide-foot">
-							<a href="../Top/top.html" class="button is-medium intro-slide-foot-btn-1">始める
+						<div class="common-slide-foot">
+							<a href="../Top/top.html" class="button is-medium common-slide-foot-btn-1">始める
 							</a>
-							<span>
-								<img src="../img/icon/instruction.png" alt="">
-							</span>
+							<p><img src="../img/icon/instruction.png" alt="指示マーク">
+							</p>
 						</div>
 					</section>
 				</div>
@@ -68,6 +92,9 @@
 
 	<!-- Initialize Swiper -->
 	<script>
+		jQuery(function($){
+			
+		});
 		var swiper = new Swiper('.swiper-container', {
 			autoHeight: true,
 			spaceBetween: 50,
@@ -82,19 +109,6 @@
 					spaceBetween: 0
 				}
 			},
-			virtual: {
-				slides: (function () {
-					var slides = [];
-					for (var i = 0; i < 2; i += 1) {
-						slides.push('Slide ' + (i + 1));
-					}
-					return slides;
-				}()),
-			},
-		});
-		document.querySelector('.slide-1').addEventListener('click', function(e) {
-			e.preventDefault();
-			swiper.slideTo(2, 0);
 		});
 	</script>
 </body>
