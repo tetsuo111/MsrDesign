@@ -41,17 +41,9 @@ a:hover {
 /*==========================================================*
 *=== プロパティ追加(中央寄せなど)
 *==========================================================*/
-.is-fuulhight {
-  min-height: 10vh;
-}
-
 .is-adjusthight-10 {
   min-height: 10vh;
   height: auto;
-}
-
-.is-fuulhight {
-  min-height: 20vh;
 }
 
 .is-adjusthight-20 {
@@ -59,17 +51,9 @@ a:hover {
   height: auto;
 }
 
-.is-fuulhight {
-  min-height: 30vh;
-}
-
 .is-adjusthight-30 {
   min-height: 30vh;
   height: auto;
-}
-
-.is-fuulhight {
-  min-height: 40vh;
 }
 
 .is-adjusthight-40 {
@@ -77,17 +61,9 @@ a:hover {
   height: auto;
 }
 
-.is-fuulhight {
-  min-height: 50vh;
-}
-
 .is-adjusthight-50 {
   min-height: 50vh;
   height: auto;
-}
-
-.is-fuulhight {
-  min-height: 60vh;
 }
 
 .is-adjusthight-60 {
@@ -95,17 +71,9 @@ a:hover {
   height: auto;
 }
 
-.is-fuulhight {
-  min-height: 70vh;
-}
-
 .is-adjusthight-70 {
   min-height: 70vh;
   height: auto;
-}
-
-.is-fuulhight {
-  min-height: 80vh;
 }
 
 .is-adjusthight-80 {
@@ -113,20 +81,12 @@ a:hover {
   height: auto;
 }
 
-.is-fuulhight {
-  min-height: 90vh;
-}
-
 .is-adjusthight-90 {
   min-height: 90vh;
   height: auto;
 }
 
-.is-fuulhight {
-  min-height: 100vh;
-}
-
-.is-adjusthight-100 {
+.is-fullhight {
   min-height: 100vh;
   height: auto;
 }
@@ -436,7 +396,7 @@ a:hover {
   position: relative;
 }
 
-.swiper-slide .common-slide-head {
+.swiper-slide.common-slide .common-slide-head {
   min-height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -455,26 +415,26 @@ a:hover {
   -webkit-justify-content: center;
 }
 
-.swiper-slide .common-slide-head .common-slide-head-text-1 {
+.swiper-slide.common-slide .common-slide-head .common-slide-head-text-1 {
   font-size: 1.25rem;
   font-weight: 400;
 }
 
-.swiper-slide .common-slide-head .common-slide-head-text-1:nth-child(1) {
+.swiper-slide.common-slide .common-slide-head .common-slide-head-text-1:nth-child(1) {
   padding-right: 70px;
 }
 
-.swiper-slide .common-slide-head .common-slide-head-text-1:nth-child(2) {
+.swiper-slide.common-slide .common-slide-head .common-slide-head-text-1:nth-child(2) {
   padding-left: 70px;
 }
 
-.swiper-slide .common-slide-body {
+.swiper-slide.common-slide .common-slide-body {
   padding: 10px;
   min-height: 25vh;
   text-align: left;
 }
 
-.swiper-slide .common-slide-foot .button.common-slide-foot-btn-1 {
+.swiper-slide.common-slide .common-slide-foot .button.common-slide-foot-btn-1 {
   background-color: #92d050;
   color: white;
   -webkit-border-radius: 25px;
@@ -484,7 +444,7 @@ a:hover {
   border: none;
 }
 
-.swiper-slide .common-slide-foot .button.common-slide-foot-btn-1:hover {
+.swiper-slide.common-slide .common-slide-foot .button.common-slide-foot-btn-1:hover {
   border: none;
 }
 

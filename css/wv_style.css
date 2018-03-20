@@ -41,13 +41,28 @@ a:hover {
 /*==========================================================*
 *=== プロパティ追加(中央寄せなど)
 *==========================================================*/
-.is-fullhight {
-	min-height: 100vh;
+.is-adjusthight-10 {
+	min-height: 10vh;
 	height: auto;
 }
 
-.is-adjusthight-80 {
-	min-height: 80vh;
+.is-adjusthight-20 {
+	min-height: 20vh;
+	height: auto;
+}
+
+.is-adjusthight-30 {
+	min-height: 30vh;
+	height: auto;
+}
+
+.is-adjusthight-40 {
+	min-height: 40vh;
+	height: auto;
+}
+
+.is-adjusthight-50 {
+	min-height: 50vh;
 	height: auto;
 }
 
@@ -56,196 +71,184 @@ a:hover {
 	height: auto;
 }
 
-.mt-0 {
-	margin-top: 0rem;
+.is-adjusthight-70 {
+	min-height: 70vh;
+	height: auto;
 }
 
-.mr-0 {
-	margin-right: 0rem;
+.is-adjusthight-80 {
+	min-height: 80vh;
+	height: auto;
 }
 
-.mb-0 {
-	margin-bottom: 0rem;
+.is-adjusthight-90 {
+	min-height: 90vh;
+	height: auto;
 }
 
-.ml-0 {
-	margin-left: 0rem;
-}
-
-.pt-0 {
-	padding-top: 0rem;
-}
-
-.pr-0 {
-	padding-right: 0rem;
-}
-
-.pb-0 {
-	padding-bottom: 0rem;
-}
-
-.pl-0 {
-	padding-left: 0rem;
+.is-fullhight {
+	min-height: 100vh;
+	height: auto;
 }
 
 .mt-10 {
-	margin-top: 1.125rem;
+	margin-top: 0.625rem;
 }
 
 .mr-10 {
-	margin-right: 1.125rem;
+	margin-right: 0.625rem;
 }
 
 .mb-10 {
-	margin-bottom: 1.125rem;
+	margin-bottom: 0.625rem;
 }
 
 .ml-10 {
-	margin-left: 1.125rem;
+	margin-left: 0.625rem;
 }
 
 .pt-10 {
-	padding-top: 1.125rem;
+	padding-top: 0.625rem;
 }
 
 .pr-10 {
-	padding-right: 1.125rem;
+	padding-right: 0.625rem;
 }
 
 .pb-10 {
-	padding-bottom: 1.125rem;
+	padding-bottom: 0.625rem;
 }
 
 .pl-10 {
-	padding-left: 1.125rem;
+	padding-left: 0.625rem;
 }
 
 .mt-20 {
-	margin-top: 2.25rem;
+	margin-top: 1.25rem;
 }
 
 .mr-20 {
-	margin-right: 2.25rem;
+	margin-right: 1.25rem;
 }
 
 .mb-20 {
-	margin-bottom: 2.25rem;
+	margin-bottom: 1.25rem;
 }
 
 .ml-20 {
-	margin-left: 2.25rem;
+	margin-left: 1.25rem;
 }
 
 .pt-20 {
-	padding-top: 2.25rem;
+	padding-top: 1.25rem;
 }
 
 .pr-20 {
-	padding-right: 2.25rem;
+	padding-right: 1.25rem;
 }
 
 .pb-20 {
-	padding-bottom: 2.25rem;
+	padding-bottom: 1.25rem;
 }
 
 .pl-20 {
-	padding-left: 2.25rem;
+	padding-left: 1.25rem;
 }
 
 .mt-30 {
-	margin-top: 3.375rem;
+	margin-top: 1.875rem;
 }
 
 .mr-30 {
-	margin-right: 3.375rem;
+	margin-right: 1.875rem;
 }
 
 .mb-30 {
-	margin-bottom: 3.375rem;
+	margin-bottom: 1.875rem;
 }
 
 .ml-30 {
-	margin-left: 3.375rem;
+	margin-left: 1.875rem;
 }
 
 .pt-30 {
-	padding-top: 3.375rem;
+	padding-top: 1.875rem;
 }
 
 .pr-30 {
-	padding-right: 3.375rem;
+	padding-right: 1.875rem;
 }
 
 .pb-30 {
-	padding-bottom: 3.375rem;
+	padding-bottom: 1.875rem;
 }
 
 .pl-30 {
-	padding-left: 3.375rem;
+	padding-left: 1.875rem;
 }
 
 .mt-40 {
-	margin-top: 4.5rem;
+	margin-top: 2.5rem;
 }
 
 .mr-40 {
-	margin-right: 4.5rem;
+	margin-right: 2.5rem;
 }
 
 .mb-40 {
-	margin-bottom: 4.5rem;
+	margin-bottom: 2.5rem;
 }
 
 .ml-40 {
-	margin-left: 4.5rem;
+	margin-left: 2.5rem;
 }
 
 .pt-40 {
-	padding-top: 4.5rem;
+	padding-top: 2.5rem;
 }
 
 .pr-40 {
-	padding-right: 4.5rem;
+	padding-right: 2.5rem;
 }
 
 .pb-40 {
-	padding-bottom: 4.5rem;
+	padding-bottom: 2.5rem;
 }
 
 .pl-40 {
-	padding-left: 4.5rem;
+	padding-left: 2.5rem;
 }
 
 .mt-50 {
-	margin-top: 5.625rem;
+	margin-top: 3.125rem;
 }
 
 .mr-50 {
-	margin-right: 5.625rem;
+	margin-right: 3.125rem;
 }
 
 .mb-50 {
-	margin-bottom: 5.625rem;
+	margin-bottom: 3.125rem;
 }
 
 .ml-50 {
-	margin-left: 5.625rem;
+	margin-left: 3.125rem;
 }
 
 .pt-50 {
-	padding-top: 5.625rem;
+	padding-top: 3.125rem;
 }
 
 .pr-50 {
-	padding-right: 5.625rem;
+	padding-right: 3.125rem;
 }
 
 .pb-50 {
-	padding-bottom: 5.625rem;
+	padding-bottom: 3.125rem;
 }
 
 .pl-50 {
-	padding-left: 5.625rem;
+	padding-left: 3.125rem;
 }
 
 /*##############################################################################*
