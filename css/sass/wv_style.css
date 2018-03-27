@@ -38,6 +38,10 @@ a:hover {
   margin-top: 0;
 }
 
+.logo {
+  height: 2.1875rem;
+}
+
 /*==========================================================*
 *=== プロパティ追加(中央寄せなど)
 *==========================================================*/
@@ -257,13 +261,46 @@ a:hover {
 /*==========================================================*
  *=== アコーディオン
  *==========================================================*/
+.accordion-list-group .accordion-rate {
+  background-image: url(../img/common/star_base.png);
+  display: inline-block;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 67px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  background-size: 340px 20px;
+}
+
+.accordion-list-group .accordion-rate.is-rate-00 {
+  background-position: left top;
+}
+
+.accordion-list-group .accordion-rate.is-rate-01 {
+  background-position: -68px top;
+}
+
+.accordion-list-group .accordion-rate.is-rate-02 {
+  background-position: -136px top;
+}
+
+.accordion-list-group .accordion-rate.is-rate-03 {
+  background-position: -204px top;
+}
+
+.accordion-list-group .accordion-rate.is-rate-04 {
+  background-position: -272px top;
+}
+
 .accordion-list-group .accordion-toggle {
-  margin-bottom: .75rem;
+  position: relative;
   border-radius: 3px;
   cursor: pointer;
   text-align: center;
   color: white;
-  padding: 0.625rem;
+  padding: 1.125rem;
+  font-weight: 600;
   background-image: url(../img/icon/accordion_up_arrow.png);
   background-repeat: no-repeat;
   background-position: right 10px center;
@@ -308,7 +345,7 @@ a:hover {
 }
 
 .accordion-list-group .accordion-list li:not(:last-child) {
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid #dcd2ce;
 }
 
 /*==========================================================*
@@ -328,7 +365,7 @@ a:hover {
   justify-content: space-between;
   -webkit-justify-content: space-between;
   overflow: hidden;
-  height: 52px;
+  height: 60px;
 }
 
 .nav-shadow {
@@ -519,21 +556,23 @@ a:hover {
 *=== footer
 *==========================================================*/
 .footer {
-  margin: 2rem 1rem;
   border-top: 1px solid #d7cbc6;
   /* Bulmaスタイル更新 */
-  padding: 1.5rem 0 0;
+  padding: 3rem 0;
   background-color: transparent;
 }
 
 .footer .footer-title {
-  margin-bottom: 1.25rem;
+  padding-bottom: 2rem;
 }
 
 .footer .footer-copyright {
-  margin-top: 1rem;
   font-size: 0.75rem;
   color: #daceca;
+}
+
+.footer-list {
+  padding-bottom: 2rem;
 }
 
 .footer-list li {
@@ -552,14 +591,28 @@ a:hover {
 *=== トップページ
 *==========================================================*/
 .top-message {
-  padding: 20px;
-  text-align: center;
-  margin: auto 5px 5vh 5px;
-  background-color: #f4f4ec;
+  padding: 0.5rem;
+  margin: 0 0 2rem 0;
+  background-color: #faf8f7;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   border-radius: 3px;
+  font-weight: 700;
+}
+
+.top-message p {
+  background-image: url("../img/icon/news.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 60px 37px;
+  padding: 0.5rem 0 0.5rem 75px;
+  color: #68615e;
+  font-size: 0.875rem;
+}
+
+.columns.top-content {
+  margin: 0 0 2rem 0;
 }
 
 /*==========================================================*

@@ -3,6 +3,7 @@
 $bg-img-accordion-up: url(../img/icon/accordion_up_arrow.png);
 $bg-img-accordion-down:url(../img/icon/accordion_down_arrow.png);
 $bg-img-accordion-right: url(../img/icon/accordion_right_arrow.png);
+$bg-img-accordion-star: url(../img/common/star_base.png);
 
 /*##############################################################################*
 *### コンポーネント
@@ -12,13 +13,40 @@ $bg-img-accordion-right: url(../img/icon/accordion_right_arrow.png);
  *=== アコーディオン
  *==========================================================*/
 .accordion-list-group {
+	.accordion-rate{
+		background-image: url(../img/common/star_base.png);
+		display: inline-block;
+		background-repeat: no-repeat;
+		height: 20px;
+		width: 67px;
+		position: absolute;
+		top: 20px;
+		left: 10px;
+		background-size: 340px 20px;
+		&.is-rate-00{
+			background-position: left top;
+		}
+		&.is-rate-01{
+			background-position: -68px top;
+		}
+		&.is-rate-02{
+			background-position: -136px top;
+		}
+		&.is-rate-03{
+			background-position: -204px top;
+		}
+		&.is-rate-04{
+			background-position: -272px top;
+		}
+	}
 	.accordion-toggle {
-		margin-bottom: .75rem;
+		position: relative;
 		border-radius: 3px;
 		cursor: pointer;
 		text-align: center;
 		color: $color-white;
-		padding: 0.625rem;
+		padding: 1.125rem;
+		font-weight: $weight-semibold;
 		background-image: $bg-img-accordion-up;
 		background-repeat: no-repeat;
 		background-position: right 10px center;
@@ -33,6 +61,7 @@ $bg-img-accordion-right: url(../img/icon/accordion_right_arrow.png);
 			background-image: $bg-img-accordion-down;
 		}
 	}
+
 	.accordion-list-group-btn1 {
 		text-align: left;
 		font-size: 1rem;

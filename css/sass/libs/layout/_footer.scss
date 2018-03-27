@@ -11,21 +11,20 @@ $footer-list-color: #68615e;
 *=== footer
 *==========================================================*/
 .footer {
-	margin: 2rem 1rem;
 	border-top: 1px solid $footer-border-color;
 	/* Bulmaスタイル更新 */
-	padding: 1.5rem 0 0;
+	padding: 3rem 0 ;
 	background-color: transparent;
 	.footer-title {
-		margin-bottom: 1.25rem;
+		padding-bottom: 2rem;
 	}
 	.footer-copyright {
-		margin-top: 1rem;
 		font-size: 0.75rem;
 		color: $footer-copyright-color;
 	}
 }
 .footer-list {
+	padding-bottom: 2rem;
 	li {
 		display: inline;
 		padding: 0 0.75rem;
