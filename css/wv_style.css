@@ -38,10 +38,6 @@ a:hover {
 	margin-top: 0;
 }
 
-.logo {
-	height: 2.1875rem;
-}
-
 /*==========================================================*
 *=== プロパティ追加(中央寄せなど)
 *==========================================================*/
@@ -90,7 +86,7 @@ a:hover {
 	height: auto;
 }
 
-.is-fullhight {
+.is-adjusthight-100 {
 	min-height: 100vh;
 	height: auto;
 }
@@ -255,44 +251,42 @@ a:hover {
 	padding-left: 3.125rem;
 }
 
+.logo {
+	height: 2.1875rem;
+}
+
+.pointer {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/icon/pointer.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.pointer:after {
+	content: "";
+	-webkit-box-shadow: 5px 7px 9.68px -0.68px rgba(86, 78, 74, 0.2);
+	box-shadow: 5px 7px 9.68px -0.68px rgba(86, 78, 74, 0.2);
+	padding: 25px;
+	border-radius: 30px;
+	display: block;
+}
+
+.cource-mask {
+	opacity: 0.4;
+}
+
+.cource-mask a {
+	pointer-events: none;
+}
+
 /*##############################################################################*
 *### コンポーネント
 *##############################################################################*/
 /*==========================================================*
 *=== アコーディオン
 *==========================================================*/
-.accordion-list-group .accordion-rate {
-	background-image: url(../img/common/star_base.png);
-	display: inline-block;
-	background-repeat: no-repeat;
-	height: 20px;
-	width: 67px;
-	position: absolute;
-	top: 20px;
-	left: 10px;
-	background-size: 340px 20px;
-}
-
-.accordion-list-group .accordion-rate.is-rate-00 {
-	background-position: left top;
-}
-
-.accordion-list-group .accordion-rate.is-rate-01 {
-	background-position: -68px top;
-}
-
-.accordion-list-group .accordion-rate.is-rate-02 {
-	background-position: -136px top;
-}
-
-.accordion-list-group .accordion-rate.is-rate-03 {
-	background-position: -204px top;
-}
-
-.accordion-list-group .accordion-rate.is-rate-04 {
-	background-position: -272px top;
-}
-
 .accordion-list-group .accordion-toggle {
 	position: relative;
 	border-radius: 3px;
@@ -317,6 +311,38 @@ a:hover {
 
 .accordion-list-group .accordion-toggle.accordion-toggle-open {
 	background-image: url(../img/icon/accordion_down_arrow.png);
+}
+
+.accordion-list-group .accordion-toggle .accordion-rate {
+	background-image: url(../img/common/star_base.png);
+	display: inline-block;
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 67px;
+	position: absolute;
+	top: 20px;
+	left: 10px;
+	background-size: 340px 20px;
+}
+
+.accordion-list-group .accordion-toggle .accordion-rate.is-rate-00 {
+	background-position: left;
+}
+
+.accordion-list-group .accordion-toggle .accordion-rate.is-rate-01 {
+	background-position: -68px;
+}
+
+.accordion-list-group .accordion-toggle .accordion-rate.is-rate-02 {
+	background-position: -136px;
+}
+
+.accordion-list-group .accordion-toggle .accordion-rate.is-rate-03 {
+	background-position: -204px;
+}
+
+.accordion-list-group .accordion-toggle .accordion-rate.is-rate-04 {
+	background-position: -272px;
 }
 
 .accordion-list-group .accordion-list-group-btn1 {
@@ -418,7 +444,7 @@ a:hover {
 
 .nav-modal-card-body li a {
 	display: block;
-	background: url(../img/msr_img/menu_arrow.png) no-repeat right 0.625rem top 0.75rem;
+	background: url(../img/icon/menu_arrow.png) no-repeat right 0.625rem top 0.75rem;
 	background-size: 0.5rem;
 	color: #29586d;
 }
@@ -447,6 +473,8 @@ a:hover {
 	-ms-flex-pack: center;
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
 	flex-direction: column;
 	justify-content: center;
 	-webkit-justify-content: center;
@@ -474,9 +502,6 @@ a:hover {
 .swiper-slide.common-slide .common-slide-foot .button.common-slide-foot-btn-1 {
 	background-color: #92d050;
 	color: white;
-	-webkit-border-radius: 25px;
-	-moz-border-radius: 25px;
-	-ms-border-radius: 25px;
 	border-radius: 25px;
 	border: none;
 }
@@ -506,10 +531,6 @@ a:hover {
 /*==========================================================*
 *=== リスト(サブメニューなど)
 *==========================================================*/
-.list {
-	margin: 0 1.25rem;
-}
-
 .list .list-icon {
 	margin-right: 1rem;
 }
@@ -519,13 +540,18 @@ a:hover {
 }
 
 .list .list-item-1 {
+	position: relative;
 	cursor: pointer;
-	margin-bottom: 2.5rem;
-	/* 矢印アイコン */
+	padding: 2rem 0;
 	background-image: url(../img/icon/hatena.png);
 	background-repeat: no-repeat;
 	background-position: center right;
 	background-size: 30px;
+	color: #68615e;
+}
+
+.list .list-item-1:not(:last-child) {
+	border-bottom: 1px solid #d7cbc6;
 }
 
 .list .list-item-1 p {
@@ -547,6 +573,12 @@ a:hover {
 .list .list-item-1 .list-text {
 	/* 行間調整 */
 	line-height: 1.2;
+}
+
+.list .list-item-1 .pointer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
 }
 
 /*##############################################################################*
@@ -594,9 +626,6 @@ a:hover {
 	padding: 0.5rem;
 	margin: 0 0 2rem 0;
 	background-color: #faf8f7;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	-ms-border-radius: 3px;
 	border-radius: 3px;
 	font-weight: 700;
 }
@@ -612,7 +641,18 @@ a:hover {
 }
 
 .columns.top-content {
+	color: #68615e;
 	margin: 0 0 2rem 0;
+}
+
+.columns.top-content .column {
+	position: relative;
+}
+
+.columns.top-content .column .pointer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
 }
 
 /*==========================================================*

@@ -12,8 +12,8 @@
 		<div class="container">
 			<nav class="nav nav-shadow">
 				<div class="nav-left-item">
-					<a href="/Top/">
-						<span class="ion-home"></span>
+					<a href="/Top/" class="nav-item">
+						<img src="/img/icon/header_home.png" width="30" height="30" alt="home">
 					</a>
 				</div>
 				<div class="nav-center-item">
@@ -22,46 +22,72 @@
 					</a>
 				</div>
 				<div class="nav-right-item">
-					<a href="/Users/logout">
-						<span class="ion-log-out"></span>
+					<a href="#" class="nav-item modal-button" data-target="#nav-modal-menu">
+						<img src="/img/icon/header_menu.png" width="30" height="23" alt="menu">
 					</a>
 				</div>
-			</nav>
-			<div class="accordion">
-				<div class="accordion-list-group">
-					<p class="accordion-toggle accordion-toggle-style1">コース 1：感じ方切替トレーニング</p>
-					<ul class="accordion-list has-text-centered">
-						<li><button data-stress-id-value="14" type="submit" class="accordion-list-group-btn1">コース2 対人ストレスマネジメント</button></li>
-						<li><button data-stress-id-value="35" type="submit" class="accordion-list-group-btn1">コース3:行動目標達成トレーニング</button></li>
-						<li><button data-stress-id-value="37" type="submit" class="accordion-list-group-btn1">マスターコース</button></li>
-					</ul>
+				<div id="nav-modal-menu" class="modal">
+					<div class="modal-background"></div>
+					<div class="modal-card">
+						<header class="modal-card-head nav-modal-card-head">
+							<p class="modal-card-title nav-modal-card-title">メニュー</p>
+							<button class="delete nav-btn-delete"></button>
+						</header>
+						<section class="modal-card-body nav-modal-card-body">
+							<ul>
+								<li><a href="/wb/Top/">HOME</a></li>
+								<li><a href="/wb/Assessment/">ストレスの原因を知る</a></li>
+								<li><a href="/wb">レジリエンスUP</a></li><li><a href="/wb/MyData/pastel_list">マイ黄金律</a></li>
+								<li><a href="/wb/MyData/face_list">マイスマイリーフェイス</a></li>
+								<li><a href="/wb/History/">記録データ</a></li>
+								<li><a href="#">このアプリについて</a></li>
+								<li><a href="#">チュートリアル</a></li>
+								<li><a href="/wb/Lemon/switch">レモンスイッチ</a></li>
+								<li><a href="#">専門家に相談したい</a></li>
+								<li><a href="#">お知らせ</a></li>
+								<li><a href="#">アプリの設定</a></li>
+								<li><a href="#">ユーザー登録情報</a></li>
+								<li><a href="/wb/Users/logout">ログアウト</a></li>
+							</ul>
+						</section>
+					</div>
 				</div>
-			</div>
-			<div class="hero mt-50">
+			</nav>
+			<div class="hero">
 				<div class="hero-head has-text-centered">
-					<figure>
-						<img src="../img/icon/mood_meter.png" alt="ムードメータ" width="">
+					<figure class="image">
+						<img src="../img/common/moodmeter_banner.png" alt="ムードメータ" width="750" height="260">
 					</figure>
-					<p>自分の感じ方特性を測定する</p>
 				</div>
 				<div class="hero-body">
 					<ul class="list">
 						<li class="list-item-1" data-href="/MentalSuppleQuick/">
 							<p class="list-icon">
-								<img src="../img/icon/mental_supple_quick.png">
+								<img src="../img/icon/list_pink01.png">
 							</p>
 							<p class="list-text">
-								<span class="list-title">簡単・感じ方測定
+								<span class="list-title">感じ方測定
+								</span>
+								<br/><span class="list-subtitle"></span>
+							</p>
+							<span class="pointer"></span>
+						</li>
+						<li class="list-item-1" data-href="/MentalSuppleQuick/">
+							<p class="list-icon">
+								<img src="../img/icon/list_pink02.png">
+							</p>
+							<p class="list-text">
+								<span class="list-title">感じ方簡単測定
 								</span>
 								<br/><span class="list-subtitle"></span>
 							</p>
 						</li>
 						<li class="list-item-1" data-href="/MentalSuppleQuick/">
 							<p class="list-icon">
-								<img src="../img/icon/mental_supple_quick.png">
+								<img src="../img/icon/list_pink03.png">
 							</p>
 							<p class="list-text">
-								<span class="list-title">感じ方測定
+								<span class="list-title">気質タイプ測定
 								</span>
 								<br/><span class="list-subtitle"></span>
 							</p>
@@ -73,10 +99,12 @@
 				<div class="footer-title">
 				<img src="../img/common/logo.png" class="logo">
 				</div>
+				<!--
 				<ul class="footer-list">
 				<li><a href="/Tou/">利用規約</a></li>
 				<li><a href="/Privacy/">プライバシーポリシー</a></li>
 				</ul>
+				-->
 				<div class="footer-copyright">Copyright (C) 2017 mind set research Inc. All Rights Reserved.</div>
 			</footer>
 		</div>

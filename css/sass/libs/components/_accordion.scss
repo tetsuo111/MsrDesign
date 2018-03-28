@@ -13,32 +13,7 @@ $bg-img-accordion-star: url(../img/common/star_base.png);
  *=== アコーディオン
  *==========================================================*/
 .accordion-list-group {
-	.accordion-rate{
-		background-image: url(../img/common/star_base.png);
-		display: inline-block;
-		background-repeat: no-repeat;
-		height: 20px;
-		width: 67px;
-		position: absolute;
-		top: 20px;
-		left: 10px;
-		background-size: 340px 20px;
-		&.is-rate-00{
-			background-position: left top;
-		}
-		&.is-rate-01{
-			background-position: -68px top;
-		}
-		&.is-rate-02{
-			background-position: -136px top;
-		}
-		&.is-rate-03{
-			background-position: -204px top;
-		}
-		&.is-rate-04{
-			background-position: -272px top;
-		}
-	}
+
 	.accordion-toggle {
 		position: relative;
 		border-radius: 3px;
@@ -60,8 +35,33 @@ $bg-img-accordion-star: url(../img/common/star_base.png);
 		&.accordion-toggle-open {
 			background-image: $bg-img-accordion-down;
 		}
+		.accordion-rate{
+			background-image: url(../img/common/star_base.png);
+			display: inline-block;
+			background-repeat: no-repeat;
+			height: 20px;
+			width: 67px;
+			position: absolute;
+			top: 20px;
+			left: 10px;
+			background-size: 340px 20px;
+			&.is-rate-00{
+				@include accordion-rate(0);
+			}
+			&.is-rate-01{
+				@include accordion-rate(1);
+			}
+			&.is-rate-02{
+				@include accordion-rate(2);
+			}
+			&.is-rate-03{
+				@include accordion-rate(3);
+			}
+			&.is-rate-04{
+				@include accordion-rate(4);
+			}
+		}
 	}
-
 	.accordion-list-group-btn1 {
 		text-align: left;
 		font-size: 1rem;

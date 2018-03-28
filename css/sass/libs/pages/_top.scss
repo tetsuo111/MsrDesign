@@ -1,6 +1,7 @@
 @charset "utf-8";
 
-$color-top-message: #68615e;
+$color-top-text: #68615e;
+
 $bg-color-top-message: #faf8f7;
 $bg-img-news : url("../img/icon/news.png");
 
@@ -23,12 +24,22 @@ $bg-img-news : url("../img/icon/news.png");
 		background-position: left center;
 		background-size: 60px 37px;
 		padding: 0.5rem 0 0.5rem 75px;
-		color: $color-top-message;
+		color: $color-top-text;
 		font-size: 0.875rem;
 	}
 }
+
 .columns{
 	&.top-content{
+		color: $color-top-text;
 		margin: 0 0 2rem 0;
+		.column{
+			position: relative;
+			.pointer{
+				position: absolute;
+				right: 0;
+				bottom: 0;
+			}
+		}
 	}
 }

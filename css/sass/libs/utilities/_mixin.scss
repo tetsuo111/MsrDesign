@@ -89,3 +89,11 @@
 	-ms-flex-direction: column;
 	flex-direction: column;
 }
+
+@mixin accordion-rate($rate){
+	@if $rate == 0 {
+		background-position: left;
+	}@else if $rate > 0{
+		background-position: $rate * -68px;
+	}
+}
