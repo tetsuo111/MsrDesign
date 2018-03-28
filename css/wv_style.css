@@ -42,213 +42,63 @@ a:hover {
 *=== プロパティ追加(中央寄せなど)
 *==========================================================*/
 .is-adjusthight-10 {
+	position: relative;
 	min-height: 10vh;
 	height: auto;
 }
 
 .is-adjusthight-20 {
+	position: relative;
 	min-height: 20vh;
 	height: auto;
 }
 
 .is-adjusthight-30 {
+	position: relative;
 	min-height: 30vh;
 	height: auto;
 }
 
 .is-adjusthight-40 {
+	position: relative;
 	min-height: 40vh;
 	height: auto;
 }
 
 .is-adjusthight-50 {
+	position: relative;
 	min-height: 50vh;
 	height: auto;
 }
 
 .is-adjusthight-60 {
+	position: relative;
 	min-height: 60vh;
 	height: auto;
 }
 
 .is-adjusthight-70 {
+	position: relative;
 	min-height: 70vh;
 	height: auto;
 }
 
 .is-adjusthight-80 {
+	position: relative;
 	min-height: 80vh;
 	height: auto;
 }
 
 .is-adjusthight-90 {
+	position: relative;
 	min-height: 90vh;
 	height: auto;
 }
 
 .is-adjusthight-100 {
+	position: relative;
 	min-height: 100vh;
 	height: auto;
-}
-
-.mt-10 {
-	margin-top: 0.625rem;
-}
-
-.mr-10 {
-	margin-right: 0.625rem;
-}
-
-.mb-10 {
-	margin-bottom: 0.625rem;
-}
-
-.ml-10 {
-	margin-left: 0.625rem;
-}
-
-.pt-10 {
-	padding-top: 0.625rem;
-}
-
-.pr-10 {
-	padding-right: 0.625rem;
-}
-
-.pb-10 {
-	padding-bottom: 0.625rem;
-}
-
-.pl-10 {
-	padding-left: 0.625rem;
-}
-
-.mt-20 {
-	margin-top: 1.25rem;
-}
-
-.mr-20 {
-	margin-right: 1.25rem;
-}
-
-.mb-20 {
-	margin-bottom: 1.25rem;
-}
-
-.ml-20 {
-	margin-left: 1.25rem;
-}
-
-.pt-20 {
-	padding-top: 1.25rem;
-}
-
-.pr-20 {
-	padding-right: 1.25rem;
-}
-
-.pb-20 {
-	padding-bottom: 1.25rem;
-}
-
-.pl-20 {
-	padding-left: 1.25rem;
-}
-
-.mt-30 {
-	margin-top: 1.875rem;
-}
-
-.mr-30 {
-	margin-right: 1.875rem;
-}
-
-.mb-30 {
-	margin-bottom: 1.875rem;
-}
-
-.ml-30 {
-	margin-left: 1.875rem;
-}
-
-.pt-30 {
-	padding-top: 1.875rem;
-}
-
-.pr-30 {
-	padding-right: 1.875rem;
-}
-
-.pb-30 {
-	padding-bottom: 1.875rem;
-}
-
-.pl-30 {
-	padding-left: 1.875rem;
-}
-
-.mt-40 {
-	margin-top: 2.5rem;
-}
-
-.mr-40 {
-	margin-right: 2.5rem;
-}
-
-.mb-40 {
-	margin-bottom: 2.5rem;
-}
-
-.ml-40 {
-	margin-left: 2.5rem;
-}
-
-.pt-40 {
-	padding-top: 2.5rem;
-}
-
-.pr-40 {
-	padding-right: 2.5rem;
-}
-
-.pb-40 {
-	padding-bottom: 2.5rem;
-}
-
-.pl-40 {
-	padding-left: 2.5rem;
-}
-
-.mt-50 {
-	margin-top: 3.125rem;
-}
-
-.mr-50 {
-	margin-right: 3.125rem;
-}
-
-.mb-50 {
-	margin-bottom: 3.125rem;
-}
-
-.ml-50 {
-	margin-left: 3.125rem;
-}
-
-.pt-50 {
-	padding-top: 3.125rem;
-}
-
-.pr-50 {
-	padding-right: 3.125rem;
-}
-
-.pb-50 {
-	padding-bottom: 3.125rem;
-}
-
-.pl-50 {
-	padding-left: 3.125rem;
 }
 
 .logo {
@@ -322,7 +172,7 @@ a:hover {
 	position: absolute;
 	top: 20px;
 	left: 10px;
-	background-size: 340px 20px;
+	background-size: 340px 15px;
 }
 
 .accordion-list-group .accordion-toggle .accordion-rate.is-rate-00 {
@@ -604,7 +454,7 @@ a:hover {
 }
 
 .footer-list {
-	padding-bottom: 2rem;
+	padding-bottom: 1rem;
 }
 
 .footer-list li {
@@ -614,6 +464,25 @@ a:hover {
 
 .footer-list li a {
 	color: #68615e;
+}
+
+/*==========================================================*
+*=== イントロダクション
+*==========================================================*/
+.intro {
+	color: white;
+}
+
+.intro.is-bg-yellow {
+	background-color: #ffc000;
+}
+
+.intro.is-bg-orange {
+	background-color: #ffc000;
+}
+
+.intro .title {
+	color: white;
 }
 
 /*##############################################################################*
@@ -653,16 +522,4 @@ a:hover {
 	position: absolute;
 	right: 0;
 	bottom: 0;
-}
-
-/*==========================================================*
-*=== イントロダクション
-*==========================================================*/
-.intro {
-	background-color: #fc9c34;
-	color: white;
-}
-
-.intro .title {
-	color: white;
 }

@@ -6,41 +6,39 @@
 
 /*** スワイプコンテンツ***/
 .swiper-slide{
-	&.common-slide{
-		text-align: center;
-		font-size: $font-size-6;
-		position: relative;
-		.common-slide-head{
-			min-height: 30vh;
-			@include flex-center;
-			@include flex-vertical;
-			@include justify-content(center);
-			.common-slide-head-text-1{
-				font-size: $font-size-5;
-				font-weight: $weight-normal;
-				&:nth-child(1){
-					padding-right: 70px;
-				}
-				&:nth-child(2){
-					padding-left: 70px;
-				}
+	text-align: center;
+	font-size: $font-size-6;
+	position: relative;
+	.swiper-slide-head{
+		min-height: 30vh;
+		@include flex-center;
+		@include flex-vertical;
+		@include justify-content(center);
+		.swiper-slide-head-text-1{
+			font-size: $font-size-5;
+			font-weight: $weight-normal;
+			&:nth-child(1){
+				padding-right: 70px;
+			}
+			&:nth-child(2){
+				padding-left: 70px;
 			}
 		}
-		.common-slide-body{
-			padding: 10px;
-			min-height: 25vh;
-			text-align: left;
-		}
-		.common-slide-foot{
-			.button{
-				&.common-slide-foot-btn-1{
-					background-color:$color-palegreen;
-					color: $color-white;
-					@include border-radius(25px);
+	}
+	.swiper-slide-body{
+		padding: 10px;
+		min-height: 25vh;
+		text-align: left;
+	}
+	.swiper-slide-foot{
+		.button{
+			&.swiper-slide-foot-btn-1{
+				background-color:$color-palegreen;
+				color: $color-white;
+				@include border-radius(25px);
+				border: none;
+				&:hover{
 					border: none;
-					&:hover{
-						border: none;
-					}
 				}
 			}
 		}
@@ -50,8 +48,5 @@
 /*** スキップボタン***/
 .swipper-skip {
 	padding-right: 20px;
-	min-height: 20vh;
-	@include flex(flex-end);
-	@include justify-content(flex-end);
 }
 

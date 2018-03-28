@@ -2,12 +2,17 @@
 
 $color-white: white;
 $color-orange: #fc9c34;
+$color-yellow: #ffc000;
 $color-deepblue: #29586d;
 $color-grey: #ddd;
 $color-palegrey: #eee;
 $color-grey-2: #d6cbc5;
 $color-palegreen: #92d050;
-$color-grey: #dcd2ce;
+$color-grey-3: #dcd2ce;
+$color-list-border: #d7cbc6;
+$color-list-text: #68615e;
+$box-shadow-color: #f1f1f1;
+$nav-home-color: #958b87;
 
 $font-size-1: 3rem;
 $font-size-2: 2.5rem;
@@ -26,3 +31,12 @@ $weight-bold: 700 !default;
 $breakpoint-sm: 768px !default;
 $breakpoint-tb: 769px !default;
 $breakpoint-de: 1024px !default;
+
+$bg-img-pointer: url(../img/icon/pointer.png);
+$bg-img-accordion-up: url(../img/icon/accordion_up_arrow.png);
+$bg-img-accordion-down:url(../img/icon/accordion_down_arrow.png);
+$bg-img-accordion-right: url(../img/icon/accordion_right_arrow.png);
+$bg-img-accordion-star: url(../img/common/star_base.png);
+$bg-img-arrow-1: url(../img/icon/arrow.png);
+$bg-img-question: url(../img/icon/hatena.png);
+$bg-img-nav-menu: url(../img/icon/menu_arrow.png);

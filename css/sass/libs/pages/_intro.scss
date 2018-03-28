@@ -4,8 +4,13 @@
 *=== イントロダクション
 *==========================================================*/
 .intro{
-	background-color: $color-orange;
 	color: $color-white;
+	&.is-bg-yellow{
+		background-color: $color-yellow;
+	}
+	&.is-bg-orange{
+		background-color: $color-yellow;
+	}
 	.title{
 		color: $color-white;
 	}
