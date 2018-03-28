@@ -8,7 +8,6 @@
 .swiper-slide{
 	text-align: center;
 	font-size: $font-size-6;
-	position: relative;
 	.swiper-slide-head{
 		min-height: 30vh;
 		@include flex-center;
@@ -42,6 +41,13 @@
 				}
 			}
 		}
+	}
+}
+
+.swiper-pagination-bullet{
+	margin: 0 5px;
+	&.swiper-pagination-bullet-active{
+		background-color: $color-swiper-active;
 	}
 }
 

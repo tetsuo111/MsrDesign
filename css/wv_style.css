@@ -221,7 +221,7 @@ a:hover {
 }
 
 .accordion-list-group .accordion-list li:not(:last-child) {
-	border-bottom: 2px solid #dcd2ce;
+	border-bottom: 2px solid #ddd;
 }
 
 /*==========================================================*
@@ -303,13 +303,13 @@ a:hover {
 *=== スワイパーカスタム
 *==========================================================*/
 /*** スワイプコンテンツ***/
-.swiper-slide.common-slide {
+.swiper-slide {
 	text-align: center;
 	font-size: 1rem;
 	position: relative;
 }
 
-.swiper-slide.common-slide .common-slide-head {
+.swiper-slide .swiper-slide-head {
 	min-height: 30vh;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -330,52 +330,39 @@ a:hover {
 	-webkit-justify-content: center;
 }
 
-.swiper-slide.common-slide .common-slide-head .common-slide-head-text-1 {
+.swiper-slide .swiper-slide-head .swiper-slide-head-text-1 {
 	font-size: 1.25rem;
 	font-weight: 400;
 }
 
-.swiper-slide.common-slide .common-slide-head .common-slide-head-text-1:nth-child(1) {
+.swiper-slide .swiper-slide-head .swiper-slide-head-text-1:nth-child(1) {
 	padding-right: 70px;
 }
 
-.swiper-slide.common-slide .common-slide-head .common-slide-head-text-1:nth-child(2) {
+.swiper-slide .swiper-slide-head .swiper-slide-head-text-1:nth-child(2) {
 	padding-left: 70px;
 }
 
-.swiper-slide.common-slide .common-slide-body {
+.swiper-slide .swiper-slide-body {
 	padding: 10px;
 	min-height: 25vh;
 	text-align: left;
 }
 
-.swiper-slide.common-slide .common-slide-foot .button.common-slide-foot-btn-1 {
+.swiper-slide .swiper-slide-foot .button.swiper-slide-foot-btn-1 {
 	background-color: #92d050;
 	color: white;
 	border-radius: 25px;
 	border: none;
 }
 
-.swiper-slide.common-slide .common-slide-foot .button.common-slide-foot-btn-1:hover {
+.swiper-slide .swiper-slide-foot .button.swiper-slide-foot-btn-1:hover {
 	border: none;
 }
 
 /*** スキップボタン***/
 .swipper-skip {
 	padding-right: 20px;
-	min-height: 20vh;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-box-align: flex-end;
-	-ms-flex-align: flex-end;
-	-webkit-align-items: flex-end;
-	align-items: flex-end;
-	-webkit-box-pack: flex-end;
-	-ms-flex-pack: flex-end;
-	justify-content: flex-end;
-	-webkit-justify-content: flex-end;
 }
 
 /*==========================================================*
