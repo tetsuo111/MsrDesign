@@ -1,8 +1,4 @@
 @charset "utf-8";
-$footer-border-color: #d7cbc6;
-$footer-copyright-color: #daceca;
-$footer-list-color: #68615e;
-
 
 /*##############################################################################*
 *### レイアウト(footer,header,contentsなどの変更)
@@ -12,6 +8,7 @@ $footer-list-color: #68615e;
 *==========================================================*/
 .footer {
 	border-top: 1px solid $footer-border-color;
+	background-image: $color-white;
 	/* Bulmaスタイル更新 */
 	padding: 3rem 0 ;
 	background-color: transparent;
@@ -23,6 +20,7 @@ $footer-list-color: #68615e;
 		color: $footer-copyright-color;
 	}
 }
+
 .footer-list {
 	padding-bottom: 1rem;
 	li {

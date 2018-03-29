@@ -2,7 +2,6 @@
 
 @mixin link-color($color) {
 	color: $color;
-
 	&:hover {
 		color: lighten($color, 20%);
 	}

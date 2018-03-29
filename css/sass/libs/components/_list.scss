@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*==========================================================*
-*=== リスト(サブメニューなど)
+*=== リスト
 *==========================================================*/
 .list {
 	.list-icon {
@@ -17,14 +17,12 @@
 		background-repeat: no-repeat;
 		background-position: center right;
 		background-size: 30px;
-		color: $color-list-text;
 		&:not(:last-child){
 			border-bottom: 1px solid $color-list-border;
 		}
-		p{
-			display: inline-block;
-			/* 上下中央 */
-			vertical-align: middle;
+		.list-link{
+			@include link-color($color-white);
+			color: $color-list-text;
 		}
 		.list-title {
 			font-size: 1.25rem;
@@ -35,6 +33,7 @@
 			color: $color-grey-2;
 		}
 		.list-text {
+			color: $color-list-text;
 			/* 行間調整 */
 			line-height: 1.2;
 		}

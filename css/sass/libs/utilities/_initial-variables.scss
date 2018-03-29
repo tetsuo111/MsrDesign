@@ -1,8 +1,9 @@
 @charset "utf-8";
 
-$color-white: white;
-$color-orange: #fc9c34;
-$color-yellow: #ffc000;
+$color-white  : #ffffff;
+$color-black  : black;
+$color-orange : #fc9c34;
+$color-yellow : #ffc000;
 $color-deepblue: #29586d;
 $color-grey: #ddd;
 $color-palegrey: #eee;
@@ -13,7 +14,13 @@ $color-list-border: #d7cbc6;
 $color-list-text: #68615e;
 $box-shadow-color: #f1f1f1;
 $nav-home-color: #958b87;
+$color-swaiper-active-defalut: #007aff;
 $color-swiper-active: #aaa29f;
+$color-top-text: #68615e;
+$bg-color-top-message: #faf8f7;
+$footer-border-color: #d7cbc6;
+$footer-copyright-color: #daceca;
+$footer-list-color: #68615e;
 
 $font-size-1: 3rem;
 $font-size-2: 2.5rem;
@@ -41,3 +48,7 @@ $bg-img-accordion-star: url(../img/common/star_base.png);
 $bg-img-arrow-1: url(../img/icon/arrow.png);
 $bg-img-question: url(../img/icon/hatena.png);
 $bg-img-nav-menu: url(../img/icon/menu_arrow.png);
+$bg-img-news : url("../img/icon/news.png");
+$bg-img-moodmeter: url("../img/common/bg_moodmeter.png");
+
+$swiper-skip-z: 11;

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<title>Swiper demo</title>
+		<link rel="stylesheet" href="../css/bulma.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/ionicons.min.css"/>
+		<link rel="stylesheet" href="../css/swiper.min.css">
+		<link rel="stylesheet" href="../css/wv_style.css">
+	</head>
+	<body>
+		<div class="intro is-bg-orange container is-fullhd">
+			<figure class="has-text-centered">
+				<img src="../img/common/intro_logo.png" alt="イントロダクションロゴ">
+			</figure>
+			<div class="swiper-container swiper-intro">
+				<div class="swiper-wrapper">
+					<section class="swiper-slide">
+						<div class="swiper-slide-head">
+							<h1 class="title">コース１<br/>感じ方切替トレーニング
+							</h1>
+						</div>
+						<div class="swiper-slide-body">
+							<p><img src="../img/common/intro_logo.png" alt="ロゴ" width="200" height="35">には、３つのコースがあります。このコースでは、最も基本的で最も重要な「感じ方」を切り替えるトレーニングを行っていきます。
+							</p>
+						</div>
+						<div class="swiper-skip">
+							<a href="../Top/top.html">Skip</a>
+						</div>
+					</section>
+					<section class="swiper-slide">
+						<div class="swiper-slide-head">
+							<h1 class="title">「直感」勝負
+							</h1>
+						</div>
+						<div class="swiper-slide-body">
+							<p>トレーニングで効果を挙げるには、２つの“コツ”があります。
+							</p>
+							<p>ますは、１つ目、それは「直感」です。</p>
+							<p>これから質問に答えたり、画像を選んだり、様々な“選択”をします。この時、こちらかあちらかと悩まず、気になるもの、目に入るもの、心地よいと感じたもの、パパッ！と「直感」で選んで下さい。
+							</p>
+						</div>
+						<div class="swiper-skip">
+							<a href="../Top/top.html">Skip</a>
+						</div>
+					</section>
+					<section class="swiper-slide">
+						<div class="swiper-slide-head"></div>
+						<div class="swiper-slide-body">
+							<p>もし、変更したいと思ったら、後で何回でもやり直せます。重要なのは、自分の「直感」を信じること。</p>
+							<p>2つ目の“コツ”は、また後でお伝えします。</p>
+						</div>
+						<div class="swiper-skip">
+							<a href="../Top/top.html">Skip</a>
+						</div>
+					</section>
+					<section class="swiper-slide">
+						<div class="swiper-slide-head"></div>
+						<div class="swiper-slide-body">
+							<p class="has-text-centered">さぁ、でははじめましょう</p>
+						</div>
+						<div class="swiper-slide-foot">
+							<div><a href="../index.html" class="button is-medium swiper-slide-foot-btn-1">始める</a></div>
+							<span class="pointer is-pointer-size50"></span>
+						</div>
+					</section>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/swiper.min.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript">
+			var swiper = new Swiper('.swiper-container', {
+				autoHeight: true,
+				speed: 1000,
+				mousewheelControl: true,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				breakpoints: {
+					767: {
+						slidesPerView: 1,
+						spaceBetween: 0
+					}
+				},
+				queueEndCallbacks: true,
+				onReachEnd: function(){
+					swiper.disableMousewheelControl();
+					swiper.disableTouchControl();
+				}
+			});
+			
+		</script>
+	</body>
+</html>

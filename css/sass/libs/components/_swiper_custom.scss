@@ -1,15 +1,15 @@
 @charset "utf-8";
 
 /*==========================================================*
-*=== スワイパーカスタム
+*=== Swiper Custom
 *==========================================================*/
 
-/*** スワイプコンテンツ***/
+/*** Content ***/
 .swiper-slide{
+	min-height: 100vh;
 	text-align: center;
-	font-size: $font-size-6;
 	.swiper-slide-head{
-		min-height: 30vh;
+		min-height: 25vh;
 		@include flex-center;
 		@include flex-vertical;
 		@include justify-content(center);
@@ -23,36 +23,90 @@
 				padding-left: 70px;
 			}
 		}
+		figure{
+			padding: 20px;
+		}
 	}
 	.swiper-slide-body{
 		padding: 10px;
 		min-height: 25vh;
 		text-align: left;
+		font-size: $font-size-4;
+		img{
+			vertical-align: middle;
+		}
+		p{
+			padding: 0 0 10px 0;
+		}
 	}
 	.swiper-slide-foot{
 		.button{
 			&.swiper-slide-foot-btn-1{
 				background-color:$color-palegreen;
 				color: $color-white;
-				@include border-radius(25px);
+				@include border-radius(50px);
 				border: none;
+				width: 100px;
+				font-size: $font-size-4;
+				font-weight: $weight-semibold;
 				&:hover{
 					border: none;
 				}
 			}
 		}
+		.pointer{
+			position: relative;
+			bottom: 20px;
+			left: 40px;
+		}
+	}
+}
+/*** bullet ***/
+.swiper-container-horizontal.swiper-intro>.swiper-pagination-bullets{
+	.swiper-pagination-bullet{
+		margin: 0 10px;
+		width: 12px;
+		height: 12px;
+		background: $color-white;
+		opacity: 1;
+		&.swiper-pagination-bullet-active{
+			background: $color-swaiper-active-defalut
+		}
+	}
+}
+.swiper-container-horizontal.swiper-course>.swiper-pagination-bullets,.swiper-container-horizontal.swiper-guidanse>.swiper-pagination-bullets{
+	.swiper-pagination-bullet{
+		margin: 0 10px;
+		width: 12px;
+		height: 12px;
+		background: $color-white;
+		opacity: 1;
+		&.swiper-pagination-bullet-active{
+			background: $color-swiper-active;
+		}
 	}
 }
 
-.swiper-pagination-bullet{
-	margin: 0 5px;
-	&.swiper-pagination-bullet-active{
-		background-color: $color-swiper-active;
+/*** guidanse ***/
+.swiper-container.swiper-guidanse{
+	&.is-bg-moodmeter{
+		background-image: $bg-img-moodmeter;
+	}
+	&.is-bg-exercise{}
+	&.is-bg-supplement{}
+	&.is-bg-learning{}
+	&.is-bg-question{}
+}
+/*** skip ***/
+.swiper-skip {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	z-index: $swiper-skip-z;
+	a{
+		font-weight: $weight-semibold;
+		font-size: $font-size-5;
+		@include link-color($color-white);
+		display: inline-block;
 	}
 }
-
-/*** スキップボタン***/
-.swipper-skip {
-	padding-right: 20px;
-}
-

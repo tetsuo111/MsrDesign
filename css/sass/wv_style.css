@@ -24,7 +24,7 @@ body::-webkit-scrollbar {
 
 /* リンク */
 a {
-  color: white;
+  color: #ffffff;
 }
 
 a:hover {
@@ -106,9 +106,7 @@ a:hover {
 }
 
 .pointer {
-  display: block;
-  width: 50px;
-  height: 50px;
+  display: inline-block;
   background-image: url(../img/icon/pointer.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -116,18 +114,37 @@ a:hover {
 
 .pointer:after {
   content: "";
+  display: inline-block;
   -webkit-box-shadow: 5px 7px 9.68px -0.68px rgba(86, 78, 74, 0.2);
   box-shadow: 5px 7px 9.68px -0.68px rgba(86, 78, 74, 0.2);
-  padding: 25px;
   border-radius: 30px;
-  display: block;
 }
 
-.cource-mask {
+.pointer.is-pointer-size30 {
+  width: 30px;
+  height: 30px;
+}
+
+.pointer.is-pointer-size30:after {
+  width: 30px;
+  height: 30px;
+}
+
+.pointer.is-pointer-size50 {
+  width: 50px;
+  height: 50px;
+}
+
+.pointer.is-pointer-size50:after {
+  width: 50px;
+  height: 50px;
+}
+
+.course-mask {
   opacity: 0.4;
 }
 
-.cource-mask a {
+.course-mask a {
   pointer-events: none;
 }
 
@@ -142,7 +159,7 @@ a:hover {
   border-radius: 3px;
   cursor: pointer;
   text-align: center;
-  color: white;
+  color: #ffffff;
   padding: 1.125rem;
   font-weight: 600;
   background-image: url(../img/icon/accordion_up_arrow.png);
@@ -203,7 +220,7 @@ a:hover {
   margin-right: 1.5rem;
   /* ボタンスタイル削除 */
   border: none;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .accordion-list-group .accordion-list {
@@ -275,7 +292,7 @@ a:hover {
 }
 
 .nav-modal-card-title {
-  color: white;
+  color: #ffffff;
 }
 
 .nav-btn-delete {
@@ -300,17 +317,16 @@ a:hover {
 }
 
 /*==========================================================*
-*=== スワイパーカスタム
+*=== Swiper Custom
 *==========================================================*/
-/*** スワイプコンテンツ***/
+/*** Content ***/
 .swiper-slide {
+  min-height: 100vh;
   text-align: center;
-  font-size: 1rem;
-  position: relative;
 }
 
 .swiper-slide .swiper-slide-head {
-  min-height: 30vh;
+  min-height: 25vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -343,30 +359,96 @@ a:hover {
   padding-left: 70px;
 }
 
+.swiper-slide .swiper-slide-head figure {
+  padding: 20px;
+}
+
 .swiper-slide .swiper-slide-body {
   padding: 10px;
   min-height: 25vh;
   text-align: left;
+  font-size: 1.5rem;
+}
+
+.swiper-slide .swiper-slide-body img {
+  vertical-align: middle;
+}
+
+.swiper-slide .swiper-slide-body p {
+  padding: 0 0 10px 0;
 }
 
 .swiper-slide .swiper-slide-foot .button.swiper-slide-foot-btn-1 {
   background-color: #92d050;
-  color: white;
-  border-radius: 25px;
+  color: #ffffff;
+  border-radius: 50px;
   border: none;
+  width: 100px;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .swiper-slide .swiper-slide-foot .button.swiper-slide-foot-btn-1:hover {
   border: none;
 }
 
-/*** スキップボタン***/
-.swipper-skip {
-  padding-right: 20px;
+.swiper-slide .swiper-slide-foot .pointer {
+  position: relative;
+  bottom: 20px;
+  left: 40px;
+}
+
+/*** bullet ***/
+.swiper-container-horizontal.swiper-intro > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 10px;
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  opacity: 1;
+}
+
+.swiper-container-horizontal.swiper-intro > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #007aff;
+}
+
+.swiper-container-horizontal.swiper-course > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-container-horizontal.swiper-guidanse > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 10px;
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  opacity: 1;
+}
+
+.swiper-container-horizontal.swiper-course > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active, .swiper-container-horizontal.swiper-guidanse > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #aaa29f;
+}
+
+/*** guidanse ***/
+.swiper-container.swiper-guidanse.is-bg-moodmeter {
+  background-image: url("../img/common/bg_moodmeter.png");
+}
+
+/*** skip ***/
+.swiper-skip {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 11;
+}
+
+.swiper-skip a {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #ffffff;
+  display: inline-block;
+}
+
+.swiper-skip a:hover {
+  color: white;
 }
 
 /*==========================================================*
-*=== リスト(サブメニューなど)
+*=== リスト
 *==========================================================*/
 .list .list-icon {
   margin-right: 1rem;
@@ -384,17 +466,19 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center right;
   background-size: 30px;
-  color: #68615e;
 }
 
 .list .list-item-1:not(:last-child) {
   border-bottom: 1px solid #d7cbc6;
 }
 
-.list .list-item-1 p {
-  display: inline-block;
-  /* 上下中央 */
-  vertical-align: middle;
+.list .list-item-1 .list-link {
+  color: #ffffff;
+  color: #68615e;
+}
+
+.list .list-item-1 .list-link:hover {
+  color: white;
 }
 
 .list .list-item-1 .list-title {
@@ -408,6 +492,7 @@ a:hover {
 }
 
 .list .list-item-1 .list-text {
+  color: #68615e;
   /* 行間調整 */
   line-height: 1.2;
 }
@@ -426,6 +511,7 @@ a:hover {
 *==========================================================*/
 .footer {
   border-top: 1px solid #d7cbc6;
+  background-image: #ffffff;
   /* Bulmaスタイル更新 */
   padding: 3rem 0;
   background-color: transparent;
@@ -453,11 +539,14 @@ a:hover {
   color: #68615e;
 }
 
+/*##############################################################################*
+*### 各ページ(ページ独自のスタイル)
+*##############################################################################*/
 /*==========================================================*
 *=== イントロダクション
 *==========================================================*/
 .intro {
-  color: white;
+  color: #ffffff;
 }
 
 .intro.is-bg-yellow {
@@ -465,16 +554,13 @@ a:hover {
 }
 
 .intro.is-bg-orange {
-  background-color: #ffc000;
+  background-color: #fc9c34;
 }
 
 .intro .title {
-  color: white;
+  color: #ffffff;
 }
 
-/*##############################################################################*
-*### 各ページ(ページ独自のスタイル)
-*##############################################################################*/
 /*==========================================================*
 *=== トップページ
 *==========================================================*/
@@ -510,3 +596,7 @@ a:hover {
   right: 0;
   bottom: 0;
 }
+
+/*==========================================================*
+*=== ガイダンス
+*==========================================================*/
