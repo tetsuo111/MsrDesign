@@ -1,46 +1,48 @@
 @charset "utf-8";
 /*==========================================================*
-*=== リスト
+*=== List
 *==========================================================*/
-.list {
-	.list-icon {
-		margin-right: 1rem;
-		img {
-			width: 40px;
-		}
+
+/***  guidanse list ***/
+.list-item01 {
+	position: relative;
+	cursor: pointer;
+	color: $color-list-text;
+	&:not(:last-child){
+		border-bottom: 1px solid $color-list-border;
 	}
-	.list-item-1 {
-		position: relative;
-		cursor: pointer;
-		padding: 2rem 0;
-		background-image: url(../img/icon/hatena.png);
+	&.is-bg-hatena{
+		background-image: $bg-img-hatena;
 		background-repeat: no-repeat;
 		background-position: center right;
-		background-size: 30px;
-		&:not(:last-child){
-			border-bottom: 1px solid $color-list-border;
+	}
+	.list-item01-content{
+		display: block;
+		padding: 2rem 0 2rem 5rem;
+		font-size: 1.25rem;
+		font-weight: $weight-semibold;
+		color: $color-list-text;
+		&.is-bg-bloosm01{
+			background-image: $bg-img-bloosm01;
+			background-position: left center;
+			background-repeat: no-repeat;
 		}
-		.list-link{
-			@include link-color($color-white);
-			color: $color-list-text;
+		&.is-bg-bloosm02{
+			background-image: $bg-img-bloosm02;
+			background-position: left center;
+			background-repeat: no-repeat;
 		}
-		.list-title {
-			font-size: 1.25rem;
-			font-weight: $weight-semibold;
-		}
-		.list-subtitle {
-			font-size: 0.875rem;
-			color: $color-grey-2;
-		}
-		.list-text {
-			color: $color-list-text;
-			/* 行間調整 */
-			line-height: 1.2;
-		}
-		.pointer{
-			position: absolute;
-			top: 50%;
-			left: 50%;
+		&.is-bg-bloosm03{
+			background-image: $bg-img-bloosm03;
+			background-position: left center;
+			background-repeat: no-repeat;
 		}
 	}
+	.pointer{
+		position: absolute;
+		top: 70%;
+		left: 45%;
+	}
 }
+
+

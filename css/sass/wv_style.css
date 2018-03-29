@@ -448,59 +448,55 @@ a:hover {
 }
 
 /*==========================================================*
-*=== リスト
+*=== List
 *==========================================================*/
-.list .list-icon {
-  margin-right: 1rem;
-}
-
-.list .list-icon img {
-  width: 40px;
-}
-
-.list .list-item-1 {
+/***  guidanse list ***/
+.list-item01 {
   position: relative;
   cursor: pointer;
-  padding: 2rem 0;
-  background-image: url(../img/icon/hatena.png);
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-size: 30px;
+  color: #68615e;
 }
 
-.list .list-item-1:not(:last-child) {
+.list-item01:not(:last-child) {
   border-bottom: 1px solid #d7cbc6;
 }
 
-.list .list-item-1 .list-link {
-  color: #ffffff;
-  color: #68615e;
+.list-item01.is-bg-hatena {
+  background-image: url(../img/icon/hatena.png);
+  background-repeat: no-repeat;
+  background-position: center right;
 }
 
-.list .list-item-1 .list-link:hover {
-  color: white;
-}
-
-.list .list-item-1 .list-title {
+.list-item01 .list-item01-content {
+  display: block;
+  padding: 2rem 0 2rem 5rem;
   font-size: 1.25rem;
   font-weight: 600;
-}
-
-.list .list-item-1 .list-subtitle {
-  font-size: 0.875rem;
-  color: #d6cbc5;
-}
-
-.list .list-item-1 .list-text {
   color: #68615e;
-  /* 行間調整 */
-  line-height: 1.2;
 }
 
-.list .list-item-1 .pointer {
+.list-item01 .list-item01-content.is-bg-bloosm01 {
+  background-image: url("../img/icon/list_pink01.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.list-item01 .list-item01-content.is-bg-bloosm02 {
+  background-image: url("../img/icon/list_pink02.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.list-item01 .list-item01-content.is-bg-bloosm03 {
+  background-image: url("../img/icon/list_pink03.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.list-item01 .pointer {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 70%;
+  left: 45%;
 }
 
 /*##############################################################################*
@@ -573,13 +569,13 @@ a:hover {
 }
 
 .top-message p {
-  background-image: url("../img/icon/news.png");
+  background-image: url(../img/icon/news.png);
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: 60px 37px;
-  padding: 0.5rem 0 0.5rem 75px;
+  background-size: 67px 50px;
+  padding: 1rem 0 0.875rem 75px;
   color: #68615e;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .columns.top-content {
@@ -593,7 +589,7 @@ a:hover {
 
 .columns.top-content .column .pointer {
   position: absolute;
-  right: 0;
+  right: 10%;
   bottom: 0;
 }
 

@@ -24,7 +24,7 @@ body::-webkit-scrollbar {
 
 /* リンク */
 a {
-	color: white;
+	color: #ffffff;
 }
 
 a:hover {
@@ -159,7 +159,7 @@ a:hover {
 	border-radius: 3px;
 	cursor: pointer;
 	text-align: center;
-	color: white;
+	color: #ffffff;
 	padding: 1.125rem;
 	font-weight: 600;
 	background-image: url(../img/icon/accordion_up_arrow.png);
@@ -220,7 +220,7 @@ a:hover {
 	margin-right: 1.5rem;
 	/* ボタンスタイル削除 */
 	border: none;
-	background-color: white;
+	background-color: #ffffff;
 }
 
 .accordion-list-group .accordion-list {
@@ -292,7 +292,7 @@ a:hover {
 }
 
 .nav-modal-card-title {
-	color: white;
+	color: #ffffff;
 }
 
 .nav-btn-delete {
@@ -380,7 +380,7 @@ a:hover {
 
 .swiper-slide .swiper-slide-foot .button.swiper-slide-foot-btn-1 {
 	background-color: #92d050;
-	color: white;
+	color: #ffffff;
 	border-radius: 50px;
 	border: none;
 	width: 100px;
@@ -403,7 +403,7 @@ a:hover {
 	margin: 0 10px;
 	width: 12px;
 	height: 12px;
-	background: white;
+	background: #ffffff;
 	opacity: 1;
 }
 
@@ -415,7 +415,7 @@ a:hover {
 	margin: 0 10px;
 	width: 12px;
 	height: 12px;
-	background: white;
+	background: #ffffff;
 	opacity: 1;
 }
 
@@ -439,7 +439,7 @@ a:hover {
 .swiper-skip a {
 	font-weight: 600;
 	font-size: 1.25rem;
-	color: white;
+	color: #ffffff;
 	display: inline-block;
 }
 
@@ -448,56 +448,56 @@ a:hover {
 }
 
 /*==========================================================*
-*=== リスト
+*=== List
 *==========================================================*/
-.list .list-icon {
-	margin-right: 1rem;
-}
-
-.list .list-icon img {
-	width: 40px;
-}
-
-.list .list-item-1 {
+/***  guidanse list ***/
+.list-item01 {
 	position: relative;
 	cursor: pointer;
-	padding: 2rem 0;
-	background-image: url(../img/icon/hatena.png);
-	background-repeat: no-repeat;
-	background-position: center right;
-	background-size: 30px;
 	color: #68615e;
 }
 
-.list .list-item-1:not(:last-child) {
+.list-item01:not(:last-child) {
 	border-bottom: 1px solid #d7cbc6;
 }
 
-.list .list-item-1 p {
-	display: inline-block;
-	/* 上下中央 */
-	vertical-align: middle;
+.list-item01.is-bg-hatena {
+	background-image: url(../img/icon/hatena.png);
+	background-repeat: no-repeat;
+	background-position: center right;
 }
 
-.list .list-item-1 .list-title {
+.list-item01 .list-item01-content {
+	display: block;
+	text-align: center;
+	padding: 2rem 0;
 	font-size: 1.25rem;
 	font-weight: 600;
+	color: #68615e;
 }
 
-.list .list-item-1 .list-subtitle {
-	font-size: 0.875rem;
-	color: #d6cbc5;
+.list-item01 .list-item01-content.is-bg-bloosm01 {
+	background-image: url("../img/icon/list_pink01.png");
+	background-position: left center;
+	background-repeat: no-repeat;
 }
 
-.list .list-item-1 .list-text {
-	/* 行間調整 */
-	line-height: 1.2;
+.list-item01 .list-item01-content.is-bg-bloosm02 {
+	background-image: url("../img/icon/list_pink02.png");
+	background-position: left center;
+	background-repeat: no-repeat;
 }
 
-.list .list-item-1 .pointer {
+.list-item01 .list-item01-content.is-bg-bloosm03 {
+	background-image: url("../img/icon/list_pink03.png");
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+.list-item01 .pointer {
 	position: absolute;
-	top: 50%;
-	left: 50%;
+	top: 70%;
+	left: 45%;
 }
 
 /*##############################################################################*
@@ -508,7 +508,7 @@ a:hover {
 *==========================================================*/
 .footer {
 	border-top: 1px solid #d7cbc6;
-	background-image: white;
+	background-image: #ffffff;
 	/* Bulmaスタイル更新 */
 	padding: 3rem 0;
 	background-color: transparent;
@@ -543,7 +543,7 @@ a:hover {
 *=== イントロダクション
 *==========================================================*/
 .intro {
-	color: white;
+	color: #ffffff;
 }
 
 .intro.is-bg-yellow {
@@ -555,7 +555,7 @@ a:hover {
 }
 
 .intro .title {
-	color: white;
+	color: #ffffff;
 }
 
 /*==========================================================*

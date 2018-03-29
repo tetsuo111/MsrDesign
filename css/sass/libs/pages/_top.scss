@@ -10,13 +10,13 @@
 	@include border-radius(3px);
 	font-weight: $weight-bold;
 	p{
-		background-image: $bg-img-news;
+		background-image: url(../img/icon/news.png);
 		background-repeat: no-repeat;
 		background-position: left center;
-		background-size: 60px 37px;
-		padding: 0.5rem 0 0.5rem 75px;
-		color: $color-top-text;
-		font-size: 0.875rem;
+		background-size: 67px 50px;
+		padding: 1rem 0 0.875rem 75px;
+		color: #68615e;
+		font-size: 1rem;
 	}
 }
 
@@ -28,7 +28,7 @@
 			position: relative;
 			.pointer{
 				position: absolute;
-				right: 0;
+				right: 10%;
 				bottom: 0;
 			}
 		}
