@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*##############################################################################*
- *### 共通部
+ *### base
  *##############################################################################*/
 /*==========================================================*
- *=== 基本
+ *=== basic
  *==========================================================*/
 body {
   /* @see http://sole-color-blog.com/blog/design/963/ */
@@ -22,7 +22,7 @@ body::-webkit-scrollbar {
   padding: 1.5rem 1.5rem;
 }
 
-/* リンク */
+/* link */
 a {
   color: #ffffff;
 }
@@ -39,7 +39,7 @@ a:hover {
 }
 
 /*==========================================================*
-*=== プロパティ追加(中央寄せなど)
+*=== property
 *==========================================================*/
 .is-adjusthight-10 {
   position: relative;
@@ -102,7 +102,7 @@ a:hover {
 }
 
 .logo {
-  height: 2.1875rem;
+  height: 1.5rem;
 }
 
 .pointer {
@@ -140,19 +140,63 @@ a:hover {
   height: 50px;
 }
 
-.course-mask {
+/***  ban ***/
+.mask {
   opacity: 0.4;
 }
 
-.course-mask a {
+.mask a {
   pointer-events: none;
 }
 
 /*##############################################################################*
-*### コンポーネント
+*### elements
 *##############################################################################*/
 /*==========================================================*
- *=== アコーディオン
+*=== button
+*==========================================================*/
+.button {
+  color: #ffffff;
+  /*** introduction ***/
+  /*** guidanse ***/
+}
+
+.button.button01 {
+  background-color: #92d050;
+  border: none;
+  border-radius: 50px;
+  width: 10%;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.button.button01:hover {
+  color: #ffffff;
+  border: none;
+}
+
+.button.button02 {
+  border: none;
+  border-radius: 10px;
+  background-color: #ffad4d;
+  width: 80%;
+  font-size: 1.5rem;
+  background-image: url(../img/icon/button_right_arrow.png);
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+
+.button.button02:hover {
+  color: #ffffff;
+  border: none;
+}
+
+/*##############################################################################*
+*### components
+*##############################################################################*/
+/*==========================================================*
+ *=== accordion
  *==========================================================*/
 .accordion-list-group .accordion-toggle {
   position: relative;
@@ -160,16 +204,24 @@ a:hover {
   cursor: pointer;
   text-align: center;
   color: #ffffff;
-  padding: 1.125rem;
   font-weight: 600;
   background-image: url(../img/icon/accordion_up_arrow.png);
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 1.25rem;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .accordion-list-group .accordion-toggle {
+    font-size: 0.75rem;
+    padding: 0.875rem;
+  }
 }
 
 .accordion-list-group .accordion-toggle.accordion-toggle-style1 {
-  background-color: #fc9c34;
+  background-color: #ffad4d;
 }
 
 .accordion-list-group .accordion-toggle.accordion-toggle-style2 {
@@ -182,14 +234,23 @@ a:hover {
 
 .accordion-list-group .accordion-toggle .accordion-rate {
   background-image: url(../img/common/star_base.png);
-  display: inline-block;
+  background-size: 350px 20px;
   background-repeat: no-repeat;
+  display: inline-block;
   height: 20px;
-  width: 67px;
+  width: 72px;
   position: absolute;
-  top: 20px;
-  left: 10px;
-  background-size: 340px 15px;
+  top: 13px;
+  left: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .accordion-list-group .accordion-toggle .accordion-rate {
+    background-size: 350px 15px;
+    position: absolute;
+    top: 11px;
+    left: 5px;
+  }
 }
 
 .accordion-list-group .accordion-toggle .accordion-rate.is-rate-00 {
@@ -218,9 +279,14 @@ a:hover {
   font-weight: 700;
   cursor: pointer;
   margin-right: 1.5rem;
-  /* ボタンスタイル削除 */
   border: none;
   background-color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .accordion-list-group .accordion-list-group-btn1 {
+    font-size: 0.75rem;
+  }
 }
 
 .accordion-list-group .accordion-list {
@@ -231,18 +297,25 @@ a:hover {
   width: 100%;
   padding: 0.625rem;
   cursor: pointer;
-  background-image: url(../img/icon/accordion_right_arrow.png);
+  background-image: url(../img/icon/button_right_arrow.png);
   background-repeat: no-repeat;
   background-position: right 0.625rem center;
   background-size: 1.25rem;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .accordion-list-group .accordion-list li {
+    font-size: 0.75rem;
+  }
 }
 
 .accordion-list-group .accordion-list li:not(:last-child) {
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid #dddddd;
 }
 
 /*==========================================================*
-*=== ナビゲーション
+*=== navigation
 *==========================================================*/
 .nav {
   display: -webkit-box;
@@ -258,7 +331,13 @@ a:hover {
   justify-content: space-between;
   -webkit-justify-content: space-between;
   overflow: hidden;
-  height: 60px;
+  height: 40px;
+}
+
+@media screen and (max-width: 1023px) {
+  .nav {
+    height: 50px;
+  }
 }
 
 .nav-shadow {
@@ -285,7 +364,7 @@ a:hover {
   padding-top: 10px;
 }
 
-/* メニューモーダル */
+/* modal */
 .nav-modal-card-head {
   background-color: #29586d;
   padding: 0.625rem;
@@ -306,7 +385,7 @@ a:hover {
 .nav-modal-card-body li {
   text-align: left;
   line-height: 2.5rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .nav-modal-card-body li a {
@@ -321,12 +400,10 @@ a:hover {
 *==========================================================*/
 /*** Content ***/
 .swiper-slide {
-  min-height: 100vh;
   text-align: center;
 }
 
 .swiper-slide .swiper-slide-head {
-  min-height: 25vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -365,7 +442,6 @@ a:hover {
 
 .swiper-slide .swiper-slide-body {
   padding: 10px;
-  min-height: 25vh;
   text-align: left;
   font-size: 1.5rem;
 }
@@ -376,20 +452,6 @@ a:hover {
 
 .swiper-slide .swiper-slide-body p {
   padding: 0 0 10px 0;
-}
-
-.swiper-slide .swiper-slide-foot .button.swiper-slide-foot-btn-1 {
-  background-color: #92d050;
-  color: #ffffff;
-  border-radius: 50px;
-  border: none;
-  width: 100px;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.swiper-slide .swiper-slide-foot .button.swiper-slide-foot-btn-1:hover {
-  border: none;
 }
 
 .swiper-slide .swiper-slide-foot .pointer {
@@ -411,7 +473,7 @@ a:hover {
   background: #007aff;
 }
 
-.swiper-container-horizontal.swiper-course > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-container-horizontal.swiper-guidanse > .swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-container-horizontal.swiper-course > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-container-horizontal.swiper-course > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 10px;
   width: 12px;
   height: 12px;
@@ -419,13 +481,8 @@ a:hover {
   opacity: 1;
 }
 
-.swiper-container-horizontal.swiper-course > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active, .swiper-container-horizontal.swiper-guidanse > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.swiper-container-horizontal.swiper-course > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active, .swiper-container-horizontal.swiper-course > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #aaa29f;
-}
-
-/*** guidanse ***/
-.swiper-container.swiper-guidanse.is-bg-moodmeter {
-  background-image: url("../img/common/bg_moodmeter.png");
 }
 
 /*** skip ***/
@@ -465,32 +522,36 @@ a:hover {
   background-image: url(../img/icon/hatena.png);
   background-repeat: no-repeat;
   background-position: center right;
+  background-size: 30px;
 }
 
 .list-item01 .list-item01-content {
   display: block;
-  padding: 2rem 0 2rem 5rem;
+  padding: 1.5rem 0 1.5rem 5rem;
   font-size: 1.25rem;
   font-weight: 600;
   color: #68615e;
 }
 
 .list-item01 .list-item01-content.is-bg-bloosm01 {
-  background-image: url("../img/icon/list_pink01.png");
+  background-image: url(../img/icon/list_pink01.png);
   background-position: left center;
   background-repeat: no-repeat;
+  background-size: 40px;
 }
 
 .list-item01 .list-item01-content.is-bg-bloosm02 {
-  background-image: url("../img/icon/list_pink02.png");
+  background-image: url(../img/icon/list_pink02.png);
   background-position: left center;
   background-repeat: no-repeat;
+  background-size: 40px;
 }
 
 .list-item01 .list-item01-content.is-bg-bloosm03 {
-  background-image: url("../img/icon/list_pink03.png");
+  background-image: url(../img/icon/list_pink03.png);
   background-position: left center;
   background-repeat: no-repeat;
+  background-size: 40px;
 }
 
 .list-item01 .pointer {
@@ -500,7 +561,7 @@ a:hover {
 }
 
 /*##############################################################################*
-*### レイアウト(footer,header,contentsなどの変更)
+*### layout
 *##############################################################################*/
 /*==========================================================*
 *=== footer
@@ -509,12 +570,12 @@ a:hover {
   border-top: 1px solid #d7cbc6;
   background-image: #ffffff;
   /* Bulmaスタイル更新 */
-  padding: 3rem 0;
+  padding: 1.5rem 0;
   background-color: transparent;
 }
 
 .footer .footer-title {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .footer .footer-copyright {
@@ -536,10 +597,10 @@ a:hover {
 }
 
 /*##############################################################################*
-*### 各ページ(ページ独自のスタイル)
+*### Unique Page
 *##############################################################################*/
 /*==========================================================*
-*=== イントロダクション
+*=== Introduction
 *==========================================================*/
 .intro {
   color: #ffffff;
@@ -550,7 +611,7 @@ a:hover {
 }
 
 .intro.is-bg-orange {
-  background-color: #fc9c34;
+  background-color: #ffad4d;
 }
 
 .intro .title {
@@ -558,41 +619,123 @@ a:hover {
 }
 
 /*==========================================================*
-*=== トップページ
+*=== Top
 *==========================================================*/
 .top-message {
-  padding: 0.5rem;
-  margin: 0 0 2rem 0;
   background-color: #faf8f7;
   border-radius: 3px;
   font-weight: 700;
-}
-
-.top-message p {
-  background-image: url(../img/icon/news.png);
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 67px 50px;
-  padding: 1rem 0 0.875rem 75px;
   color: #68615e;
   font-size: 1rem;
+  margin: 0 0 1rem 0;
+  padding: 0.75rem 0 0.675rem 5rem;
+}
+
+@media screen and (max-width: 399px) {
+  .top-message {
+    font-size: 0.75rem;
+    padding: 0.25rem;
+    margin: 0 0 0.75rem 0;
+  }
+}
+
+.top-message.is-bg-img-news {
+  background-image: url(../img/icon/news.png);
+  background-repeat: no-repeat;
+  background-position: left 7px center;
+  background-size: 60px;
+}
+
+@media screen and (max-width: 399px) {
+  .top-message.is-bg-img-news {
+    background-size: 45px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .top-message .top-message-text {
+    padding: 0.5rem 0.5rem 0.675rem 4rem;
+  }
 }
 
 .columns.top-content {
   color: #68615e;
-  margin: 0 0 2rem 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 399px) {
+  .columns.top-content {
+    margin: 0 0.75rem 0 0.75rem;
+  }
 }
 
 .columns.top-content .column {
   position: relative;
 }
 
+@media screen and (max-width: 399px) {
+  .columns.top-content .column {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+}
+
+.columns.top-content .column a {
+  display: block;
+}
+
+@media screen and (max-width: 399px) {
+  .columns.top-content .column img {
+    width: 150px;
+  }
+}
+
 .columns.top-content .column .pointer {
   position: absolute;
-  right: 10%;
+  right: 20%;
   bottom: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .columns.top-content .column .pointer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
 /*==========================================================*
-*=== ガイダンス
+*=== cource
 *==========================================================*/
+.course {
+  color: #ffffff;
+}
+
+.course .course-head {
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.course .course-head.is-bg-img-pink01 {
+  background-image: url(../img/common/moodmeter_banner_bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-repeat: center;
+}
+
+.course .course-body .course-body-image01 {
+  text-align: center;
+  padding: 1.5rem 0 0 0;
+}
+
+.course .sub-title {
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.course .is-bg-moodmeter {
+  background-image: url(../img/common/bg_moodmeter.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}

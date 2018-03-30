@@ -1,13 +1,16 @@
 @charset "utf-8";
 
 /*==========================================================*
-*=== ナビゲーション
+*=== navigation
 *==========================================================*/
 .nav {
 	@include flex-center;
 	@include justify-content(space-between);
 	overflow: hidden;
-	height: 60px;
+	height: 40px;
+	@include mq-down(lg){
+		height: 50px;
+	}
 }
 
 .nav-shadow {
@@ -33,7 +36,7 @@
 	}
 }
 
-/* メニューモーダル */
+/* modal */
 .nav-modal-card-head {
 	background-color: $color-deepblue;
 	padding: 0.625rem;

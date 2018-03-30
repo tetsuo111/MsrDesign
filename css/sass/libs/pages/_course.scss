@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/*==========================================================*
+*=== cource
+*==========================================================*/
+.course{
+	color: $color-white;
+	.course-head{
+		padding: 1.5rem 0;
+		text-align: center;
+		&.is-bg-img-pink01{
+			background-image: $bg-img-pink01;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			background-repeat: center;
+		}
+		
+	}
+	.course-body{
+		.course-body-image01{
+			text-align: center;
+			padding: 1.5rem 0 0 0;
+		}
+	}
+	.sub-title{
+		font-weight: $weight-semibold;
+		text-align: center;
+		padding-bottom: 1rem;
+		font-size: 1.5rem;
+	}
+	.is-bg-moodmeter{
+		background-image: $bg-img-moodmeter;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+}
+

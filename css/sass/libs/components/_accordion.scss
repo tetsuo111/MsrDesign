@@ -1,25 +1,31 @@
 @charset "utf-8";
 
 /*##############################################################################*
-*### コンポーネント
+*### components
 *##############################################################################*/
 
 /*==========================================================*
- *=== アコーディオン
+ *=== accordion
  *==========================================================*/
 .accordion-list-group {
 	.accordion-toggle {
 		position: relative;
-		border-radius: 3px;
+		@include border-radius(3px);
 		cursor: pointer;
 		text-align: center;
 		color: $color-white;
-		padding: 1.125rem;
+		
 		font-weight: $weight-semibold;
-		background-image: $bg-img-accordion-up;
+		background-image: url(../img/icon/accordion_up_arrow.png);
 		background-repeat: no-repeat;
 		background-position: right 10px center;
 		background-size: 1.25rem;
+		font-size: $font-size-6;
+		padding: 1rem;
+		@include mq-down(md){
+			font-size: $font-size-7;
+			padding: 0.875rem;
+		}
 		&.accordion-toggle-style1 {
 			background-color: $color-orange;
 		}
@@ -31,14 +37,20 @@
 		}
 		.accordion-rate{
 			background-image: url(../img/common/star_base.png);
-			display: inline-block;
+			background-size: 350px 20px;
 			background-repeat: no-repeat;
+			display: inline-block;
 			height: 20px;
-			width: 67px;
+			width: 72px;
 			position: absolute;
-			top: 20px;
-			left: 10px;
-			background-size: 340px 15px;
+			top: 13px;
+			left: 25px;
+			@include mq-down(md){
+				background-size: 350px 15px;
+				position: absolute;
+				top: 11px;
+				left: 5px;
+			}
 			&.is-rate-00{
 				@include accordion-rate(0);
 			}
@@ -58,13 +70,16 @@
 	}
 	.accordion-list-group-btn1 {
 		text-align: left;
-		font-size: 1rem;
+		
+		font-size: $font-size-6;
 		font-weight: $weight-bold;
 		cursor: pointer;
 		margin-right: 1.5rem;
-		/* ボタンスタイル削除 */
 		border: none;
 		background-color: $color-white;
+		@include mq-down(){
+			font-size: $font-size-7;
+		}
 	}
 	.accordion-list {
 		display: none;
@@ -76,6 +91,11 @@
 			background-repeat: no-repeat;
 			background-position: right 0.625rem center;
 			background-size: 1.25rem;
+			
+			font-size: $font-size-6;
+			@include mq-down(md){
+				font-size: $font-size-7;
+			}
 			&:not(:last-child) {
 				border-bottom: 2px solid $color-grey;
 			}

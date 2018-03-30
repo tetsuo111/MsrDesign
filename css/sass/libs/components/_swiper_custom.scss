@@ -6,10 +6,8 @@
 
 /*** Content ***/
 .swiper-slide{
-	min-height: 100vh;
 	text-align: center;
 	.swiper-slide-head{
-		min-height: 25vh;
 		@include flex-center;
 		@include flex-vertical;
 		@include justify-content(center);
@@ -29,7 +27,6 @@
 	}
 	.swiper-slide-body{
 		padding: 10px;
-		min-height: 25vh;
 		text-align: left;
 		font-size: $font-size-4;
 		img{
@@ -40,20 +37,6 @@
 		}
 	}
 	.swiper-slide-foot{
-		.button{
-			&.swiper-slide-foot-btn-1{
-				background-color:$color-palegreen;
-				color: $color-white;
-				@include border-radius(50px);
-				border: none;
-				width: 100px;
-				font-size: $font-size-4;
-				font-weight: $weight-semibold;
-				&:hover{
-					border: none;
-				}
-			}
-		}
 		.pointer{
 			position: relative;
 			bottom: 20px;
@@ -74,7 +57,7 @@
 		}
 	}
 }
-.swiper-container-horizontal.swiper-course>.swiper-pagination-bullets,.swiper-container-horizontal.swiper-guidanse>.swiper-pagination-bullets{
+.swiper-container-horizontal.swiper-course>.swiper-pagination-bullets,.swiper-container-horizontal.swiper-course>.swiper-pagination-bullets{
 	.swiper-pagination-bullet{
 		margin: 0 10px;
 		width: 12px;
@@ -87,16 +70,6 @@
 	}
 }
 
-/*** guidanse ***/
-.swiper-container.swiper-guidanse{
-	&.is-bg-moodmeter{
-		background-image: $bg-img-moodmeter;
-	}
-	&.is-bg-exercise{}
-	&.is-bg-supplement{}
-	&.is-bg-learning{}
-	&.is-bg-question{}
-}
 /*** skip ***/
 .swiper-skip {
 	position: absolute;

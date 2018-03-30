@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /*##############################################################################*
-*### レイアウト(footer,header,contentsなどの変更)
+*### layout
 *##############################################################################*/
 /*==========================================================*
 *=== footer
@@ -10,10 +10,10 @@
 	border-top: 1px solid $footer-border-color;
 	background-image: $color-white;
 	/* Bulmaスタイル更新 */
-	padding: 3rem 0 ;
+	padding: 1.5rem 0 ;
 	background-color: transparent;
 	.footer-title {
-		padding-bottom: 2rem;
+		padding-bottom: 1rem;
 	}
 	.footer-copyright {
 		font-size: 0.75rem;
@@ -27,7 +27,7 @@
 		display: inline;
 		padding: 0 0.75rem;
 		a {
-			color: $footer-list-color;
+			color: $color-base-text;
 		}
 	}
 }

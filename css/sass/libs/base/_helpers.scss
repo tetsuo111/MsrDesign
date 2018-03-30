@@ -4,7 +4,7 @@ $num : 10;
 $base_rem : 0.625;
 
 /*==========================================================*
-*=== プロパティ追加(中央寄せなど)
+*=== property
 *==========================================================*/
 @for $i from 1 through 10 {
 	.is-adjusthight-#{$i * $num}{
@@ -15,7 +15,7 @@ $base_rem : 0.625;
 }
 
 .logo{
-	height: 2.1875rem
+	height: 1.5rem
 }
 
 .pointer{
@@ -47,9 +47,11 @@ $base_rem : 0.625;
 	}
 }
 
-.course-mask{
+/***  ban ***/
+.mask{
 	opacity: 0.4;
 	a{
 		pointer-events: none;
 	}
 }
+

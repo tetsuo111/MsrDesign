@@ -7,7 +7,7 @@
 .list-item01 {
 	position: relative;
 	cursor: pointer;
-	color: $color-list-text;
+	color: $color-base-text;
 	&:not(:last-child){
 		border-bottom: 1px solid $color-list-border;
 	}
@@ -15,27 +15,31 @@
 		background-image: $bg-img-hatena;
 		background-repeat: no-repeat;
 		background-position: center right;
+		background-size: 30px;
 	}
 	.list-item01-content{
 		display: block;
-		padding: 2rem 0 2rem 5rem;
-		font-size: 1.25rem;
+		padding: 1.5rem 0 1.5rem 5rem;
+		font-size: $font-size-5;
 		font-weight: $weight-semibold;
-		color: $color-list-text;
+		color: $color-base-text;
 		&.is-bg-bloosm01{
 			background-image: $bg-img-bloosm01;
 			background-position: left center;
 			background-repeat: no-repeat;
+			background-size: 40px;
 		}
 		&.is-bg-bloosm02{
 			background-image: $bg-img-bloosm02;
 			background-position: left center;
 			background-repeat: no-repeat;
+			background-size: 40px;
 		}
 		&.is-bg-bloosm03{
 			background-image: $bg-img-bloosm03;
 			background-position: left center;
 			background-repeat: no-repeat;
+			background-size: 40px;
 		}
 	}
 	.pointer{
