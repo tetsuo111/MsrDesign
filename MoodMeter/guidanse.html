@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="../css/wv_style.css">
 	</head>
 	<body>
-		<div class="course container is-fullhd">
+		<div class="container course">
 			<header>
 				<nav class="nav nav-shadow">
 					<div class="nav-left-item"></div>
@@ -53,22 +53,22 @@
 				</nav>
 			</header>
 			<div class="swiper-container swiper-course is-bg-moodmeter">
-				<div class="swiper-wrapper">
+				<div class="swiper-wrapper is-adjusthight-90">
 					<section class="swiper-slide">
-						<div class="swiper-slide-head is-adjusthight-30">
+						<div class="swiper-slide-head course-head">
 							<figure>
-								<img src="../img/common/bg_moodmeter03.png" alt="イントロダクションロゴ" width="140">
+								<img src="../img/common/bg_moodmeter03.png" alt="イントロダクションロゴ" width="140" class="course-head-guidanse-img01">
 							</figure>
 							<figure>
-								<img src="../img/common/bg_moodmeter02.png" alt="moodmeter" width="300">
+								<img src="../img/common/bg_moodmeter02.png" alt="moodmeter" width="300" class="course-head-guidanse-img02">
 							</figure>
 						</div>
-						<div class="swiper-slide-body is-adjusthight-40">
+						<div class="swiper-slide-body">
 							<h2 class="sub-title">自分の感じ方</h2>
-							<p>まず、トレーニングを始める前に、自分の「感じ方」特性を測定してみましょう。この「感じ方」測定を変えていくのが、このトレーニングの目的です。
+							<p class="course-text">まず、トレーニングを始める前に、自分の「感じ方」特性を測定してみましょう。この「感じ方」測定を変えていくのが、このトレーニングの目的です。
 							</p>
 						</div>
-						<div class="swiper-slide-foot is-adjusthight-30"></div>
+						<div class="swiper-slide-foot"></div>
 						<div class="swiper-skip">
 							<a href="../Top/top.html">Skip</a>
 						</div>
@@ -133,27 +133,31 @@
 		<script type="text/javascript" src="../js/swiper.min.js"></script>
 		<script type="text/javascript" src="../js/common.js"></script>
 		<script type="text/javascript">
-			var swiper = new Swiper('.swiper-container', {
-				autoHeight: true,
-				speed: 1000,
-				mousewheelControl: true,
-				pagination: {
-					el: '.swiper-pagination',
-					clickable: true,
-				},
-				breakpoints: {
-					767: {
-						slidesPerView: 1,
-						spaceBetween: 0
+			var swiperEndAction = function(){
+				console.log("hello")
+			}
+			window.addEventListener('DOMContentLoaded', function(){
+				var mySwiper = new Swiper('.course .swiper-container', {
+					speed: 1000,
+					mousewheelControl: true,
+					pagination: '.swiper-pagination',
+					paginationClickable: true,
+					breakpoints: {
+						767: {
+							slidesPerView: 1,
+							spaceBetween: 0
+						}
+					},
+					queueEndCallbacks: true,
+					onReachEnd: function(mySwiper) {
+						mySwiper.disableMousewheelControl();
+						mySwiper.disableTouchControl();
+					},
+					onInit: function(i) {
+						swiperEndAction();
 					}
-				},
-				queueEndCallbacks: true,
-				onReachEnd: function(){
-					swiper.disableMousewheelControl();
-					swiper.disableTouchControl();
-				}
+				});
 			});
-
 		</script>
 	</body>
 </html>

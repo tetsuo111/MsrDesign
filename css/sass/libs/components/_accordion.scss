@@ -43,12 +43,12 @@
 			height: 20px;
 			width: 72px;
 			position: absolute;
-			top: 13px;
+			top: 17px;
 			left: 25px;
 			@include mq-down(md){
 				background-size: 350px 15px;
 				position: absolute;
-				top: 11px;
+				top: 13px;
 				left: 5px;
 			}
 			&.is-rate-00{

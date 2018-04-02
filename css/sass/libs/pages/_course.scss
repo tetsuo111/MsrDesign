@@ -5,33 +5,71 @@
 *==========================================================*/
 .course{
 	color: $color-white;
-	.course-head{
-		padding: 1.5rem 0;
-		text-align: center;
-		&.is-bg-img-pink01{
-			background-image: $bg-img-pink01;
-			background-repeat: no-repeat;
-			background-size: 100% 100%;
-			background-repeat: center;
-		}
-		
-	}
-	.course-body{
-		.course-body-image01{
-			text-align: center;
-			padding: 1.5rem 0 0 0;
-		}
-	}
 	.sub-title{
 		font-weight: $weight-semibold;
 		text-align: center;
-		padding-bottom: 1rem;
+		padding-bottom: 0 0 1rem 0;
+		@include mq-down(){
+			padding-bottom: 0 0 0.25rem 0;
+		}
 		font-size: 1.5rem;
+		@include mq-down{
+			font-size: 1.25rem;
+		}
+	}
+	.course-text{
+		font-size: 1.25rem;
+		@include mq-down{
+			font-size: 1rem;
+		}
 	}
 	.is-bg-moodmeter{
 		background-image: $bg-img-moodmeter;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
+		background-position: center;
+	}
+	.course-head{
+		padding: 1.5rem 0;
+		text-align: center;
+		@include mq-down(){
+			padding: 0.5rem 0;
+		}
+		&.is-bg-img-pink01{
+			background-image: $bg-img-pink01;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			background-position: center;
+		}
+		/***プログラムメニューのバナー画像 ***/
+		.course-head-banner{
+			width: 250px;
+			@include mq-down(){
+				width: 190px;
+			}
+		}
+		/*** ガイダンスのhead部分の画像 ***/
+		.course-head-guidanse-img01{
+			@include mq-down(){
+				width: 100px;
+				padding: 0.5rem;
+			}
+		}
+		.course-head-guidanse-img02{
+			@include mq-down(){
+				width: 240px;
+				padding: 0.5rem;
+			}
+		}
+	}
+	.course-body{
+		@include mq-down(){
+			padding: 2rem 1.5rem;
+		}
+		.course-body-image01{
+			text-align: center;
+			padding: 1.5rem 0 0 0;
+		}
 	}
 }
 

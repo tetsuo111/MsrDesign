@@ -240,7 +240,7 @@ a:hover {
   height: 20px;
   width: 72px;
   position: absolute;
-  top: 13px;
+  top: 17px;
   left: 25px;
 }
 
@@ -248,7 +248,7 @@ a:hover {
   .accordion-list-group .accordion-toggle .accordion-rate {
     background-size: 350px 15px;
     position: absolute;
-    top: 11px;
+    top: 13px;
     left: 5px;
   }
 }
@@ -398,6 +398,7 @@ a:hover {
 /*==========================================================*
 *=== Swiper Custom
 *==========================================================*/
+/*** wrapper ***/
 /*** Content ***/
 .swiper-slide {
   text-align: center;
@@ -436,22 +437,12 @@ a:hover {
   padding-left: 70px;
 }
 
-.swiper-slide .swiper-slide-head figure {
-  padding: 20px;
-}
-
 .swiper-slide .swiper-slide-body {
-  padding: 10px;
   text-align: left;
-  font-size: 1.5rem;
 }
 
 .swiper-slide .swiper-slide-body img {
   vertical-align: middle;
-}
-
-.swiper-slide .swiper-slide-body p {
-  padding: 0 0 10px 0;
 }
 
 .swiper-slide .swiper-slide-foot .pointer {
@@ -528,7 +519,7 @@ a:hover {
 .list-item01 .list-item01-content {
   display: block;
   padding: 1.5rem 0 1.5rem 5rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #68615e;
 }
@@ -646,13 +637,13 @@ a:hover {
   background-size: 60px;
 }
 
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 768px) {
   .top-message.is-bg-img-news {
     background-size: 45px;
   }
 }
 
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 768px) {
   .top-message .top-message-text {
     padding: 0.5rem 0.5rem 0.675rem 4rem;
   }
@@ -663,7 +654,7 @@ a:hover {
   text-align: center;
 }
 
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 768px) {
   .columns.top-content {
     margin: 0 0.75rem 0 0.75rem;
   }
@@ -673,7 +664,7 @@ a:hover {
   position: relative;
 }
 
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 768px) {
   .columns.top-content .column {
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   }
@@ -683,7 +674,7 @@ a:hover {
   display: block;
 }
 
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 768px) {
   .columns.top-content .column img {
     width: 150px;
   }
@@ -710,32 +701,93 @@ a:hover {
   color: #ffffff;
 }
 
-.course .course-head {
-  padding: 1.5rem 0;
-  text-align: center;
-}
-
-.course .course-head.is-bg-img-pink01 {
-  background-image: url(../img/common/moodmeter_banner_bg.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-repeat: center;
-}
-
-.course .course-body .course-body-image01 {
-  text-align: center;
-  padding: 1.5rem 0 0 0;
-}
-
 .course .sub-title {
   font-weight: 600;
   text-align: center;
-  padding-bottom: 1rem;
+  padding-bottom: 0 0 1rem 0;
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .course .sub-title {
+    padding-bottom: 0 0 0.25rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .course .sub-title {
+    font-size: 1.25rem;
+  }
+}
+
+.course .course-text {
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .course .course-text {
+    font-size: 1rem;
+  }
 }
 
 .course .is-bg-moodmeter {
   background-image: url(../img/common/bg_moodmeter.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  background-position: center;
+}
+
+.course .course-head {
+  padding: 1.5rem 0;
+  text-align: center;
+  /***プログラムメニューのバナー画像 ***/
+  /*** ガイダンスのhead部分の画像 ***/
+}
+
+@media screen and (max-width: 768px) {
+  .course .course-head {
+    padding: 0.5rem 0;
+  }
+}
+
+.course .course-head.is-bg-img-pink01 {
+  background-image: url(../img/common/moodmeter_banner_bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.course .course-head .course-head-banner {
+  width: 250px;
+}
+
+@media screen and (max-width: 768px) {
+  .course .course-head .course-head-banner {
+    width: 190px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .course .course-head .course-head-guidanse-img01 {
+    width: 100px;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .course .course-head .course-head-guidanse-img02 {
+    width: 240px;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .course .course-body {
+    padding: 2rem 1.5rem;
+  }
+}
+
+.course .course-body .course-body-image01 {
+  text-align: center;
+  padding: 1.5rem 0 0 0;
 }

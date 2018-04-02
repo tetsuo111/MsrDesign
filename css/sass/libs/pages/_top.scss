@@ -21,12 +21,12 @@
 		background-repeat: no-repeat;
 		background-position: left 7px center;
 		background-size: 60px;
-		@include mq-down(sm){
+		@include mq-down(){
 			background-size: 45px;
 		}
 	}
 	.top-message-text{
-		@include mq-down(sm){
+		@include mq-down(){
 			padding: 0.5rem 0.5rem 0.675rem 4rem;
 		}
 	}
@@ -35,19 +35,19 @@
 .columns.top-content{
 	color: $color-base-text;
 	text-align: center;
-	@include mq-down(sm){
+	@include mq-down(){
 		margin: 0 0.75rem 0 0.75rem;
 	}
 	.column{
 		position: relative;
-		@include mq-down(sm){
+		@include mq-down(){
 			padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 		}
 		a{
 			display: block;
 		}
 		img{
-			@include mq-down(sm){
+			@include mq-down(){
 				width: 150px;
 			}
 		}

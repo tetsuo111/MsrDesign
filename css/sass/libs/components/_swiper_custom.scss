@@ -3,7 +3,9 @@
 /*==========================================================*
 *=== Swiper Custom
 *==========================================================*/
-
+/*** wrapper ***/
+.swiper-wrapper{
+}
 /*** Content ***/
 .swiper-slide{
 	text-align: center;
@@ -21,19 +23,11 @@
 				padding-left: 70px;
 			}
 		}
-		figure{
-			padding: 20px;
-		}
 	}
 	.swiper-slide-body{
-		padding: 10px;
 		text-align: left;
-		font-size: $font-size-4;
 		img{
 			vertical-align: middle;
-		}
-		p{
-			padding: 0 0 10px 0;
 		}
 	}
 	.swiper-slide-foot{
