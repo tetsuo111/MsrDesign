@@ -1,163 +1,140 @@
+
+
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-		<title>Swiper demo</title>
-		<link rel="stylesheet" href="../css/bulma.min.css">
-		<link rel="stylesheet" type="text/css" href="../css/ionicons.min.css"/>
-		<link rel="stylesheet" href="../css/swiper.min.css">
-		<link rel="stylesheet" href="../css/wv_style.css">
-	</head>
-	<body>
-		<div class="container course">
-			<header>
-				<nav class="nav nav-shadow">
-					<div class="nav-left-item"></div>
-					<div class="nav-center-item">
-						<a href="/Top/top.html">
-							<img src="../img/common/logo.png" class="logo">
-						</a>
-					</div>
-					<div class="nav-right-item">
-						<a href="#" class="nav-item modal-button" data-target="#nav-modal-menu">
-							<img src="../img/icon/header_menu.png" width="30" height="23" alt="menu">
-						</a>
-					</div>
-					<div id="nav-modal-menu" class="modal">
-						<div class="modal-background"></div>
-						<div class="modal-card">
-							<header class="modal-card-head nav-modal-card-head">
-								<p class="modal-card-title nav-modal-card-title">メニュー</p>
-								<button class="delete nav-btn-delete"></button>
-							</header>
-							<section class="modal-card-body nav-modal-card-body">
-								<ul>
-									<li><a href="/wb/Top/">HOME</a></li>
-									<li><a href="/wb/Assessment/">ストレスの原因を知る</a></li>
-									<li><a href="/wb">レジリエンスUP</a></li><li><a href="/wb/MyData/pastel_list">マイ黄金律</a></li>
-									<li><a href="/wb/MyData/face_list">マイスマイリーフェイス</a></li>
-									<li><a href="/wb/History/">記録データ</a></li>
-									<li><a href="#">このアプリについて</a></li>
-									<li><a href="#">チュートリアル</a></li>
-									<li><a href="/wb/Lemon/switch">レモンスイッチ</a></li>
-									<li><a href="#">専門家に相談したい</a></li>
-									<li><a href="#">お知らせ</a></li>
-									<li><a href="#">アプリの設定</a></li>
-									<li><a href="#">ユーザー登録情報</a></li>
-									<li><a href="/wb/Users/logout">ログアウト</a></li>
-								</ul>
-							</section>
-						</div>
-					</div>
-				</nav>
-			</header>
-			<div class="swiper-container swiper-course is-bg-moodmeter">
-				<div class="swiper-wrapper is-adjusthight-90">
-					<section class="swiper-slide">
-						<div class="swiper-slide-head course-head">
-							<figure>
-								<img src="../img/common/bg_moodmeter03.png" alt="イントロダクションロゴ" width="140" class="course-head-guidanse-img01">
-							</figure>
-							<figure>
-								<img src="../img/common/bg_moodmeter02.png" alt="moodmeter" width="300" class="course-head-guidanse-img02">
-							</figure>
-						</div>
-						<div class="swiper-slide-body">
-							<h2 class="sub-title">自分の感じ方</h2>
-							<p class="course-text">まず、トレーニングを始める前に、自分の「感じ方」特性を測定してみましょう。この「感じ方」測定を変えていくのが、このトレーニングの目的です。
-							</p>
-						</div>
-						<div class="swiper-slide-foot"></div>
-						<div class="swiper-skip">
-							<a href="../Top/top.html">Skip</a>
-						</div>
-					</section>
-					<section class="swiper-slide">
-						<div class="swiper-slide-head is-adjusthight-30">
-							<figure>
-								<img src="../img/common/bg_moodmeter03.png" alt="イントロダクションロゴ" width="140">
-							</figure>
-							<figure>
-								<img src="../img/common/bg_moodmeter02.png" alt="moodmeter" width="300">
-							</figure>
-						</div>
-						<div class="swiper-slide-body is-adjusthight-70 course-body">
-							<p>測定結果は、マイデータでいつでも見ることができます。</p>
-							<figure class="course-body-image01">
-								<img src="../img/Top/mydata.png" alt="moodmeter" width="200">
-							</figure>
-						</div>
-						<div class="swiper-slide-foot">
-						</div>
-						<div class="swiper-skip">
-							<a href="../Top/top.html">Skip</a>
-						</div>
-					</section>
-					<section class="swiper-slide">
-						<div class="swiper-slide-head is-adjusthight-30">
-							<figure>
-								<img src="../img/common/bg_moodmeter03.png" alt="イントロダクションロゴ" width="140">
-							</figure>
-							<figure>
-								<img src="../img/common/bg_moodmeter02.png" alt="moodmeter" width="300">
-							</figure>
-						</div>
-						<div class="swiper-slide-body is-adjusthight-40">
-							<p>トレーニングの最後にもう一度測定します。その時には、また合図します。</p>
-							<p>では、測定してみましょう。</p>
-						</div>
-						<div class="swiper-slide-foot is-adjusthight-30">
-							<a href="../index.html" class="button button02">測定</a>
-							<span class="pointer is-pointer-size50"></span>
-						</div>
-					</section>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<title>Swiper サンプル04</title>
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<link rel="stylesheet" href="../css/bulma.min.css">
+	<link rel="stylesheet" href="../css/swiper.min.css">
+	<link rel="stylesheet" href="../css/wv_style.css">
+</head>
+<body>
+	<div class="container course">
+		<header>
+			<nav class="nav nav-shadow">
+				<div class="nav-left-item"></div>
+				<div class="nav-center-item">
+					<a href="/Top/top.html">
+						<img src="../img/common/logo.png" class="logo">
+					</a>
 				</div>
-				<!-- Add Pagination -->
-				<div class="swiper-pagination"></div>
+				<div class="nav-right-item">
+					<a href="#" class="nav-item modal-button" data-target="#nav-modal-menu">
+						<img src="../img/icon/header_menu.png" width="30" height="23" alt="menu">
+					</a>
+				</div>
+				<div id="nav-modal-menu" class="modal">
+					<div class="modal-background"></div>
+					<div class="modal-card">
+						<header class="modal-card-head nav-modal-card-head">
+							<p class="modal-card-title nav-modal-card-title">メニュー</p>
+							<button class="delete nav-btn-delete"></button>
+						</header>
+						<section class="modal-card-body nav-modal-card-body">
+							<ul>
+								<li><a href="/wb/Top/">HOME</a></li>
+								<li><a href="/wb/Assessment/">ストレスの原因を知る</a></li>
+								<li><a href="/wb">レジリエンスUP</a></li><li><a href="/wb/MyData/pastel_list">マイ黄金律</a></li>
+								<li><a href="/wb/MyData/face_list">マイスマイリーフェイス</a></li>
+								<li><a href="/wb/History/">記録データ</a></li>
+								<li><a href="#">このアプリについて</a></li>
+								<li><a href="#">チュートリアル</a></li>
+								<li><a href="/wb/Lemon/switch">レモンスイッチ</a></li>
+								<li><a href="#">専門家に相談したい</a></li>
+								<li><a href="#">お知らせ</a></li>
+								<li><a href="#">アプリの設定</a></li>
+								<li><a href="#">ユーザー登録情報</a></li>
+								<li><a href="/wb/Users/logout">ログアウト</a></li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class="swiper-container swiper-course is-bg-moodmeter">
+			<div class="swiper-wrapper is-adjusthight-90">
+				<section class="swiper-slide">
+					<div class="swiper-slide-head course-head">
+						<figure>
+							<img src="../img/common/bg_moodmeter03.png" alt="イントロダクションロゴ" width="140" class="course-head-guidanse-img01">
+						</figure>
+						<figure>
+							<img src="../img/common/bg_moodmeter02.png" alt="moodmeter" width="300" class="course-head-guidanse-img02">
+						</figure>
+					</div>
+					<div class="swiper-slide-body">
+						<h2 class="sub-title">自分の感じ方</h2>
+						<p class="course-text">まず、トレーニングを始める前に、自分の「感じ方」特性を測定してみましょう。この「感じ方」測定を変えていくのが、このトレーニングの目的です。
+						</p>
+					</div>
+					<div class="swiper-slide-foot"></div>
+				</section>
+				<section class="swiper-slide">
+					<div class="swiper-slide-head is-adjusthight-30">
+						<figure>
+							<img src="../img/common/bg_moodmeter03.png" alt="イントロダクションロゴ" width="140">
+						</figure>
+						<figure>
+							<img src="../img/common/bg_moodmeter02.png" alt="moodmeter" width="300">
+						</figure>
+					</div>
+					<div class="swiper-slide-body is-adjusthight-70 course-body">
+						<p>測定結果は、マイデータでいつでも見ることができます。</p>
+						<figure class="course-body-image01">
+							<img src="../img/Top/mydata.png" alt="moodmeter" width="200">
+						</figure>
+					</div>
+					<div class="swiper-slide-foot"></div>
+				</section>
+				<section class="swiper-slide">
+					<div class="swiper-slide-head is-adjusthight-30">
+						<figure>
+							<img src="../img/common/bg_moodmeter03.png" alt="イントロダクションロゴ" width="140">
+						</figure>
+						<figure>
+							<img src="../img/common/bg_moodmeter02.png" alt="moodmeter" width="300">
+						</figure>
+					</div>
+					<div class="swiper-slide-body is-adjusthight-40">
+						<p>トレーニングの最後にもう一度測定します。その時には、また合図します。</p>
+						<p>では、測定してみましょう。</p>
+					</div>
+					<div class="swiper-slide-foot is-adjusthight-30">
+						<a href="../index.html" class="button button02">測定</a>
+						<span class="pointer is-pointer-size50"></span>
+					</div>
+				</section>
 			</div>
-			<footer class="footer has-text-centered">
-				<div class="footer-title">
-					<img src="../img/common/footer_switch.png" class="logo">
-				</div>
-				<!--
-				<ul class="footer-list">
-				<li><a href="/Tou/">利用規約</a></li>
-				<li><a href="/Privacy/">プライバシーポリシー</a></li>
-				</ul>
-				-->
-				<div class="footer-copyright">Copyright (C) 2017 mind set research Inc. All Rights Reserved.</div>
-			</footer>
+				<!-- Add Pagination -->
+			<div class="swiper-skip">
+				<a href="../Top/top.html">Skip</a>
+			</div>
+			<div class="swiper-pagination"></div>
 		</div>
-		<script type="text/javascript" src="../js/jquery.min.js"></script>
-		<script type="text/javascript" src="../js/swiper.min.js"></script>
-		<script type="text/javascript" src="../js/common.js"></script>
-		<script type="text/javascript">
-			var swiperEndAction = function(){
-				console.log("hello")
-			}
-			window.addEventListener('DOMContentLoaded', function(){
-				var mySwiper = new Swiper('.course .swiper-container', {
-					speed: 1000,
-					mousewheelControl: true,
-					pagination: '.swiper-pagination',
-					paginationClickable: true,
-					breakpoints: {
-						767: {
-							slidesPerView: 1,
-							spaceBetween: 0
-						}
-					},
-					queueEndCallbacks: true,
-					onReachEnd: function(mySwiper) {
-						mySwiper.disableMousewheelControl();
-						mySwiper.disableTouchControl();
-					},
-					onInit: function(i) {
-						swiperEndAction();
-					}
-				});
-			});
-		</script>
-	</body>
+		<footer class="footer has-text-centered">
+			<div class="footer-title">
+				<img src="../img/common/footer_switch.png" class="logo">
+			</div>
+			<!--
+			<ul class="footer-list">
+			<li><a href="/Tou/">利用規約</a></li>
+			<li><a href="/Privacy/">プライバシーポリシー</a></li>
+			</ul>
+			-->
+			<div class="footer-copyright">Copyright (C) 2017 mind set research Inc. All Rights Reserved.</div>
+		</footer>
+	</div>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/swiper_custom.js"></script>
+	<script src="../js/common.js"></script>
+</body>
 </html>

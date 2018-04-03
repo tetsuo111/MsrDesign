@@ -1,0 +1,36 @@
+@charset 'utf-8';
+
+.sample04 .swiper-slide {
+  cursor: pointer;
+}
+
+.sample04 .swiper-slide {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.sample04 .swiper-slide p {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.sample04 .swiper-slide .is-anim {
+  transition: .6s cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.sample04 .swiper-button-prev,
+.sample04 .swiper-button-next {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sample04 .swiper-button-prev,
+  .sample04 .swiper-button-next {
+    display: block;
+  }
+}
