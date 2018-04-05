@@ -98,6 +98,8 @@ a:hover {
   margin: 0 auto;
 }
 
+/*** bulma title custom ***/
+
 /*##############################################################################*
 *### elements
 *##############################################################################*/
@@ -416,6 +418,7 @@ a:hover {
 *=== List
 *==========================================================*/
 .list-item01 {
+  font-family: NotoSansCJKjp;
   position: relative;
   cursor: pointer;
   color: #68615e;
@@ -536,8 +539,16 @@ a:hover {
   padding: 0 30%;
 }
 
+.intro-main {
+  min-height: 80vh;
+}
+
 .intro-main .intro-head {
   min-height: 20vh;
+}
+
+.intro-main .intro-body {
+  min-height: 30vh;
 }
 
 .intro-main .intro-body p {
@@ -548,7 +559,7 @@ a:hover {
 }
 
 .intro-main .intro-foot {
-  min-height: 15vh;
+  min-height: calc(100% - 50vh);
 }
 
 .intro-main .intro-foot .pointer {
@@ -689,6 +700,12 @@ a:hover {
   .logo{
     height: 1.5rem;
   }
+  .title{
+    font-size: 1.25rem;
+  }
+  .button.button01{
+    font-size: 1rem;
+  }
   .button.button02{
     font-size: 1rem;
   }
@@ -723,36 +740,33 @@ a:hover {
   .swiper-skip{
     position: absolute;
     right: 12px;
-    bottom: 6px;
+    bottom: 9px;
+  }
+  .swiper-skip a{
+    font-size: 1rem;
   }
   .list-item01.is-bg-hatena{
-    -webkit-background-size: 30px 30px;
-    background-size: 30px;
+    -webkit-background-size: 20px 20px;
+    background-size: 20px;
   }
   .list-item01 .list-item01-content{
     padding: 1.5rem 0 1.5rem 5rem;
     font-size: 1rem;
   }
   .list-item01 .list-item01-content.is-bg-bloosm01{
-    -webkit-background-size: 40px 40px;
-    background-size: 40px;
+    -webkit-background-size: 35px 35px;
+    background-size: 35px;
   }
   .list-item01 .list-item01-content.is-bg-bloosm02{
-    -webkit-background-size: 40px 40px;
-    background-size: 40px;
+    -webkit-background-size: 35px 35px;
+    background-size: 35px;
   }
   .list-item01 .list-item01-content.is-bg-bloosm03{
-    -webkit-background-size: 40px 40px;
-    background-size: 40px;
-  }
-  .intro .title{
-    font-size: 1.5rem;
+    -webkit-background-size: 35px 35px;
+    background-size: 35px;
   }
   .intro .title p{
-    padding: 0 5%;
-  }
-  .intro .logo{
-    height: 2.128rem;
+    padding: 0 15%;
   }
   .intro-main .intro-body{
     padding: 1.25rem 1.5rem;
@@ -760,6 +774,7 @@ a:hover {
   .intro-main .intro-body p{
     font-size: 1rem;
     padding: 0 0 1rem 0;
+    line-height: 1.75rem;
   }
   .intro-main .intro-body p:last-child{
     padding: 0 0 0 0;
@@ -817,7 +832,7 @@ a:hover {
     width: 190px;
   }
   .course-main .course-head .is-img01{
-    width: 90px;
+    width: 95px;
     padding: 0 0 1rem 0;
   }
   .course-main .course-head .is-img02{

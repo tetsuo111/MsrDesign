@@ -74,12 +74,15 @@
 	@include mq-down(){
 		position: absolute;
 		right: 12px;
-		bottom: 6px;
+		bottom: 9px;
 	}
 	a{
 		font-weight: $weight-semibold;
 		font-size: $font-size-5;
 		@include link-color($color-white);
 		display: inline-block;
+		@include mq-down(){
+			font-size: $font-size-6;
+		}
 	}
 }

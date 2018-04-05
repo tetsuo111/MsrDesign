@@ -20,28 +20,21 @@
 	.title{
 		color: $color-white;
 		width: 100%;
-		@include mq-down(){
-			font-size: $font-size-4;
-		}
 		p{
 			padding: 0 30%;
 			@include mq-down(){
-				padding: 0 5%;
+				padding: 0 15%;
 			}
-		}
-	}
-	.logo{
-		@include mq-down(){
-			height: 2.128rem;
 		}
 	}
 }
 .intro-main{
-	min-height: 85vh;
+	min-height: 80vh;
 	.intro-head{
 		min-height: 20vh;
 	}
 	.intro-body{
+		min-height: 30vh;
 		@include mq-down(){
 			padding: 1.25rem 1.5rem;
 		}
@@ -53,6 +46,7 @@
 			@include mq-down(){
 				font-size: $font-size-6;
 				padding: 0 0 1rem 0;
+				line-height: 1.75rem;
 			}
 			&:last-child{
 				@include mq-down(){
@@ -62,7 +56,7 @@
 		}
 	}
 	.intro-foot{
-		min-height: 15vh;
+		min-height: calc(100% - 50vh);
 		.pointer{
 			position: absolute;
 			top: 15px;

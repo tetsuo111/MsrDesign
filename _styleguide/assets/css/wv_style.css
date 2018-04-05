@@ -398,10 +398,18 @@ a:hover {
 	position: absolute;
 	right: 10px;
 	bottom: 10px;
+	z-index: 11;
+}
+
+.swiper-skip a {
 	font-weight: 600;
 	font-size: 1.25rem;
 	color: #ffffff;
-	z-index: 11;
+	display: inline-block;
+}
+
+.swiper-skip a:hover {
+	color: white;
 }
 
 /*==========================================================*
@@ -677,7 +685,7 @@ a:hover {
 	left: 50%;
 }
 
-.course-main .swiper-skip {
+.course-main .swiper-skip a {
 	color: #aaa29f;
 }
 
@@ -707,6 +715,15 @@ a:hover {
 	}
 	.nav{
 		height: 40px;
+	}
+	.swiper-container-horizontal.course-main > .swiper-pagination-bullets .swiper-pagination-bullet{
+		width: 8px;
+		height: 8px;
+	}
+	.swiper-skip{
+		position: absolute;
+		right: 12px;
+		bottom: 6px;
 	}
 	.list-item01.is-bg-hatena{
 		-webkit-background-size: 30px 30px;
@@ -742,7 +759,7 @@ a:hover {
 	}
 	.intro-main .intro-body p{
 		line-height: 2.125rem;
-		font-size: 1.25rem;
+		font-size: 1rem;
 		padding: 0 0 1rem 0;
 	}
 	.intro-main .intro-body p:last-child{

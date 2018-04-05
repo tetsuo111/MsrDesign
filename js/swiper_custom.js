@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', function() {
 			}
 		},
 		onClick(i){
-			i.slideNext(500);
+			i.slideNext(400);
 		},
 		onReachEnd: function(i) {
 			i.disableMousewheelControl();

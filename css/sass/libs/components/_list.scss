@@ -4,6 +4,7 @@
 *==========================================================*/
 
 .list-item01 {
+	font-family: NotoSansCJKjp;
 	position: relative;
 	cursor: pointer;
 	color: $color-base-text;
@@ -16,7 +17,7 @@
 		background-position: center right;
 		background-size: 45px;
 		@include mq-down{
-			background-size: 30px;
+			background-size: 20px;
 		}
 	}
 	.list-item01-content{
@@ -35,7 +36,7 @@
 			background-repeat: no-repeat;
 			background-size: 60px;
 			@include mq-down(){
-				background-size: 40px;
+				background-size: 35px;
 			}
 		}
 		&.is-bg-bloosm02{
@@ -44,7 +45,7 @@
 			background-repeat: no-repeat;
 			background-size: 60px;
 			@include mq-down(){
-				background-size: 40px;
+				background-size: 35px;
 			}
 		}
 		&.is-bg-bloosm03{
@@ -53,7 +54,7 @@
 			background-repeat: no-repeat;
 			background-size: 60px;
 			@include mq-down(){
-				background-size: 40px;
+				background-size: 35px;
 			}
 		}
 	}
@@ -63,5 +64,4 @@
 		left: 45%;
 	}
 }
-
 
