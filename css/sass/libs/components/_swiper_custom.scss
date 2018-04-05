@@ -3,9 +3,6 @@
 /*==========================================================*
 *=== Swiper Custom
 *==========================================================*/
-/*** wrapper ***/
-.swiper-wrapper{
-}
 /*** Content ***/
 .swiper-slide{
 	text-align: center;
@@ -31,15 +28,11 @@
 		}
 	}
 	.swiper-slide-foot{
-		.pointer{
-			position: relative;
-			bottom: 20px;
-			left: 40px;
-		}
+		position: relative;
 	}
 }
 /*** bullet ***/
-.swiper-container-horizontal.swiper-intro>.swiper-pagination-bullets{
+.swiper-container-horizontal.intro-main>.swiper-pagination-bullets{
 	.swiper-pagination-bullet{
 		margin: 0 10px;
 		width: 12px;
@@ -47,11 +40,11 @@
 		background: $color-white;
 		opacity: 1;
 		&.swiper-pagination-bullet-active{
-			background: $color-swaiper-active-defalut
+			background: $color-swaiper-active-defalut;
 		}
 	}
 }
-.swiper-container-horizontal.swiper-course>.swiper-pagination-bullets,.swiper-container-horizontal.swiper-course>.swiper-pagination-bullets{
+.swiper-container-horizontal.course-main>.swiper-pagination-bullets{
 	.swiper-pagination-bullet{
 		margin: 0 10px;
 		width: 12px;

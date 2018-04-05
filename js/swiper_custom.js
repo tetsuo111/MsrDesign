@@ -3,21 +3,19 @@
  */
 // sample04
 var swiperSkipHide = function() {
-	const elSkip = document.getElementsByClassName('swiper-skip');
-	console.log(elSkip);
-	elSkip.parentNode.removeChild(elSkip);
+	$(".swiper-skip").remove();
 }
 window.addEventListener('DOMContentLoaded', function() {
 	var swiper = new Swiper('.swiper-container', {
 		pagination: '.swiper-pagination',
-		paginationClickable: true,
-		speed: 1000,
-		mousewheelControl: true,
 		paginationClickable: false,
+		speed: 1000,
+		touchRatio: 0.2,
+		autoHeight: true,
 		breakpoints: {
 			767: {
 				slidesPerView: 1,
-				spaceBetween: 0
+				spaceBetween: 10
 			}
 		},
 		queueEndCallbacks: true,

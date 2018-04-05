@@ -1,75 +1,116 @@
 @charset "utf-8";
 
 /*==========================================================*
-*=== cource
+*=== each course(program_menu & guidanse) * 5
 *==========================================================*/
+
 .course{
+	position: relative;
+}
+/*** course main blocks ***/
+.course-main{
 	color: $color-white;
+	position: relative;
+	/*** 高さを固定 ***/
+	&.is-heightadjust{
+		height: 1080px;
+		@include mq-down(){
+			height: 650px;
+		}
+	}
+	&.is-bg-moodmeter {
+		background-image: $bg-img-moodmeter;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		@include mq-down(){
+			background-size: 100% 100%;
+		}
+	}
 	.sub-title{
 		font-weight: $weight-semibold;
 		text-align: center;
-		padding-bottom: 0 0 1rem 0;
+		padding: 0 0 1rem 0;
+		font-size: $font-size-3;
 		@include mq-down(){
-			padding-bottom: 0 0 0.25rem 0;
-		}
-		font-size: 1.5rem;
-		@include mq-down{
-			font-size: 1.25rem;
+			padding: 0 0 0.25rem 0;
+			font-size: $font-size-5;
 		}
 	}
 	.course-text{
-		font-size: 1.25rem;
+		padding:  0 10rem 2rem 10rem;
+		font-size: $font-size-4;
 		@include mq-down{
-			font-size: 1rem;
+			padding:  0 1rem 1.25rem 1rem;
+			font-size: $font-size-6;
 		}
-	}
-	.is-bg-moodmeter{
-		background-image: $bg-img-moodmeter;
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-		background-position: center;
 	}
 	.course-head{
 		padding: 1.5rem 0;
 		text-align: center;
 		@include mq-down(){
-			padding: 0.5rem 0;
+			padding: 1.25rem 0;
 		}
 		&.is-bg-img-pink01{
 			background-image: $bg-img-pink01;
 			background-repeat: no-repeat;
-			background-size: 100% 100%;
+			background-size: 100%;
 			background-position: center;
 		}
-		/***プログラムメニューのバナー画像 ***/
-		.course-head-banner{
-			width: 250px;
+		.is-banner{
+			width: 300px;
 			@include mq-down(){
 				width: 190px;
 			}
 		}
-		/*** ガイダンスのhead部分の画像 ***/
-		.course-head-guidanse-img01{
+		.is-img01{
+			width: 140px;
+			padding: 0 0 2rem 0;
 			@include mq-down(){
-				width: 100px;
-				padding: 0.5rem;
+				width: 90px;
+				padding: 0 0 1rem 0;
 			}
 		}
-		.course-head-guidanse-img02{
+		.is-img02{
+			width: 600px;
 			@include mq-down(){
-				width: 240px;
-				padding: 0.5rem;
+				width: 300px;
 			}
 		}
 	}
 	.course-body{
+		padding: 1rem 1.5rem;
 		@include mq-down(){
-			padding: 2rem 1.5rem;
+			padding: 0.5rem 1.5rem;
 		}
-		.course-body-image01{
-			text-align: center;
-			padding: 1.5rem 0 0 0;
+		.course-body-text{
+			padding: 0 0 1rem 0;
+			@include mq-down(){
+				padding: 0 0 0.5rem 0;
+			}
+		}
+	}
+	.course-foot{
+		.is-img01{
+			width: 300px;
+			@include mq-down(){
+				width: 200px;
+			}
+		}
+		.pointer{
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			@include mq-down(){
+				position: absolute;
+				bottom: -40px;
+				left: 50%;
+				
+			}
+		}
+	}
+	.swiper-skip{
+		a{
+			color: $color-swiper-active;
 		}
 	}
 }
-

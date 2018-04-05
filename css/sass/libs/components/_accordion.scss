@@ -14,13 +14,12 @@
 		cursor: pointer;
 		text-align: center;
 		color: $color-white;
-		
 		font-weight: $weight-semibold;
 		background-image: url(../img/icon/accordion_up_arrow.png);
 		background-repeat: no-repeat;
 		background-position: right 10px center;
-		background-size: 1.25rem;
-		font-size: $font-size-6;
+		background-size: 30px;
+		font-size: $font-size-4;
 		padding: 1rem;
 		@include mq-down(md){
 			font-size: $font-size-7;
@@ -40,15 +39,15 @@
 			background-size: 350px 20px;
 			background-repeat: no-repeat;
 			display: inline-block;
-			height: 20px;
-			width: 72px;
+			height: 30px;
+			width: 70px;
 			position: absolute;
-			top: 17px;
+			top: 20px;
 			left: 25px;
-			@include mq-down(md){
+			@include mq-down(){
 				background-size: 350px 15px;
 				position: absolute;
-				top: 13px;
+				top: 8px;
 				left: 5px;
 			}
 			&.is-rate-00{
@@ -93,7 +92,7 @@
 			background-size: 1.25rem;
 			
 			font-size: $font-size-6;
-			@include mq-down(md){
+			@include mq-down(){
 				font-size: $font-size-7;
 			}
 			&:not(:last-child) {

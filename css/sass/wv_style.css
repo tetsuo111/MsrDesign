@@ -41,74 +41,16 @@ a:hover {
 /*==========================================================*
 *=== property
 *==========================================================*/
-.is-adjusthight-10 {
-  position: relative;
-  min-height: 10vh;
-  height: auto;
-}
-
-.is-adjusthight-20 {
-  position: relative;
-  min-height: 20vh;
-  height: auto;
-}
-
-.is-adjusthight-30 {
-  position: relative;
-  min-height: 30vh;
-  height: auto;
-}
-
-.is-adjusthight-40 {
-  position: relative;
-  min-height: 40vh;
-  height: auto;
-}
-
-.is-adjusthight-50 {
-  position: relative;
-  min-height: 50vh;
-  height: auto;
-}
-
-.is-adjusthight-60 {
-  position: relative;
-  min-height: 60vh;
-  height: auto;
-}
-
-.is-adjusthight-70 {
-  position: relative;
-  min-height: 70vh;
-  height: auto;
-}
-
-.is-adjusthight-80 {
-  position: relative;
-  min-height: 80vh;
-  height: auto;
-}
-
-.is-adjusthight-90 {
-  position: relative;
-  min-height: 90vh;
-  height: auto;
-}
-
-.is-adjusthight-100 {
-  position: relative;
-  min-height: 100vh;
-  height: auto;
-}
-
 .logo {
-  height: 1.5rem;
+  height: 2.128rem;
 }
 
+/*** arrow  ***/
 .pointer {
   display: inline-block;
   background-image: url(../img/icon/pointer.png);
   background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
   background-size: 100%;
 }
 
@@ -117,6 +59,7 @@ a:hover {
   display: inline-block;
   -webkit-box-shadow: 5px 7px 9.68px -0.68px rgba(86, 78, 74, 0.2);
   box-shadow: 5px 7px 9.68px -0.68px rgba(86, 78, 74, 0.2);
+  -webkit-border-radius: 30px;
   border-radius: 30px;
 }
 
@@ -137,23 +80,29 @@ a:hover {
 
 .pointer.is-pointer-size50:after {
   width: 50px;
-  height: 50px;
+  height: 51px;
 }
 
-/***  ban ***/
+/*** using ban ***/
 .mask {
   opacity: 0.4;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
 }
 
 .mask a {
   pointer-events: none;
 }
 
+/*** bulma image custom ***/
+.image img.is-centered {
+  margin: 0 auto;
+}
+
 /*##############################################################################*
 *### elements
 *##############################################################################*/
 /*==========================================================*
-*=== button
+*=== button(base:bulma)
 *==========================================================*/
 .button {
   color: #ffffff;
@@ -164,8 +113,9 @@ a:hover {
 .button.button01 {
   background-color: #92d050;
   border: none;
+  -webkit-border-radius: 50px;
   border-radius: 50px;
-  width: 10%;
+  width: 50%;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -177,13 +127,15 @@ a:hover {
 
 .button.button02 {
   border: none;
+  -webkit-border-radius: 10px;
   border-radius: 10px;
-  background-color: #ffad4d;
   width: 80%;
   font-size: 1.5rem;
+  background-color: #ffad4d;
   background-image: url(../img/icon/button_right_arrow.png);
   background-position: right 10px center;
   background-repeat: no-repeat;
+  -webkit-background-size: 30px 30px;
   background-size: 30px;
 }
 
@@ -200,6 +152,7 @@ a:hover {
  *==========================================================*/
 .accordion-list-group .accordion-toggle {
   position: relative;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
   cursor: pointer;
   text-align: center;
@@ -208,16 +161,10 @@ a:hover {
   background-image: url(../img/icon/accordion_up_arrow.png);
   background-repeat: no-repeat;
   background-position: right 10px center;
-  background-size: 1.25rem;
-  font-size: 1rem;
+  -webkit-background-size: 30px 30px;
+  background-size: 30px;
+  font-size: 1.5rem;
   padding: 1rem;
-}
-
-@media screen and (max-width: 768px) {
-  .accordion-list-group .accordion-toggle {
-    font-size: 0.75rem;
-    padding: 0.875rem;
-  }
 }
 
 .accordion-list-group .accordion-toggle.accordion-toggle-style1 {
@@ -234,23 +181,15 @@ a:hover {
 
 .accordion-list-group .accordion-toggle .accordion-rate {
   background-image: url(../img/common/star_base.png);
+  -webkit-background-size: 350px 20px;
   background-size: 350px 20px;
   background-repeat: no-repeat;
   display: inline-block;
-  height: 20px;
-  width: 72px;
+  height: 30px;
+  width: 70px;
   position: absolute;
-  top: 17px;
+  top: 20px;
   left: 25px;
-}
-
-@media screen and (max-width: 768px) {
-  .accordion-list-group .accordion-toggle .accordion-rate {
-    background-size: 350px 15px;
-    position: absolute;
-    top: 13px;
-    left: 5px;
-  }
 }
 
 .accordion-list-group .accordion-toggle .accordion-rate.is-rate-00 {
@@ -283,12 +222,6 @@ a:hover {
   background-color: #ffffff;
 }
 
-@media screen and (max-width: 768px) {
-  .accordion-list-group .accordion-list-group-btn1 {
-    font-size: 0.75rem;
-  }
-}
-
 .accordion-list-group .accordion-list {
   display: none;
 }
@@ -300,14 +233,9 @@ a:hover {
   background-image: url(../img/icon/button_right_arrow.png);
   background-repeat: no-repeat;
   background-position: right 0.625rem center;
+  -webkit-background-size: 1.25rem 1.25rem;
   background-size: 1.25rem;
   font-size: 1rem;
-}
-
-@media screen and (max-width: 768px) {
-  .accordion-list-group .accordion-list li {
-    font-size: 0.75rem;
-  }
 }
 
 .accordion-list-group .accordion-list li:not(:last-child) {
@@ -320,24 +248,16 @@ a:hover {
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: space-between;
   -webkit-justify-content: space-between;
   overflow: hidden;
-  height: 40px;
-}
-
-@media screen and (max-width: 1023px) {
-  .nav {
-    height: 50px;
-  }
+  height: 50px;
 }
 
 .nav-shadow {
@@ -391,6 +311,7 @@ a:hover {
 .nav-modal-card-body li a {
   display: block;
   background: url(../img/icon/menu_arrow.png) no-repeat right 0.625rem top 0.75rem;
+  -webkit-background-size: 0.5rem 0.5rem;
   background-size: 0.5rem;
   color: #29586d;
 }
@@ -398,7 +319,6 @@ a:hover {
 /*==========================================================*
 *=== Swiper Custom
 *==========================================================*/
-/*** wrapper ***/
 /*** Content ***/
 .swiper-slide {
   text-align: center;
@@ -407,15 +327,12 @@ a:hover {
 .swiper-slide .swiper-slide-head {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -445,34 +362,34 @@ a:hover {
   vertical-align: middle;
 }
 
-.swiper-slide .swiper-slide-foot .pointer {
+.swiper-slide .swiper-slide-foot {
   position: relative;
-  bottom: 20px;
-  left: 40px;
 }
 
 /*** bullet ***/
-.swiper-container-horizontal.swiper-intro > .swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-container-horizontal.intro-main > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 10px;
   width: 12px;
   height: 12px;
   background: #ffffff;
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-.swiper-container-horizontal.swiper-intro > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.swiper-container-horizontal.intro-main > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #007aff;
 }
 
-.swiper-container-horizontal.swiper-course > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-container-horizontal.swiper-course > .swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-container-horizontal.course-main > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 10px;
   width: 12px;
   height: 12px;
   background: #ffffff;
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-.swiper-container-horizontal.swiper-course > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active, .swiper-container-horizontal.swiper-course > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.swiper-container-horizontal.course-main > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #aaa29f;
 }
 
@@ -498,7 +415,6 @@ a:hover {
 /*==========================================================*
 *=== List
 *==========================================================*/
-/***  guidanse list ***/
 .list-item01 {
   position: relative;
   cursor: pointer;
@@ -513,36 +429,40 @@ a:hover {
   background-image: url(../img/icon/hatena.png);
   background-repeat: no-repeat;
   background-position: center right;
-  background-size: 30px;
+  -webkit-background-size: 45px 45px;
+  background-size: 45px;
 }
 
 .list-item01 .list-item01-content {
   display: block;
-  padding: 1.5rem 0 1.5rem 5rem;
-  font-size: 1rem;
   font-weight: 600;
   color: #68615e;
+  padding: 2.25rem 0 2rem 6rem;
+  font-size: 1.5rem;
 }
 
 .list-item01 .list-item01-content.is-bg-bloosm01 {
   background-image: url(../img/icon/list_pink01.png);
   background-position: left center;
   background-repeat: no-repeat;
-  background-size: 40px;
+  -webkit-background-size: 60px 60px;
+  background-size: 60px;
 }
 
 .list-item01 .list-item01-content.is-bg-bloosm02 {
   background-image: url(../img/icon/list_pink02.png);
   background-position: left center;
   background-repeat: no-repeat;
-  background-size: 40px;
+  -webkit-background-size: 60px 60px;
+  background-size: 60px;
 }
 
 .list-item01 .list-item01-content.is-bg-bloosm03 {
   background-image: url(../img/icon/list_pink03.png);
   background-position: left center;
   background-repeat: no-repeat;
-  background-size: 40px;
+  -webkit-background-size: 60px 60px;
+  background-size: 60px;
 }
 
 .list-item01 .pointer {
@@ -558,11 +478,11 @@ a:hover {
 *=== footer
 *==========================================================*/
 .footer {
+  text-align: center;
   border-top: 1px solid #d7cbc6;
-  background-image: #ffffff;
   /* Bulmaスタイル更新 */
   padding: 1.5rem 0;
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .footer .footer-title {
@@ -594,6 +514,7 @@ a:hover {
 *=== Introduction
 *==========================================================*/
 .intro {
+  position: relative;
   color: #ffffff;
 }
 
@@ -607,6 +528,30 @@ a:hover {
 
 .intro .title {
   color: #ffffff;
+  width: 100%;
+}
+
+.intro .title p {
+  padding: 0 30%;
+}
+
+.intro-main {
+  min-height: 95vh;
+}
+
+.intro-main .intro-head {
+  min-height: 20vh;
+}
+
+.intro-main .intro-body p {
+  line-height: 3rem;
+  font-weight: 500;
+  padding: 0 10rem 2rem 10rem;
+  font-size: 1.5rem;
+}
+
+.intro-main .intro-foot {
+  min-height: 15vh;
 }
 
 /*==========================================================*
@@ -614,39 +559,21 @@ a:hover {
 *==========================================================*/
 .top-message {
   background-color: #faf8f7;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
   font-weight: 700;
   color: #68615e;
-  font-size: 1rem;
+  font-size: 1.25rem;
   margin: 0 0 1rem 0;
-  padding: 0.75rem 0 0.675rem 5rem;
-}
-
-@media screen and (max-width: 399px) {
-  .top-message {
-    font-size: 0.75rem;
-    padding: 0.25rem;
-    margin: 0 0 0.75rem 0;
-  }
+  padding: 1rem 0 1.25rem 6rem;
 }
 
 .top-message.is-bg-img-news {
   background-image: url(../img/icon/news.png);
   background-repeat: no-repeat;
   background-position: left 7px center;
-  background-size: 60px;
-}
-
-@media screen and (max-width: 768px) {
-  .top-message.is-bg-img-news {
-    background-size: 45px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .top-message .top-message-text {
-    padding: 0.5rem 0.5rem 0.675rem 4rem;
-  }
+  -webkit-background-size: 70px 70px;
+  background-size: 70px;
 }
 
 .columns.top-content {
@@ -654,30 +581,12 @@ a:hover {
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-  .columns.top-content {
-    margin: 0 0.75rem 0 0.75rem;
-  }
-}
-
 .columns.top-content .column {
   position: relative;
 }
 
-@media screen and (max-width: 768px) {
-  .columns.top-content .column {
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  }
-}
-
 .columns.top-content .column a {
   display: block;
-}
-
-@media screen and (max-width: 768px) {
-  .columns.top-content .column img {
-    width: 150px;
-  }
 }
 
 .columns.top-content .column .pointer {
@@ -686,108 +595,221 @@ a:hover {
   bottom: 0;
 }
 
-@media screen and (max-width: 768px) {
-  .columns.top-content .column .pointer {
+/*==========================================================*
+*=== each course(program_menu & guidanse) * 5
+*==========================================================*/
+.course {
+  position: relative;
+}
+
+/*** course main blocks ***/
+.course-main {
+  color: #ffffff;
+  position: relative;
+  /*** 高さを固定 ***/
+}
+
+.course-main.is-heightadjust {
+  height: 1080px;
+}
+
+.course-main.is-bg-moodmeter {
+  background-image: url(../img/common/bg_moodmeter.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100%;
+}
+
+.course-main .sub-title {
+  font-weight: 600;
+  text-align: center;
+  padding: 0 0 1rem 0;
+  font-size: 2rem;
+}
+
+.course-main .course-text {
+  padding: 0 10rem 2rem 10rem;
+  font-size: 1.5rem;
+}
+
+.course-main .course-head {
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.course-main .course-head.is-bg-img-pink01 {
+  background-image: url(../img/common/moodmeter_banner_bg.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100%;
+  background-position: center;
+}
+
+.course-main .course-head .is-banner {
+  width: 300px;
+}
+
+.course-main .course-head .is-img01 {
+  width: 140px;
+  padding: 0 0 2rem 0;
+}
+
+.course-main .course-head .is-img02 {
+  width: 600px;
+}
+
+.course-main .course-body {
+  padding: 1rem 1.5rem;
+}
+
+.course-main .course-body .course-body-text {
+  padding: 0 0 1rem 0;
+}
+
+.course-main .course-foot .is-img01 {
+  width: 300px;
+}
+
+.course-main .course-foot .pointer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+.course-main .swiper-skip a {
+  color: #aaa29f;
+}
+
+@media screen and (max-width: 768px){
+  .logo{
+    height: 1.5rem;
+  }
+  .button.button02{
+    font-size: 1rem;
+  }
+  .accordion-list-group .accordion-toggle{
+    font-size: 0.75rem;
+    padding: 0.875rem;
+  }
+  .accordion-list-group .accordion-toggle .accordion-rate{
+    -webkit-background-size: 350px 15px;
+    background-size: 350px 15px;
+    position: absolute;
+    top: 8px;
+    left: 5px;
+  }
+  .accordion-list-group .accordion-list-group-btn1{
+    font-size: 0.75rem;
+  }
+  .accordion-list-group .accordion-list li{
+    font-size: 0.75rem;
+  }
+  .nav{
+    height: 40px;
+  }
+  .list-item01.is-bg-hatena{
+    -webkit-background-size: 30px 30px;
+    background-size: 30px;
+  }
+  .list-item01 .list-item01-content{
+    padding: 1.5rem 0 1.5rem 5rem;
+    font-size: 1rem;
+  }
+  .list-item01 .list-item01-content.is-bg-bloosm01{
+    -webkit-background-size: 40px 40px;
+    background-size: 40px;
+  }
+  .list-item01 .list-item01-content.is-bg-bloosm02{
+    -webkit-background-size: 40px 40px;
+    background-size: 40px;
+  }
+  .list-item01 .list-item01-content.is-bg-bloosm03{
+    -webkit-background-size: 40px 40px;
+    background-size: 40px;
+  }
+  .intro .title{
+    font-size: 1.5rem;
+  }
+  .intro .title p{
+    padding: 0 5%;
+  }
+  .intro .logo{
+    height: 2.128rem;
+  }
+  .intro-main .intro-body{
+    padding: 2rem 1.5rem;
+  }
+  .intro-main .intro-body p{
+    line-height: 2.125rem;
+    font-size: 1.25rem;
+    padding: 0;
+  }
+  .top-message{
+    font-size: 0.75rem;
+    padding: 0.25rem;
+    margin: 0 0 0.75rem 0;
+  }
+  .top-message.is-bg-img-news{
+    -webkit-background-size: 45px 45px;
+    background-size: 45px;
+  }
+  .top-message .top-message-text{
+    padding: 0.5rem 0.5rem 0.675rem 4rem;
+  }
+  .columns.top-content{
+    margin: 0 0.75rem 0 0.75rem;
+  }
+  .columns.top-content .column{
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+  .columns.top-content .column img{
+    width: 150px;
+  }
+  .columns.top-content .column .pointer{
     position: absolute;
     right: 0;
     bottom: 0;
   }
-}
-
-/*==========================================================*
-*=== cource
-*==========================================================*/
-.course {
-  color: #ffffff;
-}
-
-.course .sub-title {
-  font-weight: 600;
-  text-align: center;
-  padding-bottom: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-@media screen and (max-width: 768px) {
-  .course .sub-title {
-    padding-bottom: 0 0 0.25rem 0;
+  .course-main.is-heightadjust{
+    height: 650px;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .course .sub-title {
+  .course-main.is-bg-moodmeter{
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+  .course-main .sub-title{
+    padding: 0 0 0.25rem 0;
     font-size: 1.25rem;
   }
-}
-
-.course .course-text {
-  font-size: 1.25rem;
-}
-
-@media screen and (max-width: 768px) {
-  .course .course-text {
+  .course-main .course-text{
+    padding: 0 1rem 1.25rem 1rem;
     font-size: 1rem;
   }
-}
-
-.course .is-bg-moodmeter {
-  background-image: url(../img/common/bg_moodmeter.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-}
-
-.course .course-head {
-  padding: 1.5rem 0;
-  text-align: center;
-  /***プログラムメニューのバナー画像 ***/
-  /*** ガイダンスのhead部分の画像 ***/
-}
-
-@media screen and (max-width: 768px) {
-  .course .course-head {
-    padding: 0.5rem 0;
+  .course-main .course-head{
+    padding: 1.25rem 0;
   }
-}
-
-.course .course-head.is-bg-img-pink01 {
-  background-image: url(../img/common/moodmeter_banner_bg.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-}
-
-.course .course-head .course-head-banner {
-  width: 250px;
-}
-
-@media screen and (max-width: 768px) {
-  .course .course-head .course-head-banner {
+  .course-main .course-head .is-banner{
     width: 190px;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .course .course-head .course-head-guidanse-img01 {
-    width: 100px;
-    padding: 0.5rem;
+  .course-main .course-head .is-img01{
+    width: 90px;
+    padding: 0 0 1rem 0;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .course .course-head .course-head-guidanse-img02 {
-    width: 240px;
-    padding: 0.5rem;
+  .course-main .course-head .is-img02{
+    width: 300px;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .course .course-body {
-    padding: 2rem 1.5rem;
+  .course-main .course-body{
+    padding: 0.5rem 1.5rem;
   }
-}
-
-.course .course-body .course-body-image01 {
-  text-align: center;
-  padding: 1.5rem 0 0 0;
+  .course-main .course-body .course-body-text{
+    padding: 0 0 0.5rem 0;
+  }
+  .course-main .course-foot .is-img01{
+    width: 200px;
+  }
+  .course-main .course-foot .pointer{
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+  }
 }

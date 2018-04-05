@@ -7,11 +7,11 @@
 *=== footer
 *==========================================================*/
 .footer {
+	text-align: center;
 	border-top: 1px solid $footer-border-color;
-	background-image: $color-white;
 	/* Bulmaスタイル更新 */
 	padding: 1.5rem 0 ;
-	background-color: transparent;
+	background-color: $color-white;
 	.footer-title {
 		padding-bottom: 1rem;
 	}

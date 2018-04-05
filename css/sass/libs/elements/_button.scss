@@ -5,7 +5,7 @@
 *##############################################################################*/
 
 /*==========================================================*
-*=== button
+*=== button(base:bulma)
 *==========================================================*/
 .button{
 	color: $color-white;
@@ -14,7 +14,7 @@
 		background-color:$color-palegreen;
 		border: none;
 		@include border-radius(50px);
-		width: 10%;
+		width: 50%;
 		font-size: $font-size-4;
 		font-weight: $weight-semibold;
 		&:hover{
@@ -26,13 +26,16 @@
 	&.button02{
 		border: none;
 		@include border-radius(10px);
-		background-color:$color-orange;
 		width: 80%;
 		font-size: $font-size-4;
+		background-color:$color-orange;
 		background-image: $bg-img-accordion-right;
 		background-position: right 10px center;
 		background-repeat: no-repeat;
 		background-size: 30px;
+		@include mq-down(){
+			font-size: $font-size-6;
+		}
 		&:hover{
 			color: $color-white;
 			border: none;

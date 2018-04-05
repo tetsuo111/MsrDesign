@@ -7,9 +7,9 @@
 	@include flex-center;
 	@include justify-content(space-between);
 	overflow: hidden;
-	height: 40px;
-	@include mq-down(lg){
-		height: 50px;
+	height: 50px;
+	@include mq-down(){
+		height: 40px;
 	}
 }
 

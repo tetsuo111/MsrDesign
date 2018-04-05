@@ -1,22 +1,17 @@
 var gulp = require('gulp');
-var uglify = require('gulp-uglify');
-var autoprefixer = require('gulp-autoprefixer');
 var sass = require('gulp-sass');
-
-//CSSファイル、javascriptファイルをミニマイズしてくれます。
-gulp.task('uglify', function () {
-	gulp.src('./js/common.min.js')
-		.pipe(uglify())
-		.pipe(gulp.dest('js'))
-});
+var pleeease = require('gulp-pleeease');
 
 //sassのコンパイルを可能にします。
 gulp.task('sass', function(){
 	gulp.src('css/sass/**/*.scss')
 		.pipe(sass({outputStyle: 'expanded'}))
-		.pipe(autoprefixer({
-		browsers: ['last 2 version', 'iOS >= 8.1', 'Android >= 4.4'],
-		cascade: false
+		.pipe(pleeease({
+		autoprefixer: { 'browsers': ['last 2 versions', 'ie 6', 'ie 7', 'ie 8', 'Safari 4', 'Android 2.3', 'iOS 4'],cascade: false },
+			minifier: false,
+			rem: false,
+			pseudoElements: false,
+			mqpacker: true
 	}))
 		.pipe(gulp.dest('css/sass/'));
 });
@@ -27,5 +22,3 @@ gulp.task('sass-watch', ['sass'], function(){
 	watcher.on('change', function(event) {
 	});
 });
-
-
