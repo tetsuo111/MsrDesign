@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+@mixin link-color($color) {
+	color: $color;
+	&:hover {
+		color: lighten($color, 20%);
+	}
+}
+
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	$ieopacity: ($opacity * 100);
+	filter: alpha(opacity=$ieopacity);
+}
+
+@mixin font-size($size, $base: 16) {
+	font-size: $size + px;
+	font-size: ($size / $base) + rem;
+}
+
+@mixin truncate($width: 100%) {
+	width: $width;
+	max-width: 100%;
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+@mixin border-top-left-radius($radius) {
+	-webkit-border-top-left-radius: $radius;
+	-moz-border-radius-topleft: $radius;
+	border-top-left-radius: $radius;
+}
+@mixin border-top-right-radius($radius) {
+	-webkit-border-top-right-radius: $radius;
+	-moz-border-radius-topright: $radius;
+	border-top-right-radius: $radius;
+}
+@mixin border-bottom-right-radius($radius) {
+	-webkit-border-bottom-right-radius: $radius;
+	-moz-border-radius-bottomright: $radius;
+	border-bottom-right-radius: $radius;
+}
+@mixin border-bottom-left-radius($radius) {
+	-webkit-border-bottom-left-radius: $radius;
+	-moz-border-radius-bottomleft: $radius;
+	border-bottom-left-radius: $radius;
+}
+
+@mixin flex-center{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+}
+@mixin flex($property){
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: $property;
+	-ms-flex-align: $property;
+	-webkit-align-items: $property;
+	align-items: $property;
+	-webkit-box-pack: $property;
+	-ms-flex-pack: $property;
+}
+
+@mixin justify-content($property){
+	justify-content: $property;
+	-webkit-justify-content: $property;
+}
+@mixin flex-vertical{
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+@mixin accordion-rate($rate){
+	@if $rate == 0 {
+		background-position: left;
+	}@else if $rate > 0{
+		background-position: $rate * -68px;
+	}
+}
+
+@mixin mq-up($breakpoint: md) {
+	@media #{map-get($breakpoint-up, $breakpoint)} {
+		@content;
+	}
+}
+
+@mixin mq-down($breakpoint: md) {
+	@media #{map-get($breakpoint-down, $breakpoint)} {
+		@content;
+	}
+}

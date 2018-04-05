@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/*##############################################################################*
+*### Unique Page
+*##############################################################################*/
+
+/*==========================================================*
+*=== Introduction
+*==========================================================*/
+.intro{
+	position: relative;
+	color: $color-white;
+	&.is-bg-yellow{
+		background-color: $color-yellow;
+	}
+	&.is-bg-orange{
+		background-color: $color-orange;
+	}
+	.title{
+		color: $color-white;
+		width: 100%;
+		@include mq-down(){
+			font-size: $font-size-4;
+		}
+		p{
+			padding: 0 30%;
+			@include mq-down(){
+				padding: 0 5%;
+			}
+		}
+	}
+	.logo{
+		@include mq-down(){
+			height: 2.128rem;
+		}
+	}
+}
+.intro-main{
+	min-height: 95vh;
+	.intro-head{
+		min-height: 20vh;
+	}
+	.intro-body{
+		@include mq-down(){
+			padding: 1.25rem 1.5rem;
+		}
+		p{
+			line-height: 3rem;
+			font-weight: $weight-medium;
+			padding: 0 10rem 2rem 10rem;
+			font-size: $font-size-4;
+			@include mq-down(){
+				line-height: 2.125rem;
+				font-size: $font-size-6;
+				padding: 0 0 1rem 0;
+			}
+			&:last-child{
+				@include mq-down(){
+					padding: 0 0 0 0;
+				}
+			}
+		}
+	}
+	.intro-foot{
+		min-height: 15vh;
+		position: relative;
+		.pointer{
+			position: absolute;
+			top: 15px;
+			right: 20%;
+			transform: rotate(-40deg);
+			@include mq-down(){
+				position: absolute;
+				top: 15px;
+				right: 12%;
+			}
+		}
+	}
+}
+

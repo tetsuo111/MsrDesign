@@ -80,7 +80,7 @@ a:hover {
 
 .pointer.is-pointer-size50:after {
 	width: 50px;
-	height: 51px;
+	height: 50px;
 }
 
 /*** using ban ***/
@@ -516,6 +516,7 @@ a:hover {
 .intro {
 	position: relative;
 	color: #ffffff;
+	min-height: 100vh;
 }
 
 .intro.is-bg-yellow {
@@ -535,16 +536,12 @@ a:hover {
 	padding: 0 30%;
 }
 
-.intro-main {
-	min-height: 95vh;
-}
-
 .intro-main .intro-head {
 	min-height: 20vh;
 }
 
 .intro-main .intro-body p {
-	line-height: 2.125rem;
+	line-height: 3rem;
 	font-weight: 500;
 	padding: 0 10rem 2rem 10rem;
 	font-size: 1.5rem;
@@ -552,6 +549,14 @@ a:hover {
 
 .intro-main .intro-foot {
 	min-height: 15vh;
+}
+
+.intro-main .intro-foot .pointer {
+	position: absolute;
+	top: 15px;
+	right: 20%;
+	-webkit-transform: rotate(-40deg);
+	transform: rotate(-40deg);
 }
 
 /*==========================================================*
@@ -672,7 +677,7 @@ a:hover {
 
 .course-main .course-foot .pointer {
 	position: absolute;
-	bottom: 0;
+	bottom: -40px;
 	left: 50%;
 }
 
@@ -707,6 +712,19 @@ a:hover {
 	.nav{
 		height: 40px;
 	}
+	.swiper-container-horizontal.intro-main > .swiper-pagination-bullets .swiper-pagination-bullet{
+		width: 8px;
+		height: 8px;
+	}
+	.swiper-container-horizontal.course-main > .swiper-pagination-bullets .swiper-pagination-bullet{
+		width: 8px;
+		height: 8px;
+	}
+	.swiper-skip{
+		position: absolute;
+		right: 12px;
+		bottom: 6px;
+	}
 	.list-item01.is-bg-hatena{
 		-webkit-background-size: 30px 30px;
 		background-size: 30px;
@@ -737,11 +755,20 @@ a:hover {
 		height: 2.128rem;
 	}
 	.intro-main .intro-body{
-		padding: 2rem 1.5rem;
+		padding: 1.25rem 1.5rem;
 	}
 	.intro-main .intro-body p{
-		font-size: 1.25rem;
-		padding: 0;
+		line-height: 2.125rem;
+		font-size: 1rem;
+		padding: 0 0 1rem 0;
+	}
+	.intro-main .intro-body p:last-child{
+		padding: 0 0 0 0;
+	}
+	.intro-main .intro-foot .pointer{
+		position: absolute;
+		top: 15px;
+		right: 12%;
 	}
 	.top-message{
 		font-size: 0.75rem;
@@ -805,10 +832,5 @@ a:hover {
 	}
 	.course-main .course-foot .is-img01{
 		width: 200px;
-	}
-	.course-main .course-foot .pointer{
-		position: absolute;
-		bottom: -40px;
-		left: 50%;
 	}
 }

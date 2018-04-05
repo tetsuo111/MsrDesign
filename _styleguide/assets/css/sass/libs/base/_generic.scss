@@ -1,0 +1,36 @@
+@charset "utf-8";
+/*##############################################################################*
+ *### base
+ *##############################################################################*/
+/*==========================================================*
+ *=== basic
+ *==========================================================*/
+
+body {
+	/* @see http://sole-color-blog.com/blog/design/963/ */
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+	/* スマホの横向き時の文字サイズ設定 */
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+.contents-margin {
+  /*margin-bottom: 1.25rem;*/
+  padding: 1.5rem 1.5rem;
+}
+
+/* link */
+a {
+	@include link-color($color-white);
+}
+
+/* Bulma変更 */
+.columns {
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+}
+

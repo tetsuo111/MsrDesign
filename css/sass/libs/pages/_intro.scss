@@ -10,6 +10,7 @@
 .intro{
 	position: relative;
 	color: $color-white;
+	min-height: 100vh;
 	&.is-bg-yellow{
 		background-color: $color-yellow;
 	}
@@ -36,13 +37,13 @@
 	}
 }
 .intro-main{
-	min-height: 95vh;
+	min-height: 85vh;
 	.intro-head{
 		min-height: 20vh;
 	}
 	.intro-body{
 		@include mq-down(){
-			padding: 2rem 1.5rem;
+			padding: 1.25rem 1.5rem;
 		}
 		p{
 			line-height: 3rem;
@@ -50,14 +51,29 @@
 			padding: 0 10rem 2rem 10rem;
 			font-size: $font-size-4;
 			@include mq-down(){
-				line-height: 2.125rem;
-				font-size: $font-size-5;
-				padding: 0;
+				font-size: $font-size-6;
+				padding: 0 0 1rem 0;
+			}
+			&:last-child{
+				@include mq-down(){
+					padding: 0 0 0 0;
+				}
 			}
 		}
 	}
 	.intro-foot{
 		min-height: 15vh;
+		.pointer{
+			position: absolute;
+			top: 15px;
+			right: 20%;
+			transform: rotate(-40deg);
+			@include mq-down(){
+				position: absolute;
+				top: 15px;
+				right: 12%;
+			}
+		}
 	}
 }
 

@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/*==========================================================*
+*=== navigation
+*==========================================================*/
+.nav {
+	@include flex-center;
+	@include justify-content(space-between);
+	overflow: hidden;
+	height: 50px;
+	@include mq-down(){
+		height: 40px;
+	}
+}
+
+.nav-shadow {
+	/* 下に1px影 */
+	box-shadow: 0px 2px 0px 0px $box-shadow-color;
+	-moz-box-shadow: 0px 2px 0px 0px $box-shadow-color;
+	-webkit-box-shadow: 0px 2px 0px 0px $box-shadow-color;
+}
+.nav-left-item,
+.nav-right-item {
+	width: 50px;
+	text-align: center;
+}
+.nav-left-item a,
+.nav-right-item a {
+	font-size: 2rem;
+	color: $nav-home-color;
+}
+.nav-center-item {
+	a{
+		display: block;
+		padding-top: 10px;
+	}
+}
+
+/* modal */
+.nav-modal-card-head {
+	background-color: $color-deepblue;
+	padding: 0.625rem;
+}
+.nav-modal-card-title {
+	color: $color-white;
+}
+.nav-btn-delete {
+	/* Bulmaの .delete.is-large が効かないため指定 */
+	height: 32px;
+	width: 32px;
+	max-height: 32px;
+	max-width: 32px;
+}
+.nav-modal-card-body {
+	li {
+		text-align: left;
+		line-height: 2.5rem;
+		border-bottom: 1px solid $color-palegrey;
+		a {
+			display: block;
+			background: $bg-img-nav-menu no-repeat right 0.625rem top 0.75rem;
+			background-size: 0.5rem;
+			color: $color-deepblue;
+		}
+	}
+}
+
+

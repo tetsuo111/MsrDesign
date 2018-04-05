@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+/*##############################################################################*
+*### components
+*##############################################################################*/
+
+/*==========================================================*
+ *=== accordion
+ *==========================================================*/
+.accordion-list-group {
+	.accordion-toggle {
+		position: relative;
+		@include border-radius(3px);
+		cursor: pointer;
+		text-align: center;
+		color: $color-white;
+		font-weight: $weight-semibold;
+		background-image: url(../img/icon/accordion_up_arrow.png);
+		background-repeat: no-repeat;
+		background-position: right 10px center;
+		background-size: 30px;
+		font-size: $font-size-4;
+		padding: 1rem;
+		@include mq-down(md){
+			font-size: $font-size-7;
+			padding: 0.875rem;
+		}
+		&.accordion-toggle-style1 {
+			background-color: $color-orange;
+		}
+		&.accordion-toggle-style2 {
+			background-color: $color-deepblue;
+		}
+		&.accordion-toggle-open {
+			background-image: $bg-img-accordion-down;
+		}
+		.accordion-rate{
+			background-image: url(../img/common/star_base.png);
+			background-size: 350px 20px;
+			background-repeat: no-repeat;
+			display: inline-block;
+			height: 30px;
+			width: 70px;
+			position: absolute;
+			top: 20px;
+			left: 25px;
+			@include mq-down(){
+				background-size: 350px 15px;
+				position: absolute;
+				top: 8px;
+				left: 5px;
+			}
+			&.is-rate-00{
+				@include accordion-rate(0);
+			}
+			&.is-rate-01{
+				@include accordion-rate(1);
+			}
+			&.is-rate-02{
+				@include accordion-rate(2);
+			}
+			&.is-rate-03{
+				@include accordion-rate(3);
+			}
+			&.is-rate-04{
+				@include accordion-rate(4);
+			}
+		}
+	}
+	.accordion-list-group-btn1 {
+		text-align: left;
+		
+		font-size: $font-size-6;
+		font-weight: $weight-bold;
+		cursor: pointer;
+		margin-right: 1.5rem;
+		border: none;
+		background-color: $color-white;
+		@include mq-down(){
+			font-size: $font-size-7;
+		}
+	}
+	.accordion-list {
+		display: none;
+		li {
+			width: 100%;
+			padding: 0.625rem;
+			cursor: pointer;
+			background-image: $bg-img-accordion-right;
+			background-repeat: no-repeat;
+			background-position: right 0.625rem center;
+			background-size: 1.25rem;
+			
+			font-size: $font-size-6;
+			@include mq-down(){
+				font-size: $font-size-7;
+			}
+			&:not(:last-child) {
+				border-bottom: 2px solid $color-grey;
+			}
+		}
+	}
+}

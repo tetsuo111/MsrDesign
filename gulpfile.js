@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var pleeease = require('gulp-pleeease');
+var frontNote = require('gulp-frontnote');
 
 //sassのコンパイルを可能にします。
 gulp.task('sass', function(){
@@ -16,9 +17,20 @@ gulp.task('sass', function(){
 		.pipe(gulp.dest('css/sass/'));
 });
 
+//styleガイド制作
+gulp.task('doc', function() {
+	gulp.src('./css/sass/**/*.scss')
+		.pipe(sass({outputStyle: 'expanded'}))
+		.pipe(frontNote({
+		out: './_styleguide',
+		css: ['css/style.css']
+	}));
+});
+
 //sassファイルを監視してくれます。
 gulp.task('sass-watch', ['sass'], function(){
 	var watcher = gulp.watch('css/sass/**/*.scss', ['sass']);
 	watcher.on('change', function(event) {
 	});
 });
+

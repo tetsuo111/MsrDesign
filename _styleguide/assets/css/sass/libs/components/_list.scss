@@ -1,0 +1,67 @@
+@charset "utf-8";
+/*==========================================================*
+*=== List
+*==========================================================*/
+
+.list-item01 {
+	position: relative;
+	cursor: pointer;
+	color: $color-base-text;
+	&:not(:last-child){
+		border-bottom: 1px solid $color-list-border;
+	}
+	&.is-bg-hatena{
+		background-image: $bg-img-hatena;
+		background-repeat: no-repeat;
+		background-position: center right;
+		background-size: 45px;
+		@include mq-down{
+			background-size: 30px;
+		}
+	}
+	.list-item01-content{
+		display: block;
+		font-weight: $weight-semibold;
+		color: $color-base-text;
+		padding: 2.25rem 0 2rem 6rem;
+		font-size: $font-size-4;
+		@include mq-down{
+			padding: 1.5rem 0 1.5rem 5rem;
+			font-size: $font-size-6;
+		}
+		&.is-bg-bloosm01{
+			background-image: $bg-img-bloosm01;
+			background-position: left center;
+			background-repeat: no-repeat;
+			background-size: 60px;
+			@include mq-down(){
+				background-size: 40px;
+			}
+		}
+		&.is-bg-bloosm02{
+			background-image: $bg-img-bloosm02;
+			background-position: left center;
+			background-repeat: no-repeat;
+			background-size: 60px;
+			@include mq-down(){
+				background-size: 40px;
+			}
+		}
+		&.is-bg-bloosm03{
+			background-image: $bg-img-bloosm03;
+			background-position: left center;
+			background-repeat: no-repeat;
+			background-size: 60px;
+			@include mq-down(){
+				background-size: 40px;
+			}
+		}
+	}
+	.pointer{
+		position: absolute;
+		top: 70%;
+		left: 45%;
+	}
+}
+
+

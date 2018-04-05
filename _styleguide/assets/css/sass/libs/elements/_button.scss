@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/*##############################################################################*
+*### elements
+*##############################################################################*/
+
+/*==========================================================*
+*=== button(base:bulma)
+*==========================================================*/
+.button{
+	color: $color-white;
+	/*** introduction ***/
+	&.button01{
+		background-color:$color-palegreen;
+		border: none;
+		@include border-radius(50px);
+		width: 50%;
+		font-size: $font-size-4;
+		font-weight: $weight-semibold;
+		&:hover{
+			color: $color-white;
+			border: none;
+		}
+	}
+	/*** guidanse ***/
+	&.button02{
+		border: none;
+		@include border-radius(10px);
+		width: 80%;
+		font-size: $font-size-4;
+		background-color:$color-orange;
+		background-image: $bg-img-accordion-right;
+		background-position: right 10px center;
+		background-repeat: no-repeat;
+		background-size: 30px;
+		@include mq-down(){
+			font-size: $font-size-6;
+		}
+		&:hover{
+			color: $color-white;
+			border: none;
+		}
+	}
+}
