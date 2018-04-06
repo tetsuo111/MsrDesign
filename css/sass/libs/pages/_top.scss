@@ -8,12 +8,12 @@
 	@include border-radius(3px);
 	font-weight: $weight-bold;
 	color: $color-base-text;
-	font-size: $font-size-5;
+	font-size: $font-size-6;
+	padding: 0.75rem 0 1rem 6rem;
 	margin: 0 0 1rem 0;
-	padding: 1rem 0 1.25rem 6rem;
 	@include mq-down(){
 		font-size: $font-size-7;
-		padding: 0.25rem;
+		padding: 0.5rem 0.5rem 0.675rem 4rem;
 		margin: 0 0 0.75rem 0;
 	}
 	&.is-bg-img-news{
@@ -25,37 +25,32 @@
 			background-size: 45px;
 		}
 	}
-	.top-message-text{
-		@include mq-down(){
-			padding: 0.5rem 0.5rem 0.675rem 4rem;
-		}
-	}
 }
 
-.columns.top-content{
-	color: $color-base-text;
-	text-align: center;
-	@include mq-down(){
-		margin: 0 0.75rem 0 0.75rem;
-	}
-	.column{
-		position: relative;
+.columns{
+	&.top-content{
+		padding: 2rem 0;
+		color: $color-base-text;
+		text-align: center;
 		@include mq-down(){
-			padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+			padding: 0;
+			/*** 余白の調整 ***/
+			margin: 0 0.75rem 0.75rem 0.75rem;
 		}
-		a{
-			display: block;
-		}
-		img{
+		.column{
+			position: relative;
 			@include mq-down(){
-				width: 150px;
+				padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 			}
-		}
-		.pointer{
-			position: absolute;
-			right: 20%;
-			bottom: 0;
-			@include mq-down(){
+			a{
+				display: block;
+			}
+			img{
+				@include mq-down(){
+					width: 150px;
+				}
+			}
+			.pointer{
 				position: absolute;
 				right: 0;
 				bottom: 0;

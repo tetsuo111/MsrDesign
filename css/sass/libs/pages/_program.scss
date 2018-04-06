@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/*==========================================================*
+*=== program menu
+*==========================================================*/
+/*** program menu main blocks ***/
+.program-main{
+	.program-head{
+		text-align: center;
+		padding: 1rem;
+		&.is-bg-img-pink{
+			background-image: $bg-img-pink01;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			background-position: center;
+		}
+		.is-banner{
+			width: 300px;
+			@include mq-down(){
+				width: 190px;
+			}
+		}
+	}
+	.program-body{
+		padding: 1rem 1.5rem;
+		@include mq-down(){
+			padding: 0.5rem 1.5rem;
+		}
+	}
+	.program-foot{}
+}

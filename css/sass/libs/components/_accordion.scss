@@ -9,21 +9,22 @@
  *==========================================================*/
 .accordion-list-group {
 	.accordion-toggle {
+		/*** rateの位置調整のために付与  ***/
 		position: relative;
 		@include border-radius(3px);
 		cursor: pointer;
 		text-align: center;
 		color: $color-white;
 		font-weight: $weight-semibold;
-		background-image: url(../img/icon/accordion_up_arrow.png);
+		background-image: $bg-img-accordion-up;
 		background-repeat: no-repeat;
 		background-position: right 10px center;
-		background-size: 30px;
-		font-size: $font-size-4;
-		padding: 1rem;
+		background-size: 25px;
+		font-size: $font-size-6;
+		padding: 0.75rem;
 		@include mq-down(md){
 			font-size: $font-size-7;
-			padding: 0.875rem;
+			background-size: 20px;
 		}
 		&.accordion-toggle-style1 {
 			background-color: $color-orange;
@@ -35,19 +36,19 @@
 			background-image: $bg-img-accordion-down;
 		}
 		.accordion-rate{
-			background-image: url(../img/common/star_base.png);
+			background-image: $bg-img-accordion-star;
 			background-size: 350px 20px;
 			background-repeat: no-repeat;
 			display: inline-block;
 			height: 30px;
 			width: 70px;
 			position: absolute;
-			top: 20px;
+			top: 10px;
 			left: 25px;
 			@include mq-down(){
 				background-size: 350px 15px;
 				position: absolute;
-				top: 8px;
+				top: 5px;
 				left: 5px;
 			}
 			&.is-rate-00{
@@ -69,11 +70,9 @@
 	}
 	.accordion-list-group-btn1 {
 		text-align: left;
-		
 		font-size: $font-size-6;
 		font-weight: $weight-bold;
 		cursor: pointer;
-		margin-right: 1.5rem;
 		border: none;
 		background-color: $color-white;
 		@include mq-down(){
@@ -82,18 +81,19 @@
 	}
 	.accordion-list {
 		display: none;
+		text-align: center;
 		li {
 			width: 100%;
 			padding: 0.625rem;
 			cursor: pointer;
-			background-image: $bg-img-accordion-right;
+			background-image: $bg-img-arrow-right;
 			background-repeat: no-repeat;
 			background-position: right 0.625rem center;
-			background-size: 1.25rem;
-			
+			background-size: 25px;
 			font-size: $font-size-6;
 			@include mq-down(){
 				font-size: $font-size-7;
+				background-size: 20px;
 			}
 			&:not(:last-child) {
 				border-bottom: 2px solid $color-grey;

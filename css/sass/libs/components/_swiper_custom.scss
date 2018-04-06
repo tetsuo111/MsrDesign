@@ -5,24 +5,14 @@
 *==========================================================*/
 /*** Content ***/
 .swiper-slide{
-	text-align: center;
+	/* 改行 */
+	flex-wrap: wrap;
 	.swiper-slide-head{
 		@include flex-center;
 		@include flex-vertical;
 		@include justify-content(center);
-		.swiper-slide-head-text-1{
-			font-size: $font-size-5;
-			font-weight: $weight-normal;
-			&:nth-child(1){
-				padding-right: 70px;
-			}
-			&:nth-child(2){
-				padding-left: 70px;
-			}
-		}
 	}
 	.swiper-slide-body{
-		text-align: left;
 		img{
 			vertical-align: middle;
 		}
@@ -48,7 +38,7 @@
 		}
 	}
 }
-.swiper-container-horizontal.course-main>.swiper-pagination-bullets{
+.swiper-container-horizontal.guidanse-main>.swiper-pagination-bullets{
 	.swiper-pagination-bullet{
 		margin: 0 10px;
 		width: 12px;

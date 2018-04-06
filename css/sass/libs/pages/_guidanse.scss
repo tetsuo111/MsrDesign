@@ -1,49 +1,35 @@
 @charset "utf-8";
 
 /*==========================================================*
-*=== each course(program_menu & guidanse) * 5()
+*=== each guidanse * 5
 *==========================================================*/
-/*** course main blocks ***/
-.course-main{
+/*** guidanse main blocks ***/
+.guidanse-main{
 	color: $color-white;
-	/*** 高さを固定 ***/
-	&.is-heightadjust{
-		height: 1080px;
-		@include mq-down(){
-			height: 650px;
-		}
+	min-height: 80vh;
+	@include mq-down(){
+		min-height: 100vh;
 	}
 	&.is-bg-moodmeter {
 		background-image: $bg-img-moodmeter;
 		background-repeat: no-repeat;
-		background-size: 100%;
-		@include mq-down(){
-			background-size: 100% 100%;
-		}
+		background-size: 100% 100%;
 	}
 	.sub-title{
 		font-weight: $weight-semibold;
 		text-align: center;
 		padding: 0 0 1rem 0;
-		font-size: $font-size-3;
+		font-size: $font-size-4;
 		@include mq-down(){
 			padding: 0 0 0.25rem 0;
 			font-size: $font-size-5;
 		}
 	}
-	.course-text{
-		padding:  0 10rem 2rem 10rem;
-		font-size: $font-size-4;
-		@include mq-down{
-			padding:  0 1rem 1.25rem 1rem;
-			font-size: $font-size-6;
-		}
-	}
-	.course-head{
+	.guidanse-head{
 		padding: 1.5rem 0;
 		text-align: center;
 		@include mq-down(){
-			padding: 1.25rem 0;
+			padding: 1rem 0;
 		}
 		&.is-bg-img-pink01{
 			background-image: $bg-img-pink01;
@@ -51,50 +37,47 @@
 			background-size: 100%;
 			background-position: center;
 		}
-		.is-banner{
-			width: 300px;
-			@include mq-down(){
-				width: 190px;
-			}
-		}
 		.is-img01{
-			width: 140px;
-			padding: 0 0 2rem 0;
+			width: 120px;
+			padding: 0 0 1.5rem 0;
 			@include mq-down(){
 				width: 95px;
 				padding: 0 0 1rem 0;
 			}
 		}
 		.is-img02{
-			width: 600px;
+			width: 400px;
 			@include mq-down(){
 				width: 300px;
 			}
 		}
 	}
-	.course-body{
+	.guidanse-body{
 		padding: 1rem 1.5rem;
 		@include mq-down(){
 			padding: 0.5rem 1.5rem;
 		}
-		.course-body-text{
-			padding: 0 0 1rem 0;
-			@include mq-down(){
-				padding: 0 0 0.5rem 0;
+		.guidanse-text{
+			padding:  0 10rem 1rem 10rem;
+			font-size: $font-size-5;
+			@include mq-down{
+				padding:  0 1rem 1rem 1rem;
+				font-size: $font-size-6;
 			}
 		}
 	}
-	.course-foot{
+	.guidanse-foot{
+		text-align: center;
 		.is-img01{
-			width: 300px;
+			width: 220px;
 			@include mq-down(){
-				width: 200px;
+				width: 170px;
 			}
 		}
 		.pointer{
 			&.is-position{
 				position: absolute;
-				bottom: -40px;
+				bottom: -25px;
 				left: 50%;
 			}
 		}

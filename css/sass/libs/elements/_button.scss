@@ -8,15 +8,14 @@
 *=== button(base:bulma)
 *==========================================================*/
 .button{
+	/* bulmaデフォルトのcolor変更 */
 	color: $color-white;
 	/*** introduction ***/
-	&.button01{
-		background-color:$color-palegreen;
-		border: none;
-		@include border-radius(50px);
-		width: 50%;
-		font-size: $font-size-4;
+	&.button01,
+	&.button02{
+		font-size: $font-size-5;
 		font-weight: $weight-semibold;
+		border: none;
 		@include mq-down(){
 			font-size: $font-size-6;
 		}
@@ -25,23 +24,19 @@
 			border: none;
 		}
 	}
+	&.button01{
+		width: 50%;
+		@include border-radius(50px);
+		background-color:$color-palegreen;
+	}
 	/*** guidanse ***/
 	&.button02{
-		border: none;
-		@include border-radius(10px);
 		width: 80%;
-		font-size: $font-size-4;
+		@include border-radius(10px);
 		background-color:$color-orange;
-		background-image: $bg-img-accordion-right;
+		background-image: $bg-img-arrow-right;
 		background-position: right 10px center;
 		background-repeat: no-repeat;
 		background-size: 30px;
-		@include mq-down(){
-			font-size: $font-size-6;
-		}
-		&:hover{
-			color: $color-white;
-			border: none;
-		}
 	}
 }

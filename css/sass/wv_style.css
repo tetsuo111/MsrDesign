@@ -42,10 +42,10 @@ a:hover {
 *=== property
 *==========================================================*/
 .logo {
-  height: 2.128rem;
+  height: 2rem;
 }
 
-/*** arrow  ***/
+/*** pointer  ***/
 .pointer {
   display: inline-block;
   background-image: url(../img/icon/pointer.png);
@@ -63,24 +63,24 @@ a:hover {
   border-radius: 30px;
 }
 
-.pointer.is-pointer-size30 {
+.pointer.is-pointer-sm {
   width: 30px;
   height: 30px;
 }
 
-.pointer.is-pointer-size30:after {
+.pointer.is-pointer-sm:after {
   width: 30px;
   height: 30px;
 }
 
-.pointer.is-pointer-size50 {
-  width: 50px;
-  height: 50px;
+.pointer.is-pointer-md {
+  width: 40px;
+  height: 40px;
 }
 
-.pointer.is-pointer-size50:after {
-  width: 50px;
-  height: 50px;
+.pointer.is-pointer-md:after {
+  width: 40px;
+  height: 40px;
 }
 
 /*** using ban ***/
@@ -90,6 +90,7 @@ a:hover {
 }
 
 .mask a {
+  /*** リンク無効  ***/
   pointer-events: none;
 }
 
@@ -107,43 +108,40 @@ a:hover {
 *=== button(base:bulma)
 *==========================================================*/
 .button {
+  /* bulmaデフォルトのcolor変更 */
   color: #ffffff;
   /*** introduction ***/
   /*** guidanse ***/
 }
 
-.button.button01 {
-  background-color: #92d050;
-  border: none;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
-  width: 50%;
-  font-size: 1.5rem;
+.button.button01, .button.button02 {
+  font-size: 1.25rem;
   font-weight: 600;
+  border: none;
 }
 
-.button.button01:hover {
+.button.button01:hover, .button.button02:hover {
   color: #ffffff;
   border: none;
 }
 
+.button.button01 {
+  width: 50%;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background-color: #92d050;
+}
+
 .button.button02 {
-  border: none;
+  width: 80%;
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  width: 80%;
-  font-size: 1.5rem;
   background-color: #ffad4d;
-  background-image: url(../img/icon/button_right_arrow.png);
+  background-image: url(../img/icon/accordion_right_arrow.png);
   background-position: right 10px center;
   background-repeat: no-repeat;
   -webkit-background-size: 30px 30px;
   background-size: 30px;
-}
-
-.button.button02:hover {
-  color: #ffffff;
-  border: none;
 }
 
 /*##############################################################################*
@@ -153,6 +151,7 @@ a:hover {
  *=== accordion
  *==========================================================*/
 .accordion-list-group .accordion-toggle {
+  /*** rateの位置調整のために付与  ***/
   position: relative;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -163,10 +162,10 @@ a:hover {
   background-image: url(../img/icon/accordion_up_arrow.png);
   background-repeat: no-repeat;
   background-position: right 10px center;
-  -webkit-background-size: 30px 30px;
-  background-size: 30px;
-  font-size: 1.5rem;
-  padding: 1rem;
+  -webkit-background-size: 25px 25px;
+  background-size: 25px;
+  font-size: 1rem;
+  padding: 0.75rem;
 }
 
 .accordion-list-group .accordion-toggle.accordion-toggle-style1 {
@@ -190,7 +189,7 @@ a:hover {
   height: 30px;
   width: 70px;
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 25px;
 }
 
@@ -219,24 +218,24 @@ a:hover {
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
-  margin-right: 1.5rem;
   border: none;
   background-color: #ffffff;
 }
 
 .accordion-list-group .accordion-list {
   display: none;
+  text-align: center;
 }
 
 .accordion-list-group .accordion-list li {
   width: 100%;
   padding: 0.625rem;
   cursor: pointer;
-  background-image: url(../img/icon/button_right_arrow.png);
+  background-image: url(../img/icon/accordion_right_arrow.png);
   background-repeat: no-repeat;
   background-position: right 0.625rem center;
-  -webkit-background-size: 1.25rem 1.25rem;
-  background-size: 1.25rem;
+  -webkit-background-size: 25px 25px;
+  background-size: 25px;
   font-size: 1rem;
 }
 
@@ -259,44 +258,59 @@ a:hover {
   justify-content: space-between;
   -webkit-justify-content: space-between;
   overflow: hidden;
-  height: 50px;
+  height: auto;
 }
 
-.nav-shadow {
+.nav.nav-shadow {
   /* 下に1px影 */
-  box-shadow: 0px 2px 0px 0px #f1f1f1;
-  -moz-box-shadow: 0px 2px 0px 0px #f1f1f1;
-  -webkit-box-shadow: 0px 2px 0px 0px #f1f1f1;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(51, 51, 51, 0.15);
+  box-shadow: 0px 2px 2px 0px rgba(51, 51, 51, 0.15);
+  /* firefox 5以上対応 */
+  -moz-box-shadow: 0px 2px 2px 0px rgba(51, 51, 51, 0.15);
 }
 
-.nav-left-item,
-.nav-right-item {
+.nav .nav-left-item,
+.nav .nav-right-item {
   width: 50px;
   text-align: center;
 }
 
-.nav-left-item a,
-.nav-right-item a {
+.nav .nav-left-item a,
+.nav .nav-right-item a {
   font-size: 2rem;
   color: #958b87;
 }
 
-.nav-center-item a {
+.nav .nav-center-item a {
   display: block;
   padding-top: 10px;
 }
 
-/* modal */
-.nav-modal-card-head {
-  background-color: #29586d;
+/* modal start */
+.modal-card .nav-modal-card-head {
+  background-color: #ffad4d;
   padding: 0.625rem;
 }
 
-.nav-modal-card-title {
+.modal-card .nav-modal-card-title {
   color: #ffffff;
 }
 
-.nav-btn-delete {
+.modal-card .nav-modal-card-body li {
+  text-align: left;
+  line-height: 2.5rem;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.modal-card .nav-modal-card-body li a {
+  display: block;
+  background: url(../img/icon/accordion_right_arrow.png) no-repeat right 0.625rem top 0.75rem;
+  -webkit-background-size: 20px 20px;
+  background-size: 20px;
+  color: #68615e;
+}
+
+.modal-card .nav-btn-delete {
   /* Bulmaの .delete.is-large が効かないため指定 */
   height: 32px;
   width: 32px;
@@ -304,26 +318,14 @@ a:hover {
   max-width: 32px;
 }
 
-.nav-modal-card-body li {
-  text-align: left;
-  line-height: 2.5rem;
-  border-bottom: 1px solid #eeeeee;
-}
-
-.nav-modal-card-body li a {
-  display: block;
-  background: url(../img/icon/menu_arrow.png) no-repeat right 0.625rem top 0.75rem;
-  -webkit-background-size: 0.5rem 0.5rem;
-  background-size: 0.5rem;
-  color: #29586d;
-}
-
 /*==========================================================*
 *=== Swiper Custom
 *==========================================================*/
 /*** Content ***/
 .swiper-slide {
-  text-align: center;
+  /* 改行 */
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .swiper-slide .swiper-slide-head {
@@ -341,23 +343,6 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   -webkit-justify-content: center;
-}
-
-.swiper-slide .swiper-slide-head .swiper-slide-head-text-1 {
-  font-size: 1.25rem;
-  font-weight: 400;
-}
-
-.swiper-slide .swiper-slide-head .swiper-slide-head-text-1:nth-child(1) {
-  padding-right: 70px;
-}
-
-.swiper-slide .swiper-slide-head .swiper-slide-head-text-1:nth-child(2) {
-  padding-left: 70px;
-}
-
-.swiper-slide .swiper-slide-body {
-  text-align: left;
 }
 
 .swiper-slide .swiper-slide-body img {
@@ -382,7 +367,7 @@ a:hover {
   background: #007aff;
 }
 
-.swiper-container-horizontal.course-main > .swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-container-horizontal.guidanse-main > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 10px;
   width: 12px;
   height: 12px;
@@ -391,7 +376,7 @@ a:hover {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-.swiper-container-horizontal.course-main > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.swiper-container-horizontal.guidanse-main > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #aaa29f;
 }
 
@@ -417,61 +402,59 @@ a:hover {
 /*==========================================================*
 *=== List
 *==========================================================*/
-.list-item01 {
-  font-family: NotoSansCJKjp;
+.list .list-item01 {
   position: relative;
   cursor: pointer;
-  color: #68615e;
 }
 
-.list-item01:not(:last-child) {
+.list .list-item01:not(:last-child) {
   border-bottom: 1px solid #d7cbc6;
 }
 
-.list-item01.is-bg-hatena {
+.list .list-item01.is-bg-hatena {
   background-image: url(../img/icon/hatena.png);
   background-repeat: no-repeat;
   background-position: center right;
-  -webkit-background-size: 45px 45px;
-  background-size: 45px;
+  -webkit-background-size: 35px 35px;
+  background-size: 35px;
 }
 
-.list-item01 .list-item01-content {
+.list .list-item01 .list-item01-content {
   display: block;
   font-weight: 600;
   color: #68615e;
   padding: 2.25rem 0 2rem 6rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
-.list-item01 .list-item01-content.is-bg-bloosm01 {
+.list .list-item01 .list-item01-content.is-bg-bloosm01 {
   background-image: url(../img/icon/list_pink01.png);
   background-position: left center;
   background-repeat: no-repeat;
-  -webkit-background-size: 60px 60px;
-  background-size: 60px;
+  -webkit-background-size: 50px 50px;
+  background-size: 50px;
 }
 
-.list-item01 .list-item01-content.is-bg-bloosm02 {
+.list .list-item01 .list-item01-content.is-bg-bloosm02 {
   background-image: url(../img/icon/list_pink02.png);
   background-position: left center;
   background-repeat: no-repeat;
-  -webkit-background-size: 60px 60px;
-  background-size: 60px;
+  -webkit-background-size: 50px 50px;
+  background-size: 50px;
 }
 
-.list-item01 .list-item01-content.is-bg-bloosm03 {
+.list .list-item01 .list-item01-content.is-bg-bloosm03 {
   background-image: url(../img/icon/list_pink03.png);
   background-position: left center;
   background-repeat: no-repeat;
-  -webkit-background-size: 60px 60px;
-  background-size: 60px;
+  -webkit-background-size: 50px 50px;
+  background-size: 50px;
 }
 
-.list-item01 .pointer {
+.list .list-item01 .pointer {
   position: absolute;
-  top: 70%;
-  left: 45%;
+  bottom: -20px;
+  left: 12.5%;
 }
 
 /*##############################################################################*
@@ -481,32 +464,43 @@ a:hover {
 *=== footer
 *==========================================================*/
 .footer {
-  text-align: center;
   border-top: 1px solid #d7cbc6;
   /* Bulmaスタイル更新 */
-  padding: 1.5rem 0;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
   background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  /* 未使用(今後使用することを考慮) */
 }
 
-.footer .footer-title {
-  padding-bottom: 1rem;
+.footer .content .footer-title {
+  padding: 0 2.75rem 1rem 2.75rem;
 }
 
-.footer .footer-copyright {
+.footer .content .footer-copyright {
   font-size: 0.75rem;
   color: #daceca;
 }
 
-.footer-list {
+.footer .footer-list {
   padding-bottom: 1rem;
 }
 
-.footer-list li {
+.footer .footer-list li {
   display: inline;
   padding: 0 0.75rem;
 }
 
-.footer-list li a {
+.footer .footer-list li a {
   color: #68615e;
 }
 
@@ -514,10 +508,9 @@ a:hover {
 *### Unique Page
 *##############################################################################*/
 /*==========================================================*
-*=== Introduction
+*=== Introduction(min-hightで高さを調整)
 *==========================================================*/
 .intro {
-  position: relative;
   color: #ffffff;
   min-height: 100vh;
 }
@@ -539,12 +532,17 @@ a:hover {
   padding: 0 30%;
 }
 
-.intro-main {
+.intro .logo {
+  height: 2.5rem;
+}
+
+.intro-main.is-heightadjust {
   min-height: 80vh;
 }
 
 .intro-main .intro-head {
   min-height: 20vh;
+  text-align: center;
 }
 
 .intro-main .intro-body {
@@ -555,17 +553,17 @@ a:hover {
   line-height: 3rem;
   font-weight: 500;
   padding: 0 10rem 2rem 10rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .intro-main .intro-foot {
   min-height: calc(100% - 50vh);
 }
 
-.intro-main .intro-foot .pointer {
+.intro-main .intro-foot .pointer.is-position {
   position: absolute;
   top: 15px;
-  right: 20%;
+  right: 22%;
   -webkit-transform: rotate(-40deg);
   transform: rotate(-40deg);
 }
@@ -579,9 +577,9 @@ a:hover {
   border-radius: 3px;
   font-weight: 700;
   color: #68615e;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  padding: 0.75rem 0 1rem 6rem;
   margin: 0 0 1rem 0;
-  padding: 1rem 0 1.25rem 6rem;
 }
 
 .top-message.is-bg-img-news {
@@ -593,6 +591,7 @@ a:hover {
 }
 
 .columns.top-content {
+  padding: 2rem 0;
   color: #68615e;
   text-align: center;
 }
@@ -607,53 +606,64 @@ a:hover {
 
 .columns.top-content .column .pointer {
   position: absolute;
-  right: 20%;
+  right: 0;
   bottom: 0;
 }
 
 /*==========================================================*
-*=== each course(program_menu & guidanse) * 5
+*=== program menu
 *==========================================================*/
-.course {
-  position: relative;
+/*** program menu main blocks ***/
+.program-main .program-head {
+  text-align: center;
+  padding: 1rem;
 }
 
-/*** course main blocks ***/
-.course-main {
+.program-main .program-head.is-bg-img-pink {
+  background-image: url(../img/common/moodmeter_banner_bg.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.program-main .program-head .is-banner {
+  width: 300px;
+}
+
+.program-main .program-body {
+  padding: 1rem 1.5rem;
+}
+
+/*==========================================================*
+*=== each guidanse * 5
+*==========================================================*/
+/*** guidanse main blocks ***/
+.guidanse-main {
   color: #ffffff;
-  position: relative;
-  /*** 高さを固定 ***/
+  min-height: 80vh;
 }
 
-.course-main.is-heightadjust {
-  height: 1080px;
-}
-
-.course-main.is-bg-moodmeter {
+.guidanse-main.is-bg-moodmeter {
   background-image: url(../img/common/bg_moodmeter.png);
   background-repeat: no-repeat;
   -webkit-background-size: 100% 100%;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
-.course-main .sub-title {
+.guidanse-main .sub-title {
   font-weight: 600;
   text-align: center;
   padding: 0 0 1rem 0;
-  font-size: 2rem;
-}
-
-.course-main .course-text {
-  padding: 0 10rem 2rem 10rem;
   font-size: 1.5rem;
 }
 
-.course-main .course-head {
+.guidanse-main .guidanse-head {
   padding: 1.5rem 0;
   text-align: center;
 }
 
-.course-main .course-head.is-bg-img-pink01 {
+.guidanse-main .guidanse-head.is-bg-img-pink01 {
   background-image: url(../img/common/moodmeter_banner_bg.png);
   background-repeat: no-repeat;
   -webkit-background-size: 100% 100%;
@@ -661,38 +671,39 @@ a:hover {
   background-position: center;
 }
 
-.course-main .course-head .is-banner {
-  width: 300px;
+.guidanse-main .guidanse-head .is-img01 {
+  width: 120px;
+  padding: 0 0 1.5rem 0;
 }
 
-.course-main .course-head .is-img01 {
-  width: 140px;
-  padding: 0 0 2rem 0;
+.guidanse-main .guidanse-head .is-img02 {
+  width: 400px;
 }
 
-.course-main .course-head .is-img02 {
-  width: 600px;
-}
-
-.course-main .course-body {
+.guidanse-main .guidanse-body {
   padding: 1rem 1.5rem;
 }
 
-.course-main .course-body .course-body-text {
-  padding: 0 0 1rem 0;
+.guidanse-main .guidanse-body .guidanse-text {
+  padding: 0 10rem 1rem 10rem;
+  font-size: 1.25rem;
 }
 
-.course-main .course-foot .is-img01 {
-  width: 300px;
+.guidanse-main .guidanse-foot {
+  text-align: center;
 }
 
-.course-main .course-foot .pointer {
+.guidanse-main .guidanse-foot .is-img01 {
+  width: 220px;
+}
+
+.guidanse-main .guidanse-foot .pointer.is-position {
   position: absolute;
-  bottom: -40px;
+  bottom: -25px;
   left: 50%;
 }
 
-.course-main .swiper-skip a {
+.guidanse-main .swiper-skip a {
   color: #aaa29f;
 }
 
@@ -703,21 +714,19 @@ a:hover {
   .title{
     font-size: 1.25rem;
   }
-  .button.button01{
-    font-size: 1rem;
-  }
-  .button.button02{
+  .button.button01, .button.button02{
     font-size: 1rem;
   }
   .accordion-list-group .accordion-toggle{
     font-size: 0.75rem;
-    padding: 0.875rem;
+    -webkit-background-size: 20px 20px;
+    background-size: 20px;
   }
   .accordion-list-group .accordion-toggle .accordion-rate{
     -webkit-background-size: 350px 15px;
     background-size: 350px 15px;
     position: absolute;
-    top: 8px;
+    top: 5px;
     left: 5px;
   }
   .accordion-list-group .accordion-list-group-btn1{
@@ -725,15 +734,14 @@ a:hover {
   }
   .accordion-list-group .accordion-list li{
     font-size: 0.75rem;
-  }
-  .nav{
-    height: 40px;
+    -webkit-background-size: 20px 20px;
+    background-size: 20px;
   }
   .swiper-container-horizontal.intro-main > .swiper-pagination-bullets .swiper-pagination-bullet{
     width: 8px;
     height: 8px;
   }
-  .swiper-container-horizontal.course-main > .swiper-pagination-bullets .swiper-pagination-bullet{
+  .swiper-container-horizontal.guidanse-main > .swiper-pagination-bullets .swiper-pagination-bullet{
     width: 8px;
     height: 8px;
   }
@@ -745,28 +753,36 @@ a:hover {
   .swiper-skip a{
     font-size: 1rem;
   }
-  .list-item01.is-bg-hatena{
+  .list .list-item01.is-bg-hatena{
     -webkit-background-size: 20px 20px;
     background-size: 20px;
   }
-  .list-item01 .list-item01-content{
+  .list .list-item01 .list-item01-content{
     padding: 1.5rem 0 1.5rem 5rem;
     font-size: 1rem;
   }
-  .list-item01 .list-item01-content.is-bg-bloosm01{
+  .list .list-item01 .list-item01-content.is-bg-bloosm01{
     -webkit-background-size: 35px 35px;
     background-size: 35px;
   }
-  .list-item01 .list-item01-content.is-bg-bloosm02{
+  .list .list-item01 .list-item01-content.is-bg-bloosm02{
     -webkit-background-size: 35px 35px;
     background-size: 35px;
   }
-  .list-item01 .list-item01-content.is-bg-bloosm03{
+  .list .list-item01 .list-item01-content.is-bg-bloosm03{
     -webkit-background-size: 35px 35px;
     background-size: 35px;
+  }
+  .list .list-item01 .pointer{
+    position: absolute;
+    bottom: -20px;
+    left: 40%;
   }
   .intro .title p{
     padding: 0 15%;
+  }
+  .intro .logo{
+    height: 2rem;
   }
   .intro-main .intro-body{
     padding: 1.25rem 1.5rem;
@@ -779,25 +795,24 @@ a:hover {
   .intro-main .intro-body p:last-child{
     padding: 0 0 0 0;
   }
-  .intro-main .intro-foot .pointer{
+  .intro-main .intro-foot .pointer.is-position{
     position: absolute;
     top: 15px;
-    right: 12%;
+    right: 15%;
   }
   .top-message{
     font-size: 0.75rem;
-    padding: 0.25rem;
+    padding: 0.5rem 0.5rem 0.675rem 4rem;
     margin: 0 0 0.75rem 0;
   }
   .top-message.is-bg-img-news{
     -webkit-background-size: 45px 45px;
     background-size: 45px;
   }
-  .top-message .top-message-text{
-    padding: 0.5rem 0.5rem 0.675rem 4rem;
-  }
   .columns.top-content{
-    margin: 0 0.75rem 0 0.75rem;
+    padding: 0;
+    /*** 余白の調整 ***/
+    margin: 0 0.75rem 0.75rem 0.75rem;
   }
   .columns.top-content .column{
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -805,46 +820,37 @@ a:hover {
   .columns.top-content .column img{
     width: 150px;
   }
-  .columns.top-content .column .pointer{
-    position: absolute;
-    right: 0;
-    bottom: 0;
+  .program-main .program-head .is-banner{
+    width: 190px;
   }
-  .course-main.is-heightadjust{
-    height: 650px;
+  .program-main .program-body{
+    padding: 0.5rem 1.5rem;
   }
-  .course-main.is-bg-moodmeter{
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%;
+  .guidanse-main{
+    min-height: 100vh;
   }
-  .course-main .sub-title{
+  .guidanse-main .sub-title{
     padding: 0 0 0.25rem 0;
     font-size: 1.25rem;
   }
-  .course-main .course-text{
-    padding: 0 1rem 1.25rem 1rem;
-    font-size: 1rem;
+  .guidanse-main .guidanse-head{
+    padding: 1rem 0;
   }
-  .course-main .course-head{
-    padding: 1.25rem 0;
-  }
-  .course-main .course-head .is-banner{
-    width: 190px;
-  }
-  .course-main .course-head .is-img01{
+  .guidanse-main .guidanse-head .is-img01{
     width: 95px;
     padding: 0 0 1rem 0;
   }
-  .course-main .course-head .is-img02{
+  .guidanse-main .guidanse-head .is-img02{
     width: 300px;
   }
-  .course-main .course-body{
+  .guidanse-main .guidanse-body{
     padding: 0.5rem 1.5rem;
   }
-  .course-main .course-body .course-body-text{
-    padding: 0 0 0.5rem 0;
+  .guidanse-main .guidanse-body .guidanse-text{
+    padding: 0 1rem 1rem 1rem;
+    font-size: 1rem;
   }
-  .course-main .course-foot .is-img01{
-    width: 200px;
+  .guidanse-main .guidanse-foot .is-img01{
+    width: 170px;
   }
 }
