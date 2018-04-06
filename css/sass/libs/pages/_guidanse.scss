@@ -6,9 +6,9 @@
 /*** guidanse main blocks ***/
 .guidanse-main{
 	color: $color-white;
-	min-height: 80vh;
+	min-height: 85vh;
 	@include mq-down(){
-		min-height: 100vh;
+		min-height: 70vh;
 	}
 	&.is-bg-moodmeter {
 		background-image: $bg-img-moodmeter;
@@ -22,7 +22,7 @@
 		font-size: $font-size-4;
 		@include mq-down(){
 			padding: 0 0 0.25rem 0;
-			font-size: $font-size-5;
+			font-size: $font-size-6;
 		}
 	}
 	.guidanse-head{
@@ -31,24 +31,18 @@
 		@include mq-down(){
 			padding: 1rem 0;
 		}
-		&.is-bg-img-pink01{
-			background-image: $bg-img-pink01;
-			background-repeat: no-repeat;
-			background-size: 100%;
-			background-position: center;
-		}
 		.is-img01{
 			width: 120px;
 			padding: 0 0 1.5rem 0;
 			@include mq-down(){
-				width: 95px;
+				width: 80px;
 				padding: 0 0 1rem 0;
 			}
 		}
 		.is-img02{
 			width: 400px;
 			@include mq-down(){
-				width: 300px;
+				width: 200px;
 			}
 		}
 	}
@@ -59,10 +53,10 @@
 		}
 		.guidanse-text{
 			padding:  0 10rem 1rem 10rem;
-			font-size: $font-size-5;
+			font-size: $font-size-6;
 			@include mq-down{
 				padding:  0 1rem 1rem 1rem;
-				font-size: $font-size-6;
+				font-size: $font-size-7;
 			}
 		}
 	}
@@ -71,7 +65,7 @@
 		.is-img01{
 			width: 220px;
 			@include mq-down(){
-				width: 170px;
+				width: 90px;
 			}
 		}
 		.pointer{

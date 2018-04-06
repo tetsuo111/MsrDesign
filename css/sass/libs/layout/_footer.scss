@@ -7,23 +7,23 @@
 *=== footer
 *==========================================================*/
 .footer {
+	min-height: calc(100% - 90vh);
 	border-top: 1px solid $footer-border-color;
 	/* Bulmaスタイル更新 */
-	padding: 2rem 0 1rem 0;
+	padding: 1rem 0 0.5rem 0;
 	text-align: center;
 	background-color: $color-white;
 	@include flex-center;
 	@include justify-content(center);
 	.content{
 		.footer-title {
-			padding: 0 2.75rem 1rem 2.75rem;
+			padding: 0 2.75rem 0 2.75rem;
 		}
 		.footer-copyright {
 			font-size: 0.75rem;
 			color: $footer-copyright-color;
 		}
 	}
-	/* 未使用(今後使用することを考慮) */
 	.footer-list {
 		padding-bottom: 1rem;
 		li {

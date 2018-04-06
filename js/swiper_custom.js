@@ -7,6 +7,7 @@
 //Skip button hide
 var swiperSkipHide = function() {
 	$(".swiper-skip").remove();
+	$(".swiper-pagination").remove();
 }
 
 //Swipe Main
@@ -17,8 +18,8 @@ window.addEventListener('DOMContentLoaded', function() {
 			type: 'bullets',
 		},
 		paginationClickable: false,
-		speed: 500,
-		touchRatio: 0.2,
+		speed: 400,
+		touchRatio: 2,
 		autoHeight: true,
 		nested: true,
 		mousewheel: false,

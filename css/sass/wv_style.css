@@ -253,10 +253,9 @@ a:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-justify-content: space-between;
   overflow: hidden;
   height: auto;
 }
@@ -335,14 +334,13 @@ a:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -ms-flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-justify-content: center;
 }
 
 .swiper-slide .swiper-slide-body img {
@@ -464,9 +462,10 @@ a:hover {
 *=== footer
 *==========================================================*/
 .footer {
+  min-height: calc(100% - 90vh);
   border-top: 1px solid #d7cbc6;
   /* Bulmaスタイル更新 */
-  padding: 2rem 0 1rem 0;
+  padding: 1rem 0 0.5rem 0;
   text-align: center;
   background-color: #ffffff;
   display: -webkit-box;
@@ -478,12 +477,10 @@ a:hover {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-justify-content: center;
-  /* 未使用(今後使用することを考慮) */
 }
 
 .footer .content .footer-title {
-  padding: 0 2.75rem 1rem 2.75rem;
+  padding: 0 2.75rem 0 2.75rem;
 }
 
 .footer .content .footer-copyright {
@@ -526,6 +523,7 @@ a:hover {
 .intro .title {
   color: #ffffff;
   width: 100%;
+  font-size: 2rem;
 }
 
 .intro .title p {
@@ -641,7 +639,7 @@ a:hover {
 /*** guidanse main blocks ***/
 .guidanse-main {
   color: #ffffff;
-  min-height: 80vh;
+  min-height: 85vh;
 }
 
 .guidanse-main.is-bg-moodmeter {
@@ -663,14 +661,6 @@ a:hover {
   text-align: center;
 }
 
-.guidanse-main .guidanse-head.is-bg-img-pink01 {
-  background-image: url(../img/common/moodmeter_banner_bg.png);
-  background-repeat: no-repeat;
-  -webkit-background-size: 100% 100%;
-  background-size: 100%;
-  background-position: center;
-}
-
 .guidanse-main .guidanse-head .is-img01 {
   width: 120px;
   padding: 0 0 1.5rem 0;
@@ -686,7 +676,7 @@ a:hover {
 
 .guidanse-main .guidanse-body .guidanse-text {
   padding: 0 10rem 1rem 10rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .guidanse-main .guidanse-foot {
@@ -778,6 +768,9 @@ a:hover {
     bottom: -20px;
     left: 40%;
   }
+  .intro .title{
+    font-size: 1.5rem;
+  }
   .intro .title p{
     padding: 0 15%;
   }
@@ -827,30 +820,30 @@ a:hover {
     padding: 0.5rem 1.5rem;
   }
   .guidanse-main{
-    min-height: 100vh;
+    min-height: 70vh;
   }
   .guidanse-main .sub-title{
     padding: 0 0 0.25rem 0;
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   .guidanse-main .guidanse-head{
     padding: 1rem 0;
   }
   .guidanse-main .guidanse-head .is-img01{
-    width: 95px;
+    width: 80px;
     padding: 0 0 1rem 0;
   }
   .guidanse-main .guidanse-head .is-img02{
-    width: 300px;
+    width: 200px;
   }
   .guidanse-main .guidanse-body{
     padding: 0.5rem 1.5rem;
   }
   .guidanse-main .guidanse-body .guidanse-text{
     padding: 0 1rem 1rem 1rem;
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
   .guidanse-main .guidanse-foot .is-img01{
-    width: 170px;
+    width: 90px;
   }
 }
