@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /*##############################################################################*
+*### OOCSS + Bulmaの書き方で表記しています。
+*##############################################################################*/
+
+/*##############################################################################*
 *### base
 *##############################################################################*/
 /*==========================================================*
@@ -110,8 +114,6 @@ a:hover {
 .button {
 	/* bulmaデフォルトのcolor変更 */
 	color: #ffffff;
-	/*** introduction ***/
-	/*** guidanse ***/
 }
 
 .button.button01, .button.button02 {
@@ -645,8 +647,8 @@ a:hover {
 .guidanse-main.is-bg-moodmeter {
 	background-image: url(../img/common/bg_moodmeter.png);
 	background-repeat: no-repeat;
-	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;
+	-webkit-background-size: 100%;
+	background-size: 100%;
 }
 
 .guidanse-main .sub-title {
